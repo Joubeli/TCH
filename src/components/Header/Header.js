@@ -43,8 +43,8 @@ const Header = () => {
           <svg
             className="arrow"
             xmlns="http://www.w3.org/2000/svg"
-            width="10"
-            height="10"
+            width="11"
+            height="11"
             viewBox="0 0 24 24"
           >
             <path
