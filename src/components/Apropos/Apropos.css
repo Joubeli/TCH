@@ -1,0 +1,33 @@
+.container{
+    padding-top: 80px;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-title{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #459baa;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.art {
+    background-color: white;
+    width: 30%;
+    border-radius: 5px;
+    padding: 15px;    
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.art p {
+    font-size: 1em;
+    line-height: 30px;
+    text-align: left;
+}
