@@ -6,6 +6,7 @@ import QuiSommesNous from './components/QuiSommesNous/QuiSommesNous'
 import Partenaires from './components/Partenaires/Partenaires'
 import Contact from './components/Contact/Contact'
 import Accueil from './components/Accueil/Accueil';
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <QuiSommesNous/>
       <Partenaires/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }
