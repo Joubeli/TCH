@@ -19,7 +19,7 @@ const Contact = () => {
     return (
       <section className='sec-contact' id='contact'>
           <h2 data-aos='fade-up'  className='section-title'>Contact</h2>          
-          <p data-aos='fade-up'  className='sec-sub-title'>Contactez-Nous Pour Plus D'information</p>
+          <p data-aos='fade-up'  className='sec-sub-title contact-sub-title'>Contactez-Nous Pour Plus D'information</p>
           <div className='content-contact'>
             <section data-aos='fade-up' className='coord sec'>    
               <div className="sub-sec" style={{marginTop:'20px'}}>

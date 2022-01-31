@@ -12,16 +12,16 @@
     font-family: 'Poppins', sans-serif;
     /* padding-bottom: -1%; */
     margin-bottom: -1%;
+    margin-top: 1%;
 }
 
 .partners-row{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 80%;
     margin-left: 10%;
     /* background-color: red; */
-    margin-top: 2%;
-
+    margin-top: 4%;
 }
 
 .partners{
@@ -35,11 +35,14 @@
 }
 
 .artos {
-    padding-top: 3%;
+    /* padding-top: 3%; */
+    margin-top: 8%;
 }
 
 .techS{
-    padding-top: 10%;
+    padding: 2%;
+    background-color: black;
+    margin-top: 6%;
 }
 
 .sumake{
@@ -47,7 +50,8 @@
 }
 
 .kortho{
-    padding-top: 6%;
+    padding: 3%;
+    background-color: #302070;
 }
 
 .aos {
@@ -55,7 +59,9 @@
 }
 
 .hk{
-    padding-top: 5%;
+    padding: 5%;
+    margin-top: 4%;
+    background-color: #00245d;
 
 }
 

@@ -17,7 +17,10 @@
     color: #6b6b6b;
     font-size: 1em;
     font-family: 'Poppins', sans-serif;
-    padding-bottom: 1%;
+}
+
+.contact-sub-title{
+    padding-bottom: 3%;
 }
 
 .sec{

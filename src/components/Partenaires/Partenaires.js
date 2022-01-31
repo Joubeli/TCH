@@ -21,36 +21,46 @@ const Partenaires = () => {
       <section className='sec-part' id='partenaires'>
           <h2 data-aos='fade-up' className='section-title'>Nos Partenaires</h2>
           <p data-aos='fade-up'  className='sec-sub-title'>Nous Sommes les Représenatnt Officiels de :</p>
+
           <div className='partners-row' data-aos='fade-up' >
+
             <div className='partners'>
               <a href='#'><img className='grayscale artos' src={Artos} alt="artos-logo" /></a>
             </div>
+
             <div className='partners'>
               <a href='#'><img className='grayscale techS' src={TechS} alt="techsonic-logo" /></a>
             </div>
-          </div>
+          
             <div className='partners '>
               <a href='#'>
                 <img className='grayscale kortho' src={Kortho} alt="kortho-logo" />
               </a>
-            <div className='partners-row' data-aos='fade-up' >
-            <div className='partners '>
-              <a href='#'>
-                <img className='grayscale sumake' src={Sumake} alt="sumake-logo" />
-              </a>
             </div>
+
+        </div>
+
+        <div className='partners-row' data-aos='fade-up' >
+
+          <div className='partners '>
+            <a href='#'>
+              <img className='grayscale sumake' src={Sumake} alt="sumake-logo" />
+            </a>
           </div>
-              <div className='partners '>
-                <a href='#'>
-                  <img className='grayscale aos' src={aos} alt="aos-logo" />
-                </a>
-              </div>
-              <div className='partners '>
-                <a href='#'>
-                  <img className='grayscale hk' src={hk} alt="aos-logo" />
-                </a>
-              </div>
-            </div>
+
+          <div className='partners '>
+            <a href='#'>
+              <img className='grayscale aos' src={aos} alt="aos-logo" />
+            </a>
+          </div>
+
+          <div className='partners '>
+            <a href='#'>
+              <img className='grayscale hk' src={hk} alt="aos-logo" />
+            </a>
+          </div>
+
+        </div>
       </section>
     )    
   };
