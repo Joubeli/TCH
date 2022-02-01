@@ -53,20 +53,20 @@ const Contact = () => {
               <Form>
                 <div style={{display:'flex', justifyContent:'space-between'}}>
                 <Form.Group style={{textAlign:'left'}}> 
-                  <Form.Label className='sec-sub-title'>Votre Nom :  </Form.Label>
+                  <Form.Label className='sec-sub-title sub-title-form'>Votre Nom :  </Form.Label>
                   <Form.Control type="text" style={{width:'260px'}} />
                 </Form.Group>
                 <Form.Group style={{textAlign:'left'}}>
-                  <Form.Label className='sec-sub-title'>Votre Email : </Form.Label>
+                  <Form.Label className='sec-sub-title sub-title-form'>Votre Email : </Form.Label>
                   <Form.Control type="email" style={{width:'260px'}} />
                 </Form.Group>
                 </div>
                 <Form.Group style={{textAlign:'left', marginTop:'20px'}}> 
-                  <Form.Label className='sec-sub-title'>Sujet :  </Form.Label>
+                  <Form.Label className='sec-sub-title sub-title-form'>Sujet :  </Form.Label>
                   <Form.Control type="text" style={{width:'540px'}} />
                 </Form.Group>
                 <Form.Group style={{textAlign:'left', marginTop:'20px'}}> 
-                  <Form.Label className='sec-sub-title'>Message :  </Form.Label>
+                  <Form.Label className='sec-sub-title sub-title-form'>Message :  </Form.Label>
                   <Form.Control as="textarea" rows={13} style={{width:'540px'}} />
                 </Form.Group>
               </Form>  
