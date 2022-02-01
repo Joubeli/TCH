@@ -67,7 +67,7 @@ const Contact = () => {
                 </Form.Group>
                 <Form.Group style={{textAlign:'left', marginTop:'20px'}}> 
                   <Form.Label className='sec-sub-title'>Message :  </Form.Label>
-                  <Form.Control as="textarea" rows={12} style={{width:'540px'}} />
+                  <Form.Control as="textarea" rows={13} style={{width:'540px'}} />
                 </Form.Group>
               </Form>  
               <button style={{marginTop:'20px', marginBottom:'-10px'}} type='submit' class="button" role="button">Envoyer</button>
