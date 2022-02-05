@@ -3,15 +3,14 @@ import "../../App.css";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import "./A_propos.css";
-const Apropos = () => {
+
+const A_propos = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
   return (
-    <section
-      className="sec-apropos"
-      id="apropos"
-    >
+    <section className="sec-apropos" id="apropos">
       <h2 data-aos="fade-up" className="section-title">
         A propos
       </h2>
@@ -50,4 +49,5 @@ const Apropos = () => {
     </section>
   );
 };
-export default Apropos;
+
+export default A_propos;
