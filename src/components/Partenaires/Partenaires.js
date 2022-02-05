@@ -3,12 +3,12 @@ import '../../App.css'
 import 'aos/dist/aos.css'
 import Aos from 'aos'
 import './Partenaires.css'
-import Artos from '../../images/artos.png'
-import TechS from '../../images/TechS.png'
-import Kortho from '../../images/kortho.png'
-import Sumake from '../../images/sumake.png'
-import aos from '../../images/aos.png'
-import hk from '../../images/hk.png'
+import Artos from '../../images/Partenaires/artos.png'
+import TechS from '../../images/Partenaires/TechS.png'
+import Kortho from '../../images/Partenaires/kortho.png'
+import Sumake from '../../images/Partenaires/sumake.png'
+import aos from '../../images/Partenaires/aos.png'
+import hk from '../../images/Partenaires/hk.png'
 
 
 const Partenaires = () => {
