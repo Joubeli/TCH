@@ -37,6 +37,17 @@
     display: flex;
     justify-content: start;
 }
+.location{
+    margin-top: 20px;
+}
+.location_icon{
+    margin-top: 25px;
+    margin-left: 8%;
+}
+.svg_icons{
+    margin-top: 20px;
+    margin-left: 8%;
+}
 .desc{
     margin-left: 8%;
 }
@@ -56,6 +67,9 @@
     text-transform: uppercase;
     text-align: left;    
 }
+.country{
+    margin-bottom: -3%;
+}
 .desc-para{
     text-align: left;
     font-size: .9em;
@@ -67,6 +81,23 @@
     border-bottom: 1px solid #bebebe;
     margin-bottom: 20px;
 }
+.form_line_1{
+    display: flex;
+    justify-content: space-between;
+}
+.form_group_1{
+    text-align: left;
+}
+.input_group_1{
+    width: 260px;
+}
+.form_group{
+    text-align: left;
+    margin-top: 20px;
+}
+.input_group{
+    width: 540px;
+}
 .form-label{
     color: #6b6b6b;
     font-size: 1em;
@@ -74,5 +105,9 @@
 }
 .sub-title-form{
     margin-bottom: 2%;
+}
+.form_button{
+    margin-top: 20px;
+    margin-bottom: -10px;
 }
 
