@@ -1,3 +1,88 @@
 .sec-quisommesnous{
-    
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    padding-top: 90px;
 }
+
+.sec-sub-title{
+    color: #6b6b6b;
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cartes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    /* background-color: red; */
+    margin-left: 10%;
+    width: 80%;
+    /* background-color: red; */
+}
+
+.carte{
+    background-color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 210px;
+    width: 350px;
+    border-radius: 5px;
+    /* animation: fadeIn 2s; */
+    transition: transform 800ms;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.carte:hover{
+    transform: translateY(-10px);
+}
+
+/* @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  } */
+
+  .carte-title{
+    color: #37517e;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding-top: 10px;
+    text-align: left;
+  }
+
+  .carte-sub-title{
+    color: #6b6b6b;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    /* padding-left: -40%; */
+    text-align: left;  
+    margin-bottom: -10%;  
+  }
+
+  .line{
+      width: 50%;
+  }
+
+  .profil-photo{
+    border-radius: 50%;
+    padding-left: 2%;
+    height: 140px;
+    filter: grayscale(100%);
+  }
+
+  .description{
+    margin-left: 10%;
+
+  }
+
+  .linkedin-link{
+    margin-top: -10%;
+    margin-right: 80%
+  }
+
+  .linkedin-link:hover{
+      cursor: pointer;
+  }

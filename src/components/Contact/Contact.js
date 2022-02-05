@@ -5,6 +5,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import map from '../../images/map.png'
 import { Form } from 'react-bootstrap'
+import emailjs from 'emailjs-com'
 
 
 const Contact = () => {
@@ -13,8 +14,19 @@ const Contact = () => {
     useEffect(() => {
         Aos.init({ duration: 2000 })
     }, [])
-
     
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_ri0zvtd', 'template_techindustries', e.target, 'user_rgfy6MBHjMbHfLbD7ta07')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset();
+    };
 
     return (
       <section className='sec-contact' id='contact'>
@@ -47,30 +59,31 @@ const Contact = () => {
                   </p>
                 </div>
               </div> 
-              <img className='map-sec' src={map} />            
+                <img className='map-sec' src={map} />     
             </section>
             <section data-aos='fade-up' className='form sec'> 
-              <Form>
+               <Form onSubmit={sendEmail}>
                 <div style={{display:'flex', justifyContent:'space-between'}}>
                 <Form.Group style={{textAlign:'left'}}> 
-                  <Form.Label className='sec-sub-title sub-title-form'>Votre Nom :  </Form.Label>
-                  <Form.Control type="text" style={{width:'260px'}} />
+                  <Form.Label className='sec-sub-title sub-title-form' >Votre Nom :  </Form.Label>
+                  <Form.Control type="text" style={{width:'260px'}} name='name' />
                 </Form.Group>
                 <Form.Group style={{textAlign:'left'}}>
                   <Form.Label className='sec-sub-title sub-title-form'>Votre Email : </Form.Label>
-                  <Form.Control type="email" style={{width:'260px'}} />
+                  <Form.Control type="email" style={{width:'260px'}} name='email' />
                 </Form.Group>
                 </div>
                 <Form.Group style={{textAlign:'left', marginTop:'20px'}}> 
                   <Form.Label className='sec-sub-title sub-title-form'>Sujet :  </Form.Label>
-                  <Form.Control type="text" style={{width:'540px'}} />
+                  <Form.Control type="text" style={{width:'540px'}} name='subject' />
                 </Form.Group>
                 <Form.Group style={{textAlign:'left', marginTop:'20px'}}> 
                   <Form.Label className='sec-sub-title sub-title-form'>Message :  </Form.Label>
-                  <Form.Control as="textarea" rows={13} style={{width:'540px'}} />
+                  <Form.Control as="textarea" rows={13} style={{width:'540px'}} name='message' />
                 </Form.Group>
-              </Form>  
-              <button style={{marginTop:'20px', marginBottom:'-10px'}} type='submit' class="button" role="button">Envoyer</button>
+                <button style={{marginTop:'20px', marginBottom:'-10px'}} type='submit' class="button" > Envoyer</button>
+              </Form>   
+              {/* <form onSubmit={sendEmail}></form> */}
             </section>
           </div>
       </section>

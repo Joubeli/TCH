@@ -17,17 +17,17 @@ const Header = () => {
       </div>
       <nav className="nav">
         <li className="nav-menu">
-          <Link to="accueil" smooth={true} duration={1000}>
+          <Link activeClassName='activeLink' to="accueil" smooth={true} duration={1000}>
             Accueil
           </Link>
         </li>
         <li className="nav-menu">
-          <Link to="apropos" smooth={true} duration={1000}>
+          <Link activeClassName='activeLink' to="apropos" smooth={true} duration={1000}>
             A propos
           </Link>
         </li>
         <li className="nav-menu">
-          <Link to="produits" smooth={true} duration={1000}>
+          <Link activeClassName='activeLink' to="produits" smooth={true} duration={1000}>
             Produits
           </Link>
         </li>
@@ -47,7 +47,7 @@ const Header = () => {
           </svg>
           <div className="dropdown">
             <li>
-              <a target='_blank' href={pdf1}>Thread Identification Guide</a>
+              <a target='_blank' href={pdf1}>TI Guide</a>
             </li>
             <li>
               <a target='_blank' href={pdf2}>TCH Line Card</a>
@@ -55,17 +55,17 @@ const Header = () => {
           </div>
         </li>
         <li className="nav-menu">
-          <Link to="quisommesnous" smooth={true} duration={1000}>
+          <Link activeClassName='activeLink' to="quisommesnous" smooth={true} duration={1000}>
             Qui Sommes Nous
           </Link>
         </li>
         <li className="nav-menu">
-          <Link to="partenaires" smooth={true} duration={1000}>
+          <Link activeClassName='activeLink' to="partenaires" smooth={true} duration={1000}>
             Partenaires
           </Link>
         </li>
         <li className="nav-menu">
-          <Link to="contact" smooth={true} duration={1000}>
+          <Link activeClassName='activeLink' to="contact" smooth={true} duration={1000}>
             contact
           </Link>
         </li>
