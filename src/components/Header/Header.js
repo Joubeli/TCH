@@ -22,7 +22,7 @@ const Header = () => {
           </Link>
         </li>
         <li className="nav-menu">
-          <Link to="apropos" smooth={true} duration={1000}>
+          <Link to="a_propos" smooth={true} duration={1000}>
             A propos
           </Link>
         </li>
