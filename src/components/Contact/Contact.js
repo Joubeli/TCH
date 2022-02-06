@@ -28,15 +28,13 @@ const Contact = () => {
             <img
               className="location_icon"
               src={location}
-              alt='location icon'
-              width='32px'
-              height='32px'
+              alt="location icon"
+              width="32px"
+              height="32px"
             />
             <div className="desc">
               <h6 className="subtitle">Location : </h6>
-              <p className="desc-sub country">
-                Tunisie
-              </p>
+              <p className="desc-sub country">Tunisie</p>
               <p className="desc-para">
                 Rue de parc
                 <br /> 2036 La Soukra
@@ -46,7 +44,7 @@ const Contact = () => {
           <div className="sub-sec">
             <img
               className="svg_icons"
-              alt='email icon'
+              alt="email icon"
               width="30px"
               height="30px"
               src={email}
@@ -77,42 +75,34 @@ const Contact = () => {
         </section>
         <section data-aos="fade-up" className="form sec">
           <Form>
-            <div className='form_line_1'>
+            <div className="form_line_1">
               <Form.Group className="form_group_1">
                 <Form.Label className="sec-sub-title sub-title-form">
                   Votre Nom :{" "}
                 </Form.Label>
-                <Form.Control className="input_group_1" type="text"/>
+                <Form.Control className="input_group_1" type="text" />
               </Form.Group>
               <Form.Group className="form_group_1">
                 <Form.Label className="sec-sub-title sub-title-form">
                   Votre Email :{" "}
                 </Form.Label>
-                <Form.Control className="input_group_1" type="email"/>
+                <Form.Control className="input_group_1" type="email" />
               </Form.Group>
             </div>
             <Form.Group className="form_group">
               <Form.Label className="sec-sub-title sub-title-form">
                 Sujet :{" "}
               </Form.Label>
-              <Form.Control className="input_group" type="text"/>
+              <Form.Control className="input_group" type="text" />
             </Form.Group>
             <Form.Group className="form_group">
               <Form.Label className="sec-sub-title sub-title-form">
                 Message :{" "}
               </Form.Label>
-              <Form.Control
-                as="textarea"
-                rows={13}
-                className="input_group"
-              />
+              <Form.Control as="textarea" rows={13} className="input_group" />
             </Form.Group>
           </Form>
-          <button
-            type="submit"
-            className="button form_button"
-            role="button"
-          >
+          <button type="submit" className="button form_button" role="button">
             Envoyer
           </button>
         </section>
