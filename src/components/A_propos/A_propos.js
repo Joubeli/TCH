@@ -10,7 +10,7 @@ const A_propos = () => {
   }, []);
 
   return (
-    <section className="sec-apropos" id="apropos">
+    <section className="sec-apropos" id="a_propos">
       <h2 data-aos="fade-up" className="section-title">
         A propos
       </h2>
