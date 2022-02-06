@@ -7,25 +7,19 @@
     align-content: space-around;
     align-content: space-between;
 }
-
 .links{
     font-family: 'Poppins', sans-serif;
     letter-spacing: .5px;
     font-size: .9em;
     color: #6b6b6b;
     margin-bottom: 10px;
-
 }
-
 .link{
     color: #459baa; 
-
 }
-
 .link:hover{
     cursor: pointer;
 }
-
 .socials{
     display: flex;
     width: 80px;
@@ -34,7 +28,6 @@
     align-self: center;
     margin-bottom: 5px;
 }
-
 .copy{
     color: #176a79;
     font-family: 'Poppins', sans-serif;
@@ -42,12 +35,9 @@
     font-size: .9em;
     margin-bottom: 5px;
 }
-
 .arrow{
     margin-bottom: 5px;
-
 }
-
 .arrow:hover{
     cursor:pointer;
 }
