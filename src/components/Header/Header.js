@@ -33,11 +33,7 @@ const Header = () => {
         </li>
         <li className="nav-menu ressources">
           Ressources
-          <img
-            className="arrow"
-            alt='arrow icon'
-            src={arrow}
-          />
+          <img className="arrow" alt="arrow icon" src={arrow} />
           <div className="dropdown">
             <li>
               <a target="_blank" href={pdf1}>
