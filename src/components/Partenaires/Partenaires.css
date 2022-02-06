@@ -1,84 +1,57 @@
-.sec-part{
-    width: 70%;
-    margin: 0 15% 6% 15%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
+.sec-part {
+  width: 70%;
+  margin: 0 15% 3% 15%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
 }
-
-.sec-sub-title{
-    color: #6b6b6b;
-    font-size: 1em;
-    font-family: 'Poppins', sans-serif;
-    /* padding-bottom: -1%; */
-    margin-bottom: -1%;
-    margin-top: 1%;
+.sec-sub-title {
+  color: #6b6b6b;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: -1%;
+  margin-top: 1%;
 }
-
-.partners-row{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin-left: 10%;
-    /* background-color: red; */
-    margin-top: 4%;
+.partners-row {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 4%;
 }
-
-.partners{
-    /* height: 100px;
-    width: 250px; */
-    /* border-radius: 5px; */
-    /* background-color: #37517e; */
-    transition: transform 500ms;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
-
+.partners {
+  transition: transform 500ms;
 }
-
 .artos {
-    /* padding-top: 3%; */
-    margin-top: 8%;
+  margin-top: 8%;
 }
-
-.techS{
-    padding: 2%;
-    background-color: black;
-    margin-top: 6%;
+.techS {
+  padding: 2%;
+  background-color: black;
+  margin-top: 6%;
 }
-
-.sumake{
-    padding-top: 5%;
+.sumake {
+  padding-top: 5%;
 }
-
-.kortho{
-    padding: 3%;
-    background-color: #302070;
+.kortho {
+  padding: 3%;
+  background-color: #302070;
 }
-
 .aos {
-    padding-top: 5%;
+  padding-top: 5%;
 }
-
-.hk{
-    padding: 5%;
-    margin-top: 4%;
-    background-color: #00245d;
-
+.hk {
+  padding: 5%;
+  margin-top: 4%;
+  background-color: #00245d;
 }
-
-.grayscale{
-    filter: grayscale(100%);
+.grayscale {
+  filter: grayscale(100%);
 }
-
-.partners:hover{
-    transform: translateY(-10px);
-    cursor: pointer;
+.partners:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
 }
-
-.partners:hover .grayscale{
-    filter: grayscale(0%);
+.partners:hover .grayscale {
+  filter: grayscale(0%);
 }
-
-
-
-
-

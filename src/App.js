@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header';
-import Apropos from './components/Apropos/Apropos'
+import A_propos from './components/A_propos/A_propos'
 import Produits from './components/Produits/Produits'
 import QuiSommesNous from './components/QuiSommesNous/QuiSommesNous'
 import Partenaires from './components/Partenaires/Partenaires'
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Header/>
       <Accueil/>
-      <Apropos />
+      <A_propos />
       <Produits/>
       <QuiSommesNous/>
       <Partenaires/>

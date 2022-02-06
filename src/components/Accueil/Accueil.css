@@ -1,51 +1,50 @@
 .sec-accueil {
-    background: rgb(243,245,249);
-    background: linear-gradient(0deg, rgba(243,245,249,1) 0%, rgba(67,136,155,1) 50%, rgba(58,102,129,1) 70%, rgba(49,74,104,1) 90%, rgba(50,67,97,1) 100%);
-    height: 650px;
-    padding-top: 80px;
-    display: flex;
-    justify-content: space-between;
+  background: rgb(243, 245, 249);
+  background: linear-gradient(
+    0deg,
+    rgba(243, 245, 249, 1) 0%,
+    rgba(67, 136, 155, 1) 50%,
+    rgba(58, 102, 129, 1) 70%,
+    rgba(49, 74, 104, 1) 90%,
+    rgba(50, 67, 97, 1) 100%
+  );
+  height: 650px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
 }
-
 .titles {
-    padding: 80px 0 0 80px;
+  padding: 80px 0 0 80px;
 }
-
-.accueil-title{
-    /* padding: 80px 0 10px 20px; */
-    margin-bottom: 20px;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 56px;
-    color: #fff;
-    font-family: 'Jost', sans-serif;
-    letter-spacing: 2px;
-    /* height: 200px; */
-    width: 600px;
-    text-transform: capitalize;
-    text-align: left;
+.accueil-title {
+  margin-bottom: 20px;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  letter-spacing: 2px;
+  width: 600px;
+  text-transform: capitalize;
+  text-align: left;
 }
-
-.accueil-subtitle{
-    color: rgba(255, 255, 255, 0.6);
-    font-family: 'Jost', sans-serif;
-    font-size: 24px;
-    width: 550px;
-    text-align: justify;
-    /* padding: 0 0 0 25px; */
-    line-height: 35px;
+.accueil-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  width: 550px;
+  text-align: justify;
+  line-height: 35px;
 }
-
 .video-link {
-    color: rgb(255, 255, 255);
-    font-family: 'Jost', sans-serif;
-    font-size: 20px;
-    width: 550px;
-    text-align: justify;
-    line-height: 35px;
+  color: rgb(255, 255, 255);
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  width: 550px;
+  text-align: justify;
+  line-height: 35px;
 }
-
-.video-link:hover{
-    cursor: pointer;
-    color: white;
+.video-link:hover {
+  cursor: pointer;
+  color: white;
 }

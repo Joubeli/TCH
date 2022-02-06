@@ -4,8 +4,21 @@ import "aos/dist/aos.css";
 import Aos from "aos";
 import "./Produits.css";
 import { Carousel } from "react-bootstrap";
+import green_yellow_cable from '../../images/Produits/green_yellow_cable.jpg'
+import blue_cable from '../../images/Produits/blue_cable.jpg'
+import black_orange_cable from '../../images/Produits/black_orange_cable.jpg'
+import colorful_mini_cables from '../../images/Produits/colorful_mini_cables.jpg'
+import colorful_mixed_mini_cables from '../../images/Produits/colorful_mixed_mini_cables.jpg'
+import electrical_wire from '../../images/Produits/electrical_wire.jpg'
+import orange_electrical_wires from '../../images/Produits/orange_electrical_wires.jpg'
+import electric_wires_with_terminals from '../../images/Produits/electric_wires_with_terminals.jpg'
+import joining_electrical_wires from '../../images/Produits/joining_electrical_wires.jpg'
 
 const Produits = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -21,9 +34,9 @@ const Produits = () => {
             <div class="col">
               <div class="card">
                 <img
-                  src="https://media.istockphoto.com/photos/group-of-yellow-and-green-earth-cables-picture-id531858082?k=20&m=531858082&s=612x612&w=0&h=B96KTn-6fATaRq-WpBbO0D_Rxty_-PaKZgQyy6tVl9k="
+                  src={green_yellow_cable}
                   class="card-img-top"
-                  alt="..."
+                  alt="green_yellow cable"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -40,9 +53,9 @@ const Produits = () => {
             <div class="col">
               <div class="card">
                 <img
-                  src="https://media.istockphoto.com/photos/group-of-blue-electric-cables-picture-id533989008?k=20&m=533989008&s=612x612&w=0&h=spaJX4WCzsXLVX5CZlS1KOr5ye3hCRuqEl_xQe9Hf08="
+                  src={blue_cable}
                   class="card-img-top"
-                  alt="..."
+                  alt="blue_cable"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -59,70 +72,9 @@ const Produits = () => {
             <div class="col">
               <div class="card">
                 <img
-                  src="https://media.istockphoto.com/photos/stripped-electrical-cable-used-in-electrical-systems-picture-id503071925?k=20&m=503071925&s=612x612&w=0&h=WX7fD1cUhBukqoktFVkpU4knbIljf2L14g48ItfVumU="
+                  src={black_orange_cable}
                   class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer. This is a longer card with supporting
-                    text below as a natural lead-in to additional content. This
-                    content is a little bit longer.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card">
-                <img
-                  src="https://media.istockphoto.com/photos/corrugated-pipe-with-cables-picture-id499086067?k=20&m=499086067&s=612x612&w=0&h=X3gwD9TJGhMzetFrcJ2DrHCIxO03Hw4AYvpOiYD-mu8="
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer. This is a longer card with supporting
-                    text below as a natural lead-in to additional content. This
-                    content is a little bit longer.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="https://media.istockphoto.com/photos/corrugated-pipe-with-cables-picture-id509292817?k=20&m=509292817&s=612x612&w=0&h=wr8ug7ofT3wj00pttlVtVg0OqUco1VHzl_N9vDmOumw="
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer. This is a longer card with supporting
-                    text below as a natural lead-in to additional content. This
-                    content is a little bit longer.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="https://media.istockphoto.com/photos/orange-electrical-wires-with-cable-shield-picture-id529648337?k=20&m=529648337&s=612x612&w=0&h=NfB1BInPyxlLOSeGwPcf103tvPNNZotnIc2gVHRyGEM="
-                  class="card-img-top"
-                  alt="..."
+                  alt="black_orange_cable"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -143,9 +95,9 @@ const Produits = () => {
             <div class="col">
               <div class="card">
                 <img
-                  src="https://media.istockphoto.com/photos/electrical-wire-picture-id182347807?k=20&m=182347807&s=612x612&w=0&h=JzFQTxF9BZXjDgMU4cbQhBXZjQvMsH0Yci-UHHGnkbE="
+                  src={colorful_mini_cables}
                   class="card-img-top"
-                  alt="..."
+                  alt="colorful_mini_cables"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -162,9 +114,9 @@ const Produits = () => {
             <div class="col">
               <div class="card">
                 <img
-                  src="https://media.istockphoto.com/photos/electric-wires-with-terminals-picture-id512361729?k=20&m=512361729&s=612x612&w=0&h=aCui8XTRvlBYKpPIRMBEchqRXLTzVMBsaR2Agdppk-U="
+                  src={colorful_mixed_mini_cables}
                   class="card-img-top"
-                  alt="..."
+                  alt="colorful_mixed_mini_cables"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -181,9 +133,70 @@ const Produits = () => {
             <div class="col">
               <div class="card">
                 <img
-                  src="https://media.istockphoto.com/photos/joining-electrical-wires-with-twisting-wire-nuts-picture-id1184331655?k=20&m=1184331655&s=612x612&w=0&h=1CmdJvPkikdqqUpjsNehvVsOwD8fVzNR1LE-3ZzZru0="
+                  src={orange_electrical_wires}
                   class="card-img-top"
-                  alt="..."
+                  alt="orange_electrical_wires"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer. This is a longer card with supporting
+                    text below as a natural lead-in to additional content. This
+                    content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src={electrical_wire}
+                  class="card-img-top"
+                  alt="electrical_wire"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer. This is a longer card with supporting
+                    text below as a natural lead-in to additional content. This
+                    content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src={electric_wires_with_terminals}
+                  class="card-img-top"
+                  alt="electric_wires_with_terminals"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer. This is a longer card with supporting
+                    text below as a natural lead-in to additional content. This
+                    content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src={joining_electrical_wires}
+                  class="card-img-top"
+                  alt="joining_electrical_wires"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -200,62 +213,6 @@ const Produits = () => {
           </div>
         </Carousel.Item>
       </Carousel>
-      {/* <div class="row row-cols-1 row-cols-md-4 g-4">
-              <div class="col">
-                <div class="card">
-                  <img src="https://www.cncablegroup.com/upload/201808/17/201808171705102187.jpg" class="card-img-top" alt="..."/>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img src="https://www.cncablegroup.com/upload/201808/17/201808171705102187.jpg" class="card-img-top" alt="..."/>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img src="https://www.cncablegroup.com/upload/201808/17/201808171705102187.jpg" class="card-img-top" alt="..."/>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img src="https://www.cncablegroup.com/upload/201808/17/201808171705102187.jpg" class="card-img-top" alt="..."/>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img src="https://www.cncablegroup.com/upload/201808/17/201808171705102187.jpg" class="card-img-top" alt="..."/>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img src="https://www.cncablegroup.com/upload/201808/17/201808171705102187.jpg" class="card-img-top" alt="..."/>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div> */}
     </section>
   );
 };
