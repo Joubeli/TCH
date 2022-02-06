@@ -1,0 +1,38 @@
+.sec-apropos {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.art {
+    background-color: white;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border: 1px solid #e4e4e4;
+    color: #6b6b6b;
+    height: 400px;
+  }
+  .desc-apropos p{
+    padding: 4%;
+    text-align: justify;
+  }
+  .art p {
+    font-size: 1em;
+    line-height: 30px;
+    text-align: left;
+  }  
+  .sub-title{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #459baa;
+    text-align: center;
+    padding-top: 25px;
+    margin: 0;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  .img{
+    overflow: hidden;
+  }

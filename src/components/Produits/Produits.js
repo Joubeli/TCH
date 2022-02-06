@@ -15,6 +15,9 @@ import electric_wires_with_terminals from '../../images/Produits/electric_wires_
 import joining_electrical_wires from '../../images/Produits/joining_electrical_wires.jpg'
 
 const Produits = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
