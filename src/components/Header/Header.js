@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import logo from "../../images/logo.png";
+import React from "react";
+import logo from "../../images/Header/logo.png";
 import { Link } from "react-scroll";
 import pdf1 from "../../pdf/1.pdf";
 import pdf2 from "../../pdf/2.pdf";
@@ -7,7 +7,6 @@ import "../../App.css";
 import "./Header.css";
 
 const Header = () => {
-
   return (
     <div className="topbar">
       <div className="logo">
@@ -47,10 +46,14 @@ const Header = () => {
           </svg>
           <div className="dropdown">
             <li>
-              <a target='_blank' href={pdf1}>Thread Identification Guide</a>
+              <a target="_blank" href={pdf1}>
+                Thread Identification Guide
+              </a>
             </li>
             <li>
-              <a target='_blank' href={pdf2}>TCH Line Card</a>
+              <a target="_blank" href={pdf2}>
+                TCH Line Card
+              </a>
             </li>
           </div>
         </li>
