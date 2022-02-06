@@ -3,12 +3,12 @@ import 'aos/dist/aos.css'
 import Aos from 'aos'
 import '../../App.css'
 import './QuiSommesNous.css'
-import founder from '../../images/founder.jpg'
-import manager from '../../images/manager.jpg'
-import responsable from '../../images/responsable.jpg'
-import ingénieur from '../../images/ingénieur.jpg'
-import sales from '../../images/sales.jpg'
-import technicien from '../../images/technicien.jpg'
+import founder from '../../images/QuiSommesNous/founder.jpg'
+import manager from '../../images/QuiSommesNous/manager.jpg'
+import responsable from '../../images/QuiSommesNous/responsable.jpg'
+import ingénieur from '../../images/QuiSommesNous/ingénieur.jpg'
+import sales from '../../images/QuiSommesNous/sales.jpg'
+import technicien from '../../images/QuiSommesNous/technicien.jpg'
 
 const QuiSommesNous = () => {
   
