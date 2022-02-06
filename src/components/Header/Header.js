@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../images/Header/logo.png";
+import arrow from "../../images/Header/arrow.png";
 import { Link } from "react-scroll";
 import pdf1 from "../../pdf/1.pdf";
 import pdf2 from "../../pdf/2.pdf";
@@ -32,18 +33,11 @@ const Header = () => {
         </li>
         <li className="nav-menu ressources">
           Ressources
-          <svg
+          <img
             className="arrow"
-            xmlns="http://www.w3.org/2000/svg"
-            width="11"
-            height="11"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="#37517e"
-              d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
-            />
-          </svg>
+            alt='arrow icon'
+            src={arrow}
+          />
           <div className="dropdown">
             <li>
               <a target="_blank" href={pdf1}>
