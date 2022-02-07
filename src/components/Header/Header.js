@@ -18,7 +18,6 @@ const Header = () => {
       <nav className="nav">
         <li className="nav-menu">
           <Link
-            activeClassName="activeLink"
             to="accueil"
             smooth={true}
             duration={1000}
@@ -33,7 +32,6 @@ const Header = () => {
         </li>
         <li className="nav-menu">
           <Link
-            activeClassName="activeLink"
             to="produits"
             smooth={true}
             duration={1000}
@@ -59,7 +57,6 @@ const Header = () => {
         </li>
         <li className="nav-menu">
           <Link
-            activeClassName="activeLink"
             to="quisommesnous"
             smooth={true}
             duration={1000}
@@ -69,7 +66,6 @@ const Header = () => {
         </li>
         <li className="nav-menu">
           <Link
-            activeClassName="activeLink"
             to="partenaires"
             smooth={true}
             duration={1000}
@@ -79,7 +75,6 @@ const Header = () => {
         </li>
         <li className="nav-menu">
           <Link
-            activeClassName="activeLink"
             to="contact"
             smooth={true}
             duration={1000}
