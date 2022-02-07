@@ -17,7 +17,11 @@ const Header = () => {
       </div>
       <nav className="nav">
         <li className="nav-menu">
-          <Link activeClassName='activeLink' to="accueil" smooth={true} duration={1000}>
+          <Link
+            to="accueil"
+            smooth={true}
+            duration={1000}
+          >
             Accueil
           </Link>
         </li>
@@ -27,7 +31,11 @@ const Header = () => {
           </Link>
         </li>
         <li className="nav-menu">
-          <Link activeClassName='activeLink' to="produits" smooth={true} duration={1000}>
+          <Link
+            to="produits"
+            smooth={true}
+            duration={1000}
+          >
             Produits
           </Link>
         </li>
@@ -36,7 +44,9 @@ const Header = () => {
           <img className="arrow" alt="arrow icon" src={arrow} />
           <div className="dropdown">
             <li>
-              <a target='_blank' href={pdf1}>TI Guide</a>
+              <a target="_blank" href={pdf1}>
+                TI Guide
+              </a>
             </li>
             <li>
               <a target="_blank" href={pdf2}>
@@ -46,17 +56,29 @@ const Header = () => {
           </div>
         </li>
         <li className="nav-menu">
-          <Link activeClassName='activeLink' to="quisommesnous" smooth={true} duration={1000}>
+          <Link
+            to="quisommesnous"
+            smooth={true}
+            duration={1000}
+          >
             Qui Sommes Nous
           </Link>
         </li>
         <li className="nav-menu">
-          <Link activeClassName='activeLink' to="partenaires" smooth={true} duration={1000}>
+          <Link
+            to="partenaires"
+            smooth={true}
+            duration={1000}
+          >
             Partenaires
           </Link>
         </li>
         <li className="nav-menu">
-          <Link activeClassName='activeLink' to="contact" smooth={true} duration={1000}>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={1000}
+          >
             contact
           </Link>
         </li>

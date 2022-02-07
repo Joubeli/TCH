@@ -12,10 +12,9 @@
   padding-top: 80px;
   display: flex;
   justify-content: space-between;
-  /* background-color: red; */
 }
 .titles {
-  padding: 80px 0 0 80px;
+  padding: 20px 0 0 80px;
 }
 .accueil-title {
   margin-bottom: 20px;
@@ -32,6 +31,7 @@
 .accueil-subtitle {
   color: rgba(255, 255, 255, 0.6);
   font-family: "Jost", sans-serif;
+  text-transform: capitalize;
   font-size: 24px;
   width: 550px;
   text-align: justify;
@@ -49,9 +49,9 @@
   cursor: pointer;
   color: white;
 }
-.video_icon{
+.video_icon {
   margin: 0 10px 5px 0;
 }
-.watch_video{
+.watch_video {
   padding-top: 50px;
 }
