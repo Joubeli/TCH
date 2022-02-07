@@ -8,12 +8,12 @@ const Accueil = () => {
     <section className="sec-accueil" id="accueil">
       <div className="titles">
         <h1 className="accueil-title">
-          we are a private owned Tunisian company
+          Nous Sommes Une Entreprise Tunisienne Privée
         </h1>
         <h5 className="accueil-subtitle">
-          Specialized in cables and harnesses technologies and Aerospace tooling
-          and consumables. We are an equipment dealers and solution provider for
-          electronic electric and aerospace industries.
+          Spécialisée dans les Technologies des Cables et Faisceaux et l'outillage AéroSpacial.<br/>
+          Nous sommes Revendeur d'équipements et Fournisseur de Solutions pour
+          Industries Électroniques, Électriques et Aérospatiales.
         </h5>
         <a  className="video-link" href="#">
           <p className="watch_video">
@@ -24,7 +24,7 @@ const Accueil = () => {
               height="32px"
               alt="video icon"
             />
-            Watch video
+            Regarder la vidéo
           </p>
         </a>
       </div>
