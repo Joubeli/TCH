@@ -23,7 +23,7 @@ const QuiSommesNous = () => {
       </h2>
       <div className="staff">
         <div className="spec_line">
-          <h6 data-aos="fade-up" className="sec-sub-title qsn_subtitles">
+          <h6 data-aos="fade-up" className="qsn_subtitles">
             Direction Exécutive
           </h6>
           <div className="cartes">
@@ -113,7 +113,7 @@ const QuiSommesNous = () => {
           </div>
         </div>
         <div className="spec_line">
-          <h6 data-aos="fade-up" className="sec-sub-title qsn-sub-title">
+          <h6 data-aos="fade-up" className="qsn_subtitles">
             Ingénieur / Commercial / Technicien
           </h6>
           <div className="cartes">
@@ -205,8 +205,7 @@ const QuiSommesNous = () => {
         <div className="spec_line">
           <h6
             data-aos="fade-up"
-            className="sec-sub-title"
-            style={{ marginTop: "3%" }}
+            className="qsn_subtitles"
           >
             Assistante
           </h6>
