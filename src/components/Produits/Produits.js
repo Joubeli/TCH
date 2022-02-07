@@ -4,15 +4,15 @@ import "aos/dist/aos.css";
 import Aos from "aos";
 import "./Produits.css";
 import { Carousel } from "react-bootstrap";
-import green_yellow_cable from '../../images/Produits/green_yellow_cable.jpg'
-import blue_cable from '../../images/Produits/blue_cable.jpg'
-import black_orange_cable from '../../images/Produits/black_orange_cable.jpg'
-import colorful_mini_cables from '../../images/Produits/colorful_mini_cables.jpg'
-import colorful_mixed_mini_cables from '../../images/Produits/colorful_mixed_mini_cables.jpg'
-import electrical_wire from '../../images/Produits/electrical_wire.jpg'
-import orange_electrical_wires from '../../images/Produits/orange_electrical_wires.jpg'
-import electric_wires_with_terminals from '../../images/Produits/electric_wires_with_terminals.jpg'
-import joining_electrical_wires from '../../images/Produits/joining_electrical_wires.jpg'
+import green_yellow_cable from "../../images/Produits/green_yellow_cable.jpg";
+import blue_cable from "../../images/Produits/blue_cable.jpg";
+import black_orange_cable from "../../images/Produits/black_orange_cable.jpg";
+import colorful_mini_cables from "../../images/Produits/colorful_mini_cables.jpg";
+import colorful_mixed_mini_cables from "../../images/Produits/colorful_mixed_mini_cables.jpg";
+import electrical_wire from "../../images/Produits/electrical_wire.jpg";
+import orange_electrical_wires from "../../images/Produits/orange_electrical_wires.jpg";
+import electric_wires_with_terminals from "../../images/Produits/electric_wires_with_terminals.jpg";
+import joining_electrical_wires from "../../images/Produits/joining_electrical_wires.jpg";
 
 const Produits = () => {
   useEffect(() => {
@@ -52,11 +52,7 @@ const Produits = () => {
             </div>
             <div class="col">
               <div class="card">
-                <img
-                  src={blue_cable}
-                  class="card-img-top"
-                  alt="blue_cable"
-                />
+                <img src={blue_cable} class="card-img-top" alt="blue_cable" />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">

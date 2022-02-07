@@ -221,7 +221,7 @@ const QuiSommesNous = () => {
                     </p>
                   </div>
                   <div className="carte_bottom">
-                    <hr className="line"/>
+                    <hr className="line" />
                     <a
                       rel="noopener noreferrer"
                       href="https://www.linkedin.com/in/jihen-ben-mahmoud-8199b921a/"
@@ -245,5 +245,4 @@ const QuiSommesNous = () => {
     </section>
   );
 };
-
 export default QuiSommesNous;

@@ -1,7 +1,7 @@
 import React from "react";
 import "../../App.css";
 import "./Accueil.css";
-import video_icon from '../../images/Accueil/video_icon.png'
+import video_icon from "../../images/Accueil/video_icon.png";
 
 const Accueil = () => {
   return (
@@ -11,14 +11,16 @@ const Accueil = () => {
           Nous Sommes Une Entreprise Tunisienne Privée
         </h1>
         <h5 className="accueil-subtitle">
-          Spécialisée dans les Technologies des Cables et Faisceaux et l'outillage AéroSpacial.<br/>
+          Spécialisée dans les Technologies des Cables et Faisceaux et
+          l'outillage AéroSpacial.
+          <br />
           Nous sommes Revendeur d'équipements et Fournisseur de Solutions pour
           Industries Électroniques, Électriques et Aérospatiales.
         </h5>
-        <a  className="video-link" href="#">
+        <a className="video-link" href="#">
           <p className="watch_video">
             <img
-              className='video_icon'
+              className="video_icon"
               src={video_icon}
               width="32px"
               height="32px"
@@ -28,8 +30,7 @@ const Accueil = () => {
           </p>
         </a>
       </div>
-      <div className="image">
-      </div>
+      <div className="image"></div>
     </section>
   );
 };

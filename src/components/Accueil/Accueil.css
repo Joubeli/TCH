@@ -12,7 +12,6 @@
   padding-top: 80px;
   display: flex;
   justify-content: space-between;
-  /* background-color: red; */
 }
 .titles {
   padding: 20px 0 0 80px;
@@ -50,9 +49,9 @@
   cursor: pointer;
   color: white;
 }
-.video_icon{
+.video_icon {
   margin: 0 10px 5px 0;
 }
-.watch_video{
+.watch_video {
   padding-top: 50px;
 }
