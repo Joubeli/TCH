@@ -45,7 +45,7 @@ const Footer = () => {
           {" "}
           TCH Industries
         </Link>{" "}
-        • A Private owned Tunisian company established in 2012{" "}
+        • Entreprise Tunisienne Privée Créée en 2012{" "}
       </div>
       <div className="socials">
         <a
