@@ -87,3 +87,170 @@ h2::after {
   display: flex;
   justify-content: space-between;
 }
+.topbar {
+  width: 100%;
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  display: flex;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  z-index: 2;
+}
+.logo {
+  display: flex;
+  width: 30%;
+  padding: 1% 0 1% 3%;
+}
+.logo img {
+  cursor: pointer;
+}
+h5 {
+  font-size: 1.4em;
+}
+/*******************MENU_1*******************/
+/* .nav-menu:hover {
+  color: #459baa;
+}
+.nav li a {
+  position: relative;
+  color: #37517e;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 2px;
+  font-family: "Jost", sans-serif;
+
+}
+.nav li a:hover {
+  color: #459baa;
+
+}
+.nav li a::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #459baa;
+  transition: all 0.4s ease;
+}
+.nav li a:hover::before{
+  width: 100%;
+} */
+/************************MENU_2*****************/
+nav {
+  display: flex;
+  justify-content: space-between;  
+  padding: 37px 10px;
+  width: 75%;
+}
+nav .link {
+  position: relative;
+  color: #304d6a;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  line-height: 15px;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+nav .animation{
+  position: absolute;
+  height: 70%;
+  top:0;
+  z-index: 0;
+  background:#41688f;
+  border-radius: 8px;
+  margin-top: 1.2%;
+  transition: all .5s ease;
+}
+.link:nth-child(1){
+  width: 60px;
+}
+.nav .start-home,.link:nth-child(1):hover~.animation{
+  width: 100px;
+  left: 380px;
+}
+.link:nth-child(2){
+  width: 80px;
+}
+.nav .start-a_propos,.link:nth-child(2):hover~.animation{
+  width: 110px;
+  left: 480px;
+}
+.link:nth-child(3){
+  width: 100px;
+}
+.nav .start-produits,.link:nth-child(3):hover~.animation{
+  width: 120px;
+  left: 605px;
+}
+.link:nth-child(4){
+  width: 115px;
+}
+.nav .start-ressources,.link:nth-child(4):hover~.animation{
+  width: 150px;
+  left: 725px;
+}
+.link:nth-child(5){
+  width: 170px;
+}
+.nav .start-quisommesnous,.link:nth-child(5):hover~.animation{
+  width: 180px;
+  left: 890px;
+}
+.link:nth-child(6){
+  width: 100px;
+}
+.nav .start-partenaires,.link:nth-child(6):hover~.animation{
+  width: 145px;
+  left: 1080px;
+}
+.link:nth-child(7){
+  width: 100px;
+}
+.nav .start-contact,.link:nth-child(7):hover~.animation{
+  width: 110px;
+  left: 1235px;
+}
+nav .link:hover {
+color: white;
+}
+/* .arrow {
+  padding: 5px 0 0 5px;
+}
+.dropdown {
+  height: 90px;
+  width: 150px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: none;
+  font-size: 14px;
+  padding: 5px 0;
+  margin-left: -0.5%;
+  text-align: left;
+  position: absolute;
+  top: 70%;
+}
+.dropdown li {
+  padding: 4% 0 4% 7%;
+}
+/* .dropdown li a{
+  font-size: 17px;
+} */
+/* .dropdown li a:hover {
+  color: #459baa;
+} */
+/* .ressources:hover .dropdown {
+  display: block;
+  transition: all 0.4s;
+}  */
+.arrow{
+  font-size: 12px;
+  margin-left: -5px;
+} 
