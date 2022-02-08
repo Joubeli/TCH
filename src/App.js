@@ -22,42 +22,14 @@ function App() {
           </a>
         </div>
         <nav>
-          <ul className="nav">
-            <li className="nav-menu">
-              <a href="#accueil">Accueil</a>
-            </li>
-            <li className="nav-menu">
-              <a href="#a_propos">A propos</a>
-            </li>
-            <li className="nav-menu">
-              <a href="#produits">Produits</a>
-            </li>
-            <li className="nav-menu ressources">
-              <a href="#">Ressources <span className="arrow">▼</span></a>
-              {/* <img className="arrow" alt="arrow icon" src={arrow} /> */}
-              <ul className="dropdown">
-                <li>
-                  <a target="_blank" href={pdf1}>
-                    TI Guide
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" href={pdf2}>
-                    TCH Line Card
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-menu">
-              <a href="#quisommesnous">Qui Sommes Nous</a>
-            </li>
-            <li className="nav-menu">
-              <a href="#partenaires">Partenaires</a>
-            </li>
-            <li className="nav-menu">
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
+          <a className="link" href="#accueil">Accueil</a>
+          <a className="link" href="#a_propos">A propos</a>
+          <a className="link" href="#produits">Produits</a>
+          <a className="link" href="#">Ressources <span className="arrow">▼</span></a>
+          <a className="link" href="#quisommesnous">Qui Sommes Nous</a>
+          <a className="link" href="#partenaires">Partenaires</a>
+          <a className="link" href="#contact">Contact</a>
+          <div className="animation start-home"></div>
         </nav>
       </div>
 
