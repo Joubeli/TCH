@@ -35,9 +35,9 @@
   font-size: 0.9em;
   margin-bottom: 5px;
 }
-.arrow {
+.arrow_footer {
   margin-bottom: 5px;
 }
-.arrow:hover {
+.arrow_footer:hover {
   cursor: pointer;
 }
