@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.css";
 import { BackTop } from "antd";
-import { Link } from "react-scroll";
 import facebook from "../../images/Footer/facebook.png";
 import linkedin from "../../images/Footer/linkedin.png";
 import back_to_top from "../../images/Footer/back_to_top.png";
@@ -10,41 +9,41 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="links">
-        <Link className="link" to="accueil" smooth={true} duration={1000}>
+        <a className="link" href="#accueil" >
           Accueil
-        </Link>{" "}
+        </a>{" "}
         |
-        <Link className="link" to="a_propos" smooth={true} duration={1000}>
+        <a className="link" href="#a_propos">
           {" "}
           A propos
-        </Link>{" "}
+        </a>{" "}
         |
-        <Link className="link" to="produits" smooth={true} duration={1000}>
+        <a className="link" href="#produits">
           {" "}
           Produits
-        </Link>{" "}
+        </a>{" "}
         |
-        <Link className="link" to="quisommesnous" smooth={true} duration={1000}>
+        <a className="link" href="#quisommesnous">
           {" "}
           Qui Sommes Nous
-        </Link>{" "}
+        </a>{" "}
         |
-        <Link className="link" to="partenaires" smooth={true} duration={1000}>
+        <a className="link" href="partenaires">
           {" "}
           Partenaires
-        </Link>{" "}
+        </a>{" "}
         |
-        <Link className="link" to="contact" smooth={true} duration={1000}>
+        <a className="link" href="#contact">
           {" "}
           Contact
-        </Link>
+        </a>
       </div>
       <div className="copy">
         Copyright © 2022{" "}
-        <Link to="a_propos" className="link">
+        <a href="#a_propos">
           {" "}
           TCH Industries
-        </Link>{" "}
+        </a>{" "}
         • Entreprise Tunisienne Privée Créée en 2012{" "}
       </div>
       <div className="socials">
@@ -67,7 +66,7 @@ const Footer = () => {
       </div>
       <BackTop>
         <img
-          className="arrow"
+          className="arrow_footer"
           src={back_to_top}
           width="32px"
           height="32px"
