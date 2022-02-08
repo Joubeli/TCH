@@ -2,11 +2,12 @@ import React from "react";
 import "../../App.css";
 import "./Accueil.css";
 import video_icon from "../../images/Accueil/video_icon.png";
+import acceuil_bg1 from "../../images/Accueil/acceuil_bg1.png";
 
 const Accueil = () => {
   return (
     <section className="sec-accueil" id="accueil">
-      <div className="titles">
+      <div className="titles">   
         <h1 className="accueil-title">
           Nous Sommes Une Entreprise Tunisienne Privée
         </h1>
@@ -30,7 +31,9 @@ const Accueil = () => {
           </p>
         </a>
       </div>
-      <div className="image"></div>
+      <div className="background_image">
+      <img src={acceuil_bg1}  alt='background_image'/>
+      </div>
     </section>
   );
 };
