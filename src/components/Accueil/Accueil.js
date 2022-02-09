@@ -26,8 +26,8 @@ const Accueil = () => {
               width="32px"
               height="32px"
               alt="video icon"
-            />
-            Regarder la vidéo
+            /> 
+            <a className='link_video' href='https://www.youtube.com/watch?v=n0bUKEuYDG0' target="_blank">Regarder la vidéo</a>
           </p>
         </a>
       </div>

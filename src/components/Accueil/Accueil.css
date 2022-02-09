@@ -59,3 +59,9 @@
 .background_image {
   padding: 7% 2% 0 0;
 }
+
+.link_video:hover{
+  cursor: pointer;
+  color: rgb(36, 30, 30);
+
+}
