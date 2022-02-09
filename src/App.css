@@ -15,7 +15,7 @@ h2::before {
   content: "";
   position: absolute;
   display: block;
-  width: 120px;
+  width: 11.2%;
   height: 1px;
   background: #ddd;
   bottom: 1px;
@@ -25,18 +25,18 @@ h2::after {
   content: "";
   position: absolute;
   display: block;
-  width: 40px;
-  height: 3px;
+  width: 3.7%;
+  height: 5%;
   background: #459baa;
   bottom: 0;
   left: calc(50% - 20px);
 }
 .section-title {
-  font-size: 32px;
+  font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 1%;
+  padding-bottom: 2%;
   position: relative;
   color: #37517e;
 }
@@ -110,55 +110,69 @@ h5 {
   font-size: 1.4em;
 }
 /*******************MENU_1*******************/
-/* .nav-menu:hover {
-  color: #459baa;
-}
-.nav li a {
+nav {
+  display: flex;
+  justify-content: space-around;  
+  padding: 2.6% 1.8%;
+  width: 75%;
   position: relative;
-  color: #37517e;
+  align-items: center;
+}
+.link_topbar {
+  position: relative;
   font-size: 20px;
-  font-weight: 500;
-  padding: 6px 2px;
   font-family: "Jost", sans-serif;
-
+  font-weight: 500;
+  padding: 1%;
+  z-index: 0;
+  color: #407b91;
 }
-.nav li a:hover {
-  color: #459baa;
-
-}
-.nav li a::before{
+.link_topbar::after{
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 2px;
   width: 0%;
-  background-color: #459baa;
-  transition: all 0.4s ease;
+  background-color: #407b91;
+  transition:0.5s ease;
+  z-index: -5;
+  /*******example_1********/
+  /* height: 8%; */
+  /*******example_2********/
+  height: 100%;
+  border-radius: 8px;
 }
-.nav li a:hover::before{
+.link_topbar:hover{
+  color: white;
+}
+.active {
+  color: white;
+}
+.link_topbar:hover::after,
+.active::after {  
   width: 100%;
-} */
+}
 /************************MENU_2*****************/
-nav {
+/* nav {
   display: flex;
   justify-content: space-between;  
-  padding: 37px 10px;
-  width: 75%;
+  padding: 2.6% 1.8%;
+  width: 70%;
+  position: relative;
 }
 nav .link {
   position: relative;
   color: #304d6a;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 500;
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
-  line-height: 15px;
+  line-height: 1.2em;
   z-index: 1;
   display: inline-block;
   text-align: center;
-}
-nav .animation{
+} */
+/* nav .animation{
   position: absolute;
   height: 70%;
   top:0;
@@ -166,61 +180,61 @@ nav .animation{
   background:#41688f;
   border-radius: 8px;
   margin-top: 1.2%;
-  transition: all .5s ease;
+  transition:all .5s ease 0s;
 }
-/*  
+ 
 .link:nth-child(1){
-  width: 60px;
+  width: 7%;
 }
-.nav .start-home,.link:nth-child(1):hover~.animation{
-  width: 100px;
-  left: 380px;
+nav .start-home,.link:nth-child(1):hover~.animation{
+  width: 7%;
+  left: 30.6%;
 }
 .link:nth-child(2){
-  width: 80px;
+  width: 9%;
 }
-.nav .start-a_propos,.link:nth-child(2):hover~.animation{
-  width: 110px;
-  left: 480px;
+nav .link:nth-child(2):hover~.animation{
+  width: 8%;
+  left: 37.6%;
 }
 .link:nth-child(3){
-  width: 100px;
+  width: 10%;
 }
-.nav .start-produits,.link:nth-child(3):hover~.animation{
-  width: 120px;
-  left: 605px;
+nav .link:nth-child(3):hover~.animation{
+  width: 8%;
+  left: 46%;
 }
 .link:nth-child(4){
-  width: 115px;
+  width: 13%;
 }
-.nav .start-ressources,.link:nth-child(4):hover~.animation{
-  width: 150px;
-  left: 725px;
+nav .link:nth-child(4):hover~.animation{
+  width: 11.2%;
+  left: 54.4%;
 }
 .link:nth-child(5){
-  width: 170px;
+  width: 17%;
 }
-.nav .start-quisommesnous,.link:nth-child(5):hover~.animation{
-  width: 180px;
-  left: 890px;
+nav .link:nth-child(5):hover~.animation{
+  width: 14%;
+  left: 66%;
 }
 .link:nth-child(6){
-  width: 100px;
+  width: 10%;
 }
-.nav .start-partenaires,.link:nth-child(6):hover~.animation{
-  width: 145px;
-  left: 1080px;
+.nav .link:nth-child(6):hover~.animation{
+  width: 10%;
+  left: 80.2%;
 }
 .link:nth-child(7){
-  width: 100px;
+  width: 10%;
 }
-.nav .start-contact,.link:nth-child(7):hover~.animation{
-  width: 110px;
+nav .link:nth-child(7):hover~.animation{
+  width: 7.5%;
   left: 1235px;
 }
 nav .link:hover {
-color: white;
-}
+color: white; 
+ } */
 /* .arrow {
   padding: 5px 0 0 5px;
 }

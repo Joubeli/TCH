@@ -11,13 +11,13 @@
 }
 .spec_line{
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column;  
 }
 .qsn_subtitles {  
   color: #6b6b6b;
   font-size: 1.1em;
-  font-family: "Poppins", sans-serif;margin-bottom: 2%;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1%;
 }
 .cartes {
   display: flex;
@@ -26,8 +26,9 @@
   width: 80%;
 }
 .carte {
-  height: 210px;
-  width: 350px;
+  height: 100%;
+  width: 32.4%;
+  background-color: red;
 }
 .carte_ind {
   background-color: white;

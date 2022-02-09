@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import "./App.css";
 import A_propos from "./components/A_propos/A_propos";
 import Produits from "./components/Produits/Produits";
@@ -13,6 +14,13 @@ import pdf2 from "./pdf/2.pdf";
 
 
 function App() {
+
+  const [activeClass, setActiveClass] = useState(false);
+
+  const switchClass = () => {
+    activeClass ? setActiveClass(false) : setActiveClass(true);
+  }
+
   return (
       <div className="App">
       <div className="topbar">
@@ -22,14 +30,13 @@ function App() {
           </a>
         </div>
         <nav>
-          <a className="link" href="#accueil">Accueil</a>
-          <a className="link" href="#a_propos">A propos</a>
-          <a className="link" href="#produits">Produits</a>
-          <a className="link" href="#">Ressources <span className="arrow">▼</span></a>
-          <a className="link" href="#quisommesnous">Qui Sommes Nous</a>
-          <a className="link" href="#partenaires">Partenaires</a>
-          <a className="link" href="#contact">Contact</a>
-          <div className="animation start-home"></div>
+          <a  className="link_topbar active" href="#accueil">Accueil</a>
+          <a  className="link_topbar" href="#a_propos">A propos</a>
+          <a  className="link_topbar" href="#produits">Produits</a>
+          <a  className="link_topbar" href="#">Ressources <span className="arrow">▼</span></a>
+          <a  className="link_topbar" href="#quisommesnous">Qui Sommes Nous</a>
+          <a  className="link_topbar" href="#partenaires">Partenaires</a>
+          <a  className="link_topbar" href="#contact">Contact</a>
         </nav>
       </div>
 
