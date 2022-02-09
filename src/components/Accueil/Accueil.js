@@ -18,7 +18,7 @@ const Accueil = () => {
           Nous sommes Revendeur d'équipements et Fournisseur de Solutions pour
           Industries Électroniques, Électriques et Aérospatiales.
         </h5>
-        <a className="video-link" href="#">
+        <a className="video-link" href='https://www.youtube.com/watch?v=n0bUKEuYDG0' target="_blank">
           <p className="watch_video">
             <img
               className="video_icon"
@@ -27,7 +27,7 @@ const Accueil = () => {
               height="32px"
               alt="video icon"
             /> 
-            <a className='link_video' href='https://www.youtube.com/watch?v=n0bUKEuYDG0' target="_blank">Regarder la vidéo</a>
+           Regarder la vidéo
           </p>
         </a>
       </div>
