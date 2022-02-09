@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="links">
-        <a className="link" href="#accueil" >
+        <a className="link" href="#accueil">
           Accueil
         </a>{" "}
         |
@@ -39,12 +39,8 @@ const Footer = () => {
         </a>
       </div>
       <div className="copy">
-        Copyright © 2022{" "}
-        <a href="#a_propos">
-          {" "}
-          TCH Industries
-        </a>{" "}
-        • Entreprise Tunisienne Privée Créée en 2012{" "}
+        Copyright © 2022 <a href="#a_propos"> TCH Industries</a> • Entreprise
+        Tunisienne Privée Créée en 2012{" "}
       </div>
       <div className="socials">
         <a

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import "./App.css";
 import A_propos from "./components/A_propos/A_propos";
 import Produits from "./components/Produits/Produits";
@@ -13,6 +14,9 @@ import pdf2 from "./pdf/2.pdf";
 
 
 function App() {
+
+  const [activeClass, setActiveClass] = useState('accueil');
+
   return (
       <div className="App">
       <div className="topbar">
@@ -22,14 +26,26 @@ function App() {
           </a>
         </div>
         <nav>
-          <a className="link" href="#accueil">Accueil</a>
-          <a className="link" href="#a_propos">A propos</a>
-          <a className="link" href="#produits">Produits</a>
-          <a className="link" href="#">Ressources <span className="arrow">▼</span></a>
-          <a className="link" href="#quisommesnous">Qui Sommes Nous</a>
-          <a className="link" href="#partenaires">Partenaires</a>
-          <a className="link" href="#contact">Contact</a>
-          <div className="animation start-home"></div>
+          <a onClick={() => { setActiveClass('accueil') }}  className={activeClass == 'accueil' ? 'active_link_menu link_topbar' : 'link_topbar'} href="#accueil">Accueil</a>
+          <a onClick={() => { setActiveClass('apropos') }}  className={activeClass == 'apropos' ? 'active_link_menu link_topbar' : 'link_topbar'} href="#a_propos">A propos</a>
+          <a onClick={() => { setActiveClass('produits') }}  className={activeClass == 'produits' ? 'active_link_menu link_topbar' : 'link_topbar'} href="#produits">Produits</a>
+          <a onClick={() => { setActiveClass('ressources_active') }}  className={activeClass == 'ressources_active' ? 'active_link_menu link_topbar ressources' : 'link_topbar ressources'} href="#!">Ressources <span className="arrow">▼</span>
+            <ul className="dropdown">
+              <li>
+                <a className='dropdown_link' target="_blank" href={pdf1}>
+                  TI Guide
+                </a>
+              </li>
+              <li>
+                <a className='dropdown_link' target="_blank" href={pdf2}>
+                  TCH Line Card
+                </a>
+              </li>
+            </ul>
+          </a>
+          <a onClick={() => { setActiveClass('quisommesnous') }}  className={activeClass == 'quisommesnous' ? 'active_link_menu link_topbar' : 'link_topbar'} href="#quisommesnous">Qui Sommes Nous</a>
+          <a onClick={() => { setActiveClass('partenaires') }}  className={activeClass == 'partenaires' ? 'active_link_menu link_topbar' : 'link_topbar'} href="#partenaires">Partenaires</a>
+          <a onClick={() => { setActiveClass('contact') }}  className={activeClass == 'contact' ? 'active_link_menu link_topbar' : 'link_topbar'} href="#contact">Contact</a>
         </nav>
       </div>
 
