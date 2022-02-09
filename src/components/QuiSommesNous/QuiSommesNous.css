@@ -9,11 +9,11 @@
   justify-content: space-between;
   height: 900px;
 }
-.spec_line{
+.spec_line {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
-.qsn_subtitles {  
+.qsn_subtitles {
   color: #6b6b6b;
   font-size: 1.1em;
   font-family: "Poppins", sans-serif;

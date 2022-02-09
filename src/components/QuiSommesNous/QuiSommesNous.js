@@ -203,10 +203,7 @@ const QuiSommesNous = () => {
           </div>
         </div>
         <div className="spec_line">
-          <h6
-            data-aos="fade-up"
-            className="qsn_subtitles"
-          >
+          <h6 data-aos="fade-up" className="qsn_subtitles">
             Assistante
           </h6>
           <div className="cartes">
