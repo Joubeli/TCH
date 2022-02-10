@@ -26,19 +26,19 @@ const Partenaires = () => {
 
       <div className="partners-row" data-aos="fade-up">
         <div className="partners">
-          <a href="#">
+          <a href="https://www.artosengineering.com/" target='_blank'>
             <img className="grayscale artos" src={Artos} alt="artos-logo" />
           </a>
         </div>
 
         <div className="partners">
-          <a href="#">
+          <a href="https://tech-sonic.us/" target='_blank'>
             <img className="grayscale techS" src={TechS} alt="techsonic-logo" />
           </a>
         </div>
 
         <div className="partners ">
-          <a href="#">
+          <a href="https://kortho.com/en/" target='_blank'>
             <img className="grayscale kortho" src={Kortho} alt="kortho-logo" />
           </a>
         </div>
@@ -46,20 +46,20 @@ const Partenaires = () => {
 
       <div className="partners-row" data-aos="fade-up">
         <div className="partners ">
-          <a href="#">
+          <a href="https://fr.sumake.com/" target='_blank'>
             <img className="grayscale sumake" src={Sumake} alt="sumake-logo" />
           </a>
         </div>
 
         <div className="partners ">
-          <a href="#">
+          <a href="https://www.aostechnologies.com/"  target='_blank'>
             <img className="grayscale aos" src={aos} alt="aos-logo" />
           </a>
         </div>
 
         <div className="partners ">
-          <a href="#">
-            <img className="grayscale hk" src={hk} alt="aos-logo" />
+          <a href="https://www.hahn-kolb.fr/fr/FR/EUR/"  target='_blank'>
+            <img className="grayscale hk" src={hk} alt="hk-logo" />
           </a>
         </div>
       </div>
