@@ -28,7 +28,7 @@ const Produits = () => {
       <h2 data-aos="fade-up" className="section-title">
         Produits
       </h2>
-      <Carousel data-aos="fade-up" variant="dark" style={{ height: "500px" }}>
+      <Carousel data-aos="fade-up" variant="light" style={{ height: "500px" }}>
         <Carousel.Item>
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
