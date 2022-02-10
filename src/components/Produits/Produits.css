@@ -3,3 +3,8 @@
   padding-top: 90px;
   margin: 0 auto;
 }
+
+.card_title_color {
+  color: #459baa;
+  font-weight: 600;
+}

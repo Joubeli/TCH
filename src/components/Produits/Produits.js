@@ -39,14 +39,13 @@ const Produits = () => {
                   alt="green_yellow cable"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title card_title_color">Cables jaunes et verts</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
-                    little bit longer. This is a longer card with supporting
-                    text below as a natural lead-in to additional content. This
-                    content is a little bit longer.
+                    little bit longer.
                   </p>
+                  <button className="button">Détails</button>
                 </div>
               </div>
             </div>
@@ -54,14 +53,13 @@ const Produits = () => {
               <div class="card">
                 <img src={blue_cable} class="card-img-top" alt="blue_cable" />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title card_title_color">Cable électrique bleu</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
-                    little bit longer. This is a longer card with supporting
-                    text below as a natural lead-in to additional content. This
-                    content is a little bit longer.
+                    little bit longer.
                   </p>
+                  <button className="button">Détails</button>
                 </div>
               </div>
             </div>
@@ -73,14 +71,13 @@ const Produits = () => {
                   alt="black_orange_cable"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title card_title_color">Cable électrique à rayures</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
-                    little bit longer. This is a longer card with supporting
-                    text below as a natural lead-in to additional content. This
-                    content is a little bit longer.
+                    little bit longer.
                   </p>
+                  <button className="button">Détails</button>
                 </div>
               </div>
             </div>
@@ -96,14 +93,13 @@ const Produits = () => {
                   alt="colorful_mini_cables"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title card_title_color">Tuyau ondulé avec câbles</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
-                    little bit longer. This is a longer card with supporting
-                    text below as a natural lead-in to additional content. This
-                    content is a little bit longer.
+                    little bit longer.
                   </p>
+                  <button className="button">Détails</button>
                 </div>
               </div>
             </div>
@@ -115,14 +111,13 @@ const Produits = () => {
                   alt="colorful_mixed_mini_cables"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title card_title_color">Tuyau ondulé avec câbles</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
-                    little bit longer. This is a longer card with supporting
-                    text below as a natural lead-in to additional content. This
-                    content is a little bit longer.
+                    little bit longer.
                   </p>
+                  <button className="button">Détails</button>
                 </div>
               </div>
             </div>
@@ -134,14 +129,13 @@ const Produits = () => {
                   alt="orange_electrical_wires"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title card_title_color">Orange electrical wires</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
-                    little bit longer. This is a longer card with supporting
-                    text below as a natural lead-in to additional content. This
-                    content is a little bit longer.
+                    little bit longer.
                   </p>
+                  <button className="button">Détails</button>
                 </div>
               </div>
             </div>
@@ -157,14 +151,13 @@ const Produits = () => {
                   alt="electrical_wire"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title card_title_color">Câble électrique</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
-                    little bit longer. This is a longer card with supporting
-                    text below as a natural lead-in to additional content. This
-                    content is a little bit longer.
+                    little bit longer.
                   </p>
+                  <button className="button">Détails</button>
                 </div>
               </div>
             </div>
@@ -176,14 +169,13 @@ const Produits = () => {
                   alt="electric_wires_with_terminals"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title card_title_color">fils électriques bleus</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
-                    little bit longer. This is a longer card with supporting
-                    text below as a natural lead-in to additional content. This
-                    content is a little bit longer.
+                    little bit longer.
                   </p>
+                  <button className="button">Détails</button>
                 </div>
               </div>
             </div>
@@ -195,14 +187,13 @@ const Produits = () => {
                   alt="joining_electrical_wires"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title card_title_color">Fils electriques</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
-                    little bit longer. This is a longer card with supporting
-                    text below as a natural lead-in to additional content. This
-                    content is a little bit longer.
+                    little bit longer.
                   </p>
+                  <button className="button">Détails</button>
                 </div>
               </div>
             </div>
