@@ -29,7 +29,7 @@ function App() {
           <a onClick={() => { setActiveClass('accueil') }}  className={activeClass == 'accueil' ? 'active_link_menu link_topbar' : 'link_topbar'} href="#accueil">Accueil</a>
           <a onClick={() => { setActiveClass('apropos') }}  className={activeClass == 'apropos' ? 'active_link_menu link_topbar' : 'link_topbar'} href="#a_propos">A propos</a>
           <a onClick={() => { setActiveClass('produits') }}  className={activeClass == 'produits' ? 'active_link_menu link_topbar' : 'link_topbar'} href="#produits">Produits</a>
-          <a onClick={() => { setActiveClass('ressources_active') }}  className={activeClass == 'ressources_active' ? 'active_link_menu link_topbar ressources' : 'link_topbar ressources'} href="#!">Ressources <span className="arrow">▼</span>
+          <a id="ressources" onClick={() => { setActiveClass('ressources_active') }}  className={activeClass == 'ressources_active' ? 'active_link_menu link_topbar ressources' : 'link_topbar ressources'} href="#!">Ressources<img src={arrow} alt='arrow' className="arrow"/>
             <ul className="dropdown">
               <li>
                 <a className='dropdown_link' target="_blank" href={pdf1}>
