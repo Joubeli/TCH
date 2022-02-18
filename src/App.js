@@ -11,6 +11,8 @@ import logo from "./images/Header/logo.png";
 import arrow from "./images/Header/arrow.png";
 import pdf1 from "./pdf/1.pdf";
 import pdf2 from "./pdf/2.pdf";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import  {faBars, faXmark}  from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   const [activeClass, setActiveClass] = useState("accueil");
@@ -24,18 +26,21 @@ function App() {
           </a>
         </div>
         <nav>
+          <FontAwesomeIcon icon={faBars} className='fa-2x resizable-btn' id='btns' />
+          <FontAwesomeIcon icon={faXmark} className='fa-2x resizable-btn' id='btns' />
           <a
             onClick={() => {
               setActiveClass("accueil");
             }}
             className={
               activeClass == "accueil"
-                ? "active_link_menu link_topbar"
-                : "link_topbar"
+              ? "active_link_menu link_topbar"
+              : "link_topbar"
             }
             href="#accueil"
           >
             Accueil
+
           </a>
           <a
             onClick={() => {

@@ -204,6 +204,10 @@ nav {
     transform: rotate(180deg);
   }
 }
-.dropdown_link {
+.dropdown_link,
+.resizable-btn {
   color: #407b91;
+}
+#btns{
+  display: none;
 }
