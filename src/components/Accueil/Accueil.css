@@ -59,4 +59,45 @@
 .background_image {
   padding: 7% 2% 0 0;
 }
+@media (max-width: 1220px) {
+  .sec-accueil{
+    width: 100vw;
+    position: relative;
+  }
+  .accueil-title{
+    font-size: 2rem;
+  }
+  .accueil-subtitle{
+    font-size: 1.2rem;
+    width: 100vw;
+  }
+  .background_image {
+    height: 311px;
+    width: 147px;
+    /* padding: 0; */
+    position: absolute;
+    left: 45%;
+  }
+}
+
+@media (max-width: 1120px){
+  .sec-accueil{
+    width: 100vw;
+  }
+  .accueil-title{
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+  .accueil-subtitle{
+    font-size: 16px;
+    width: 100vw;  
+  }
+  .background_image {
+    height: 100px;
+    width: 50px;
+    position: absolute;
+    left: 30%;
+  }
+}
 

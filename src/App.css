@@ -110,12 +110,14 @@ h5 {
   font-size: 1.4em;
 }
 nav {
+  position: relative;
+  width: 75%;
+}
+.links {
   display: flex;
   justify-content: space-around;
-  padding: 2.6% 1.8%;
-  width: 75%;
-  position: relative;
-  align-items: center;
+  margin-top: -0.5%;
+  width: 100%;
 }
 .link_topbar {
   position: relative;
@@ -138,9 +140,7 @@ nav {
   height: 100%;
   border-radius: 8px;
 }
-.link_topbar:hover {
-  color: white;
-}
+.link_topbar:hover,
 .active_link_menu {
   color: white;
 }
@@ -199,7 +199,6 @@ nav {
   0% {
     transform: rotate(0);
   }
-
   100% {
     transform: rotate(180deg);
   }
@@ -208,6 +207,111 @@ nav {
 .resizable-btn {
   color: #407b91;
 }
-#btns{
+label #burger-btn,
+label #cancel-btn {
+  font-size: 40px;
+  margin-right: 20px;
   display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: auto;
+  font-size: 45px;
+}
+#check {
+  display: none;
+}
+@media (max-width: 1220px) {
+  .links a {
+    font-size: 1.1rem;
+  }
+  .logo img {
+    width: 207px;
+    height: 48px;
+  }
+}
+@media (max-width: 1120px) {
+  .topbar {
+    height: 9%;
+    width: 100%;
+  }
+  .logo {
+    margin: auto 0;
+  }
+  .logo img {
+    width: 171px;
+    height: 40px;
+  }
+  .links {
+    position: fixed;
+    height: 90vh;
+    width: 100%;
+    background-color: #407b91;
+    top: 9.1%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.9;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    transition: all 0.5s;
+  }
+  .links a {
+    font-size: 1.4rem;
+  }
+  .link_topbar {
+    color: white;
+    position: relative;
+    line-height: 10px;
+  }
+  .link_topbar:hover,
+  .active_link_menu {
+    color: #44acbe;
+  }
+  .dropdown {
+    height: 20%;
+    background-color: #407b91;
+    box-shadow: none;
+    width: 20%;
+    margin-left: 55%;
+    margin-top: -3.1%;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  @keyframes myAnim {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .dropdown li a {
+    color: white;
+  }
+  #ressources:hover .arrow {
+    filter: brightness(0) invert(1);
+    animation: arrow 1s ease 0s 1 normal forwards;
+  }
+  @keyframes arrow {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+  label #cancel-btn {
+    display: block;
+  }
+  #check:checked ~ .links {
+    right: 100%;
+  }
+  #check:checked ~ label #cancel-btn {
+    display: none;
+  }
+  #check:checked ~ label #burger-btn {
+    display: block;
+  }
 }

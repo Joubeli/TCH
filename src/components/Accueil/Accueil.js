@@ -32,7 +32,7 @@ const Accueil = () => {
         </a>
       </div>
       <div className="background_image">
-        <img src={back_accueil} alt="background_image" />
+        <img src={back_accueil} alt="background_image" className="accueil-img"/>
       </div>
     </section>
   );
