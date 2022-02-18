@@ -141,7 +141,7 @@ function App() {
         </nav>
       </div>
 
-      {/* <div id="accueil">
+      <div id="accueil">
         <Accueil />
       </div>
       <div id="a_propos">
@@ -159,7 +159,7 @@ function App() {
       <div id="contact">
         <Contact />
       </div>
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

@@ -215,12 +215,13 @@ label #cancel-btn {
   cursor: pointer;
   position: absolute;
   right: 0;
-  top: auto;
+  top: 15%;
   font-size: 45px;
 }
 #check {
   display: none;
 }
+/******Max-width:1220px********/
 @media (max-width: 1220px) {
   .links a {
     font-size: 1.1rem;
@@ -230,6 +231,7 @@ label #cancel-btn {
     height: 48px;
   }
 }
+/******Max-width:1120px********/
 @media (max-width: 1120px) {
   .topbar {
     height: 9%;
