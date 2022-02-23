@@ -105,21 +105,23 @@ h2::after {
 }
 .logo img {
   cursor: pointer;
+  margin: -3% 0 0 -25%;
 }
 h5 {
   font-size: 1.4em;
 }
 nav {
   position: relative;
-  width: 75%;
+  width: 100%;
+  background-color: red;
 }
 .links {
   display: flex;
-  justify-content: space-around;
-  margin-top: -0.5%;
+  justify-content: space-between;
+  margin-top: -1.2%;
   width: 100%;
 }
-.link_topbar {
+.topbar_link {
   position: relative;
   font-size: 1.2rem;
   font-family: "Jost", sans-serif;
@@ -128,7 +130,7 @@ nav {
   z-index: 0;
   color: #407b91;
 }
-.link_topbar::after {
+.topbar_link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -140,11 +142,11 @@ nav {
   height: 100%;
   border-radius: 8px;
 }
-.link_topbar:hover,
+.topbar_link:hover,
 .active_link_menu {
   color: white;
 }
-.link_topbar:hover::after,
+.topbar_link:hover::after,
 .active_link_menu::after {
   width: 100%;
 }
@@ -227,12 +229,13 @@ label #cancel-btn {
     font-size: 1.1rem;
   }
   .logo img {
-    width: 207px;
-    height: 48px;
+    width: 90%;
+    margin: 3.2% 0 0 -30%;
   }
 }
-/******Max-width:1120px********/
-@media (max-width: 1120px) {
+
+/******Max-width:960px********/
+@media (max-width: 960px) {
   .topbar {
     height: 9%;
     width: 100%;
@@ -245,28 +248,28 @@ label #cancel-btn {
     height: 40px;
   }
   .links {
-    position: fixed;
+    position: relative;
     height: 90vh;
-    width: 100%;
+    width: 150%;
     background-color: #407b91;
-    top: 9.1%;
+    top: 59%;
     display: flex;
     flex-direction: column;
-    opacity: 0.9;
+    opacity: 0.95;
     padding: 0;
     margin: 0;
-    right: 0;
+    right: -150%;
     transition: all 0.5s;
   }
   .links a {
     font-size: 1.4rem;
   }
-  .link_topbar {
+  .topbar_link {
     color: white;
     position: relative;
     line-height: 10px;
   }
-  .link_topbar:hover,
+  .topbar_link:hover,
   .active_link_menu {
     color: #44acbe;
   }
@@ -304,16 +307,16 @@ label #cancel-btn {
       transform: rotate(90deg);
     }
   }
-  label #cancel-btn {
+  label #burger-btn {
     display: block;
   }
   #check:checked ~ .links {
-    right: 100%;
-  }
-  #check:checked ~ label #cancel-btn {
-    display: none;
+    right: 50%;
   }
   #check:checked ~ label #burger-btn {
+    display: none;
+  }
+  #check:checked ~ label #cancel-btn {
     display: block;
   }
 }

@@ -11,8 +11,8 @@ import logo from "./images/Header/logo.png";
 import arrow from "./images/Header/arrow.png";
 import pdf1 from "./pdf/1.pdf";
 import pdf2 from "./pdf/2.pdf";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import  {faBars, faXmark}  from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const [activeClass, setActiveClass] = useState("accueil");
@@ -22,14 +22,22 @@ function App() {
       <div className="topbar">
         <div className="logo">
           <a href="#accueil">
-            <img src={logo} alt="logo" height="57px" width="244px" />
+            <img src={logo} alt="logo" />
           </a>
         </div>
         <nav>
-          <input type='checkbox' id='check'/>
-          <label for='check'>
-            <FontAwesomeIcon icon={faBars} className='fa-2x resizable-btn' id='burger-btn' />
-            <FontAwesomeIcon icon={faXmark} className='fa-2x resizable-btn' id='cancel-btn' />
+          <input type="checkbox" id="check" />
+          <label for="check">
+            <FontAwesomeIcon
+              icon={faBars}
+              className="fa-2x resizable-btn"
+              id="burger-btn"
+            />
+            <FontAwesomeIcon
+              icon={faXmark}
+              className="fa-2x resizable-btn"
+              id="cancel-btn"
+            />
           </label>
           <div className="links">
             <a
@@ -38,8 +46,8 @@ function App() {
               }}
               className={
                 activeClass == "accueil"
-                ? "active_link_menu link_topbar"
-                : "link_topbar"
+                  ? "active_link_menu topbar_link"
+                  : "topbar_link"
               }
               href="#accueil"
             >
@@ -51,8 +59,8 @@ function App() {
               }}
               className={
                 activeClass == "apropos"
-                  ? "active_link_menu link_topbar"
-                  : "link_topbar"
+                  ? "active_link_menu topbar_link"
+                  : "topbar_link"
               }
               href="#a_propos"
             >
@@ -64,8 +72,8 @@ function App() {
               }}
               className={
                 activeClass == "produits"
-                  ? "active_link_menu link_topbar"
-                  : "link_topbar"
+                  ? "active_link_menu topbar_link"
+                  : "topbar_link"
               }
               href="#produits"
             >
@@ -78,8 +86,8 @@ function App() {
               }}
               className={
                 activeClass == "ressources_active"
-                  ? "active_link_menu link_topbar ressources"
-                  : "link_topbar ressources"
+                  ? "active_link_menu topbar_link ressources"
+                  : "topbar_link ressources"
               }
               href="#!"
             >
@@ -104,8 +112,8 @@ function App() {
               }}
               className={
                 activeClass == "quisommesnous"
-                  ? "active_link_menu link_topbar"
-                  : "link_topbar"
+                  ? "active_link_menu topbar_link"
+                  : "topbar_link"
               }
               href="#quisommesnous"
             >
@@ -117,8 +125,8 @@ function App() {
               }}
               className={
                 activeClass == "partenaires"
-                  ? "active_link_menu link_topbar"
-                  : "link_topbar"
+                  ? "active_link_menu topbar_link"
+                  : "topbar_link"
               }
               href="#partenaires"
             >
@@ -130,8 +138,8 @@ function App() {
               }}
               className={
                 activeClass == "contact"
-                  ? "active_link_menu link_topbar"
-                  : "link_topbar"
+                  ? "active_link_menu topbar_link"
+                  : "topbar_link"
               }
               href="#contact"
             >
