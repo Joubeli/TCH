@@ -83,13 +83,9 @@ h2::after {
   color: #459baa;
   transform: translateY(0);
 }
-.sec1 {
-  display: flex;
-  justify-content: space-between;
-}
 .topbar {
-  width: 100%;
-  height: 12%;
+  width: 100vw;
+  height: 77px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   display: flex;
@@ -100,12 +96,12 @@ h2::after {
 }
 .logo {
   display: flex;
-  width: 30%;
-  padding: 1% 0 1% 3%;
+  width: 40%;
 }
 .logo img {
   cursor: pointer;
-  margin: -3% 0 0 -25%;
+  margin: 2% 0 0 4%;  
+  width: 100%;
 }
 h5 {
   font-size: 1.4em;
@@ -113,7 +109,7 @@ h5 {
 nav {
   position: relative;
   width: 100%;
-  background-color: red;
+  padding-right: 2%;
 }
 .links {
   display: flex;
@@ -171,7 +167,6 @@ nav {
     opacity: 0;
     transform: translateY(50px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -218,51 +213,58 @@ label #cancel-btn {
   position: absolute;
   right: 0;
   top: 15%;
-  font-size: 45px;
 }
 #check {
   display: none;
 }
-/******Max-width:1220px********/
-@media (max-width: 1220px) {
+@media screen and (max-width: 1160px) {
   .links a {
     font-size: 1.1rem;
   }
-  .logo img {
-    width: 90%;
-    margin: 3.2% 0 0 -30%;
+  .logo{
+    width: 40%;
   }
 }
-
-/******Max-width:960px********/
-@media (max-width: 960px) {
+@media screen and (max-width: 1040px) {
+  .links a {
+    font-size: 1rem;
+  }
+  .logo{
+    width: 30%;
+  }
+  .logo img{
+    width: 80%;
+    margin: 5.5% 0 0 -12%;
+  }
+}
+@media screen and (max-width: 960px) {
   .topbar {
-    height: 9%;
     width: 100%;
   }
-  .logo {
-    margin: auto 0;
+  .logo{
+    width: 100%;
   }
-  .logo img {
-    width: 171px;
-    height: 40px;
+  .logo img{
+    width: 100%;
+    margin: 2% 0 0 4%;
   }
   .links {
     position: relative;
     height: 90vh;
-    width: 150%;
+    width: 220%;
     background-color: #407b91;
-    top: 59%;
+    top: 65%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     opacity: 0.95;
-    padding: 0;
     margin: 0;
-    right: -150%;
+    right: -110%;
     transition: all 0.5s;
   }
   .links a {
     font-size: 1.4rem;
+    padding: 2rem;
   }
   .topbar_link {
     color: white;
@@ -311,7 +313,7 @@ label #cancel-btn {
     display: block;
   }
   #check:checked ~ .links {
-    right: 50%;
+    right: 110%;
   }
   #check:checked ~ label #burger-btn {
     display: none;
@@ -319,4 +321,17 @@ label #cancel-btn {
   #check:checked ~ label #cancel-btn {
     display: block;
   }
+}
+@media screen and (max-width: 520px) {
+  .logo img{
+    display: none;
+  }
+  .logo {
+    background: url('./images//Header//logo-small.png') no-repeat center;
+  }  
+}
+@media screen and (max-width: 420px) {
+  .logo {
+    background: url('./images//Header//logo-smaller.png') no-repeat center;
+  } 
 }

@@ -3,8 +3,37 @@
   padding-top: 90px;
   margin: 0 auto;
 }
-
-.card_title_color {
+.carousel{
+  height: 520px;
+}
+.card{
+  /* padding: 10%; */
+  border: 1px solid #d6d6d6;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  margin: 2%;
+  width: 90%;
+  /* display: flex;
+  flex-direction: column; */
+  
+}
+.info-container{
+  padding: 5%;
+}
+.card-image{
+  width: 100%;
+  border-radius: 5px;
+}
+.card-title {
   color: #459baa;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.card-desc{
+  /* width: 100%; */
+  text-align: left;
+}
+.modal-image{
+  width: 100%;
+  /* margin: 5% auto; */
 }

@@ -22,7 +22,7 @@ function App() {
       <div className="topbar">
         <div className="logo">
           <a href="#accueil">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" className="logo-pic" />
           </a>
         </div>
         <nav>
@@ -158,9 +158,9 @@ function App() {
       <div id="produits">
         <Produits />
       </div>
-      <div id="quisommesnous">
+       {/* <div id="quisommesnous">
         <QuiSommesNous />
-      </div>
+      </div>  */}
       <div id="partenaires">
         <Partenaires />
       </div>

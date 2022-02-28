@@ -3,203 +3,70 @@ import "../../App.css";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import "./Produits.css";
-import { Carousel } from "react-bootstrap";
-import green_yellow_cable from "../../images/Produits/green_yellow_cable.jpg";
-import blue_cable from "../../images/Produits/blue_cable.jpg";
-import black_orange_cable from "../../images/Produits/black_orange_cable.jpg";
-import colorful_mini_cables from "../../images/Produits/colorful_mini_cables.jpg";
-import colorful_mixed_mini_cables from "../../images/Produits/colorful_mixed_mini_cables.jpg";
-import electrical_wire from "../../images/Produits/electrical_wire.jpg";
-import orange_electrical_wires from "../../images/Produits/orange_electrical_wires.jpg";
-import electric_wires_with_terminals from "../../images/Produits/electric_wires_with_terminals.jpg";
-import joining_electrical_wires from "../../images/Produits/joining_electrical_wires.jpg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import Item from './Item'
+import { Products } from '../../data'
+// import img2 from "../../images/Produits/blue_cable.jpg";
+// import img3 from "../../images/Produits/black_orange_cable.jpg";
+// import img4 from "../../images/Produits/colorful_mini_cables.jpg";
+// import img5 from "../../images/Produits/colorful_mixed_mini_cables.jpg";
+// import img6 from "../../images/Produits/electrical_wire.jpg";
+// import img7 from "../../images/Produits/orange_electrical_wires.jpg";
 
 const Produits = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
 
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+  var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 2,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1120,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 780,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+  };
 
   return (
     <section className="sec-produits" id="produits">
       <h2 data-aos="fade-up" className="section-title">
         Produits
       </h2>
-      <Carousel data-aos="fade-up" variant="dark" style={{ height: "530px" }}>
-        <Carousel.Item>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card">
-                <img
-                  src={green_yellow_cable}
-                  class="card-img-top"
-                  alt="green_yellow cable"
-                />
-                <div class="card-body">
-                  <h5 class="card-title card_title_color">Cables jaunes et verts</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                  <button className="button">Détails</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src={blue_cable} class="card-img-top" alt="blue_cable" />
-                <div class="card-body">
-                  <h5 class="card-title card_title_color">Cable électrique bleu</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                  <button className="button">Détails</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src={black_orange_cable}
-                  class="card-img-top"
-                  alt="black_orange_cable"
-                />
-                <div class="card-body">
-                  <h5 class="card-title card_title_color">Cable électrique à rayures</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                  <button className="button">Détails</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card">
-                <img
-                  src={colorful_mini_cables}
-                  class="card-img-top"
-                  alt="colorful_mini_cables"
-                />
-                <div class="card-body">
-                  <h5 class="card-title card_title_color">Tuyau ondulé avec câbles</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                  <button className="button">Détails</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src={colorful_mixed_mini_cables}
-                  class="card-img-top"
-                  alt="colorful_mixed_mini_cables"
-                />
-                <div class="card-body">
-                  <h5 class="card-title card_title_color">Tuyau ondulé avec câbles</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                  <button className="button">Détails</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src={orange_electrical_wires}
-                  class="card-img-top"
-                  alt="orange_electrical_wires"
-                />
-                <div class="card-body">
-                  <h5 class="card-title card_title_color">Orange electrical wires</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                  <button className="button">Détails</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card">
-                <img
-                  src={electrical_wire}
-                  class="card-img-top"
-                  alt="electrical_wire"
-                />
-                <div class="card-body">
-                  <h5 class="card-title card_title_color">Câble électrique</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                  <button className="button">Détails</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src={electric_wires_with_terminals}
-                  class="card-img-top"
-                  alt="electric_wires_with_terminals"
-                />
-                <div class="card-body">
-                  <h5 class="card-title card_title_color">fils électriques bleus</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                  <button className="button">Détails</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src={joining_electrical_wires}
-                  class="card-img-top"
-                  alt="joining_electrical_wires"
-                />
-                <div class="card-body">
-                  <h5 class="card-title card_title_color">Fils electriques</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                  <button className="button">Détails</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Carousel.Item>
-      </Carousel>
+      <div data-aos="fade-up">
+        <Slider  {...settings}>         
+            {Products.map(product => (
+              <Item product={product}/>
+            ))}          
+        </Slider>
+      </div>
     </section>
   );
 };

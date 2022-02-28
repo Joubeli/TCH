@@ -22,14 +22,14 @@
 .cartes {
   display: flex;
   justify-content: space-between;
-  margin-left: 10%;
-  width: 80%;
+  margin: 0 auto;
+  width: 90%;
 }
 .carte {
   height: 100%;
   width: 32.4%;
 }
-.carte_ind {
+.carte-ind {
   background-color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -62,7 +62,7 @@
 }
 .profil-photo {
   border-radius: 50%;
-  height: 140px;
+  height: 67%;
   filter: grayscale(100%);
   margin-top: 8%;
   margin-left: 2%;
@@ -73,6 +73,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 3%;
+  background-color: yellow;
 }
 .linkedin-link {
   margin-top: -10%;
@@ -87,4 +88,40 @@
 .last-carte-linkedin {
   margin-right: 90%;
   margin-top: -5%;
+}
+.carte-bottom{
+  background-color: red;
+}
+@media screen and (max-width: 1220px){  
+  
+.carte-ind {
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  height: 350px;
+  width: 200px;
+  border-radius: 5px;
+  transition: transform 800ms;
+  display: flex;
+  flex-direction: column;
+}
+.carte-bottom{
+  float: bottom;
+}
+.carte-title {
+  color: #37517e;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding-top: 10px;
+  text-align: left;
+}
+.profil-photo {
+  border-radius: 50%;
+  height: 45%;
+  width: 80%;
+  filter: grayscale(100%);
+  margin-top: 8%;
+  margin-left: 9%;
+}
 }

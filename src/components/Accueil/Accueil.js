@@ -2,7 +2,6 @@ import React from "react";
 import "../../App.css";
 import "./Accueil.css";
 import video_icon from "../../images/Accueil/video_icon.png";
-import back_accueil from "../../images/Accueil/back_accueil.png";
 
 const Accueil = () => {
   return (
