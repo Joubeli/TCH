@@ -1,10 +1,7 @@
 .sec-produits {
-  width: 80%;
+  width: 75%;
   padding-top: 90px;
   margin: 0 auto;
-}
-.carousel{
-  height: 520px;
 }
 .card{
   /* padding: 10%; */
@@ -36,4 +33,7 @@
 .modal-image{
   width: 100%;
   /* margin: 5% auto; */
+}
+.slider{
+  padding-left: 1.4%;
 }
