@@ -8,22 +8,20 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Item from "./Item";
 import { Products } from "../../data";
-import next from '../../images/Produits/next.png'
-import prev from '../../images/Produits/prev.png'
-
+import next from "../../images/Produits/next.png";
+import prev from "../../images/Produits/prev.png";
 const Produits = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
-
   var settings = {
     dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 2,
     initialSlide: 0,
-    nextArrow: <img className='nextArrow' src={next} />,
-    prevArrow: <img className='prevArrow' src={prev} />,
+    nextArrow: <img className="nextArrow" src={next} />,
+    prevArrow: <img className="prevArrow" src={prev} />,
     responsive: [
       {
         breakpoint: 1120,
@@ -51,7 +49,6 @@ const Produits = () => {
       },
     ],
   };
-
   return (
     <section className="sec-produits" id="produits">
       <h2 data-aos="fade-up" className="section-title">
