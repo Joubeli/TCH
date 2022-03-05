@@ -31,3 +31,11 @@
 .slider {
   padding-left: 1.4%;
 }
+@media screen and (max-width: 380px) {
+  .slider{
+    height: 450px;
+    margin-top: 5%;
+  padding-left: 4.5%;
+
+  }
+}

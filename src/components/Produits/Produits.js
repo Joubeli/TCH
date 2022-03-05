@@ -54,7 +54,7 @@ const Produits = () => {
       <h2 data-aos="fade-up" className="section-title">
         Produits
       </h2>
-      <div data-aos="fade-up">
+      <div className="Slider-container" data-aos="fade-up">
         <Slider className="slider" {...settings}>
           {Products.map((product) => (
             <Item product={product} />

@@ -13,10 +13,8 @@ import pdf1 from "./pdf/1.pdf";
 import pdf2 from "./pdf/2.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-
 function App() {
   const [activeClass, setActiveClass] = useState("accueil");
-
   return (
     <div className="App">
       <div className="topbar">
@@ -149,7 +147,7 @@ function App() {
         </nav>
       </div>
 
-      <div id="accueil">
+       <div id="accueil">
         <Accueil />
       </div>
       <div id="a_propos">
@@ -158,18 +156,17 @@ function App() {
       <div id="produits">
         <Produits />
       </div>
-       {/* <div id="quisommesnous">
+       <div id="quisommesnous">
         <QuiSommesNous />
-      </div>  */}
+      </div>  
       <div id="partenaires">
         <Partenaires />
       </div>
       <div id="contact">
         <Contact />
-      </div>
+      </div> 
       <Footer />
     </div>
   );
 }
-
 export default App;

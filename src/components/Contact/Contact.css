@@ -111,3 +111,16 @@
   margin-top: 20px;
   margin-bottom: -10px;
 }
+@media screen and (max-width: 1260px){
+  .content-contact {
+  padding: 0;
+  }
+  
+  .input_group {
+    width: 610px;
+  }
+}
+@media screen and (max-width: 1190px){  
+  
+}
+

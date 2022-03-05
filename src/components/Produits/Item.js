@@ -24,7 +24,7 @@ const Item = ({ product }) => {
           <Modal.Body>{product.desc}</Modal.Body>
           <Modal.Footer>
             <button className="button" onClick={handleClose}>
-              Close
+              Fermer
             </button>
           </Modal.Footer>
         </Modal>
