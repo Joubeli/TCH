@@ -28,14 +28,14 @@ const QuiSommesNous = () => {
           </h6>
           <div className="cartes">
             <div className="carte" data-aos="zoom-in">
-              <div className="carte_ind">
-                <img src={founder} alt="profil" className="profil-photo" />
+              <div className="carte-ind">
+                <img src={founder} alt="profil" className="profil-photo"/>
                 <div className="description">
-                  <div className="carte_top">
+                  <div className="carte-top">
                     <h6 className="carte-title">Abdessalem Barkia</h6>
                     <p className="carte-sub-title ">Fondateur</p>
                   </div>
-                  <div className="carte_bottom">
+                  <div className="carte-bottom">
                     <hr className="line" />
                     <a
                       rel="noopener noreferrer"
@@ -55,14 +55,14 @@ const QuiSommesNous = () => {
               </div>
             </div>
             <div className="carte" data-aos="zoom-in">
-              <div className="carte_ind">
+              <div className="carte-ind">
                 <img src={manager} alt="profil" className="profil-photo" />
                 <div className="description">
-                  <div className="carte_top">
+                  <div className="carte-top">
                     <h6 className="carte-title">Rajander Thind</h6>
                     <p className="carte-sub-title">Directeur</p>
                   </div>
-                  <div className="carte_bottom">
+                  <div className="carte-bottom">
                     <hr className="line" />
                     <a
                       rel="noopener noreferrer"
@@ -82,16 +82,16 @@ const QuiSommesNous = () => {
               </div>
             </div>
             <div className="carte" data-aos="zoom-in">
-              <div className="carte_ind">
+              <div className="carte-ind">
                 <img src={responsable} alt="profil" className="profil-photo" />
                 <div className="description">
-                  <div className="carte_top">
+                  <div className="carte-top">
                     <h6 className="carte-title">Mariem Chbinou</h6>
                     <p className="carte-sub-title">
                       Responsable Administratif et Financier
                     </p>
                   </div>
-                  <div className="carte_bottom">
+                  <div className="carte-bottom">
                     <hr className="line" />
                     <a
                       rel="noopener noreferrer"
@@ -118,16 +118,16 @@ const QuiSommesNous = () => {
           </h6>
           <div className="cartes">
             <div className="carte" data-aos="zoom-in">
-              <div className="carte_ind">
+              <div className="carte-ind">
                 <img src={ingénieur} alt="profil" className="profil-photo" />
                 <div className="description">
-                  <div className="carte_top">
+                  <div className="carte-top">
                     <h6 className="carte-title">Hichem Nahali</h6>
                     <p className="carte-sub-title">
                       Ingénieur Technico-commercial
                     </p>
                   </div>
-                  <div className="carte_bottom">
+                  <div className="carte-bottom">
                     <hr className="line" />
                     <a
                       rel="noopener noreferrer"
@@ -147,14 +147,14 @@ const QuiSommesNous = () => {
               </div>
             </div>
             <div className="carte" data-aos="zoom-in">
-              <div className="carte_ind">
+              <div className="carte-ind">
                 <img src={sales} alt="profil photo" className="profil-photo" />
                 <div className="description">
-                  <div className="carte_top">
+                  <div className="carte-top">
                     <h6 className="carte-title">M'Hammed M'saad</h6>
                     <p className="carte-sub-title">Ingénieur Commercial</p>
                   </div>
-                  <div className="carte_bottom">
+                  <div className="carte-bottom">
                     <hr className="line" />
                     <a
                       rel="noopener noreferrer"
@@ -174,14 +174,14 @@ const QuiSommesNous = () => {
               </div>
             </div>
             <div className="carte" data-aos="zoom-in">
-              <div className="carte_ind">
+              <div className="carte-ind">
                 <img src={technicien} alt="profil" className="profil-photo" />
                 <div className="description">
-                  <div className="carte_top">
+                  <div className="carte-top">
                     <h6 className="carte-title">Mohamed Houssem Bakir </h6>
                     <p className="carte-sub-title">Technico-commercial</p>
                   </div>
-                  <div className="carte_bottom">
+                  <div className="carte-bottom">
                     <hr className="line" />
                     <a
                       rel="noopener noreferrer"
@@ -203,20 +203,20 @@ const QuiSommesNous = () => {
           </div>
         </div>
         <div className="spec_line">
-          <h6 data-aos="fade-up" className="qsn_subtitles">
-            Assistante
+          <h6 data-aos="fade-up" className="qsn_subtitles last-title">
+            Assistante de Direction
           </h6>
           <div className="cartes">
             <div className="carte last_carte" data-aos="zoom-in">
-              <div className="carte_ind ">
+              <div className="carte-ind ">
                 <div className="description">
-                  <div className="carte_top">
+                  <div className="carte-top">
                     <h6 className="carte-title">Jihen Ben Mahmoud</h6>
                     <p className="carte-sub-title">
                       Assistante administrative et financière
                     </p>
                   </div>
-                  <div className="carte_bottom">
+                  <div className="carte-bottom">
                     <hr className="line" />
                     <a
                       rel="noopener noreferrer"

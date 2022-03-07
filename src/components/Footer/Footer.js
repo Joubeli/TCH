@@ -8,7 +8,7 @@ import back_to_top from "../../images/Footer/back_to_top.png";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="links">
+      <div className="footer_links">
         <a className="link" href="#accueil">
           Accueil
         </a>{" "}

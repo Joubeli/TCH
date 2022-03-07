@@ -3,11 +3,11 @@ import "../../App.css";
 import "./Contact.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import map from "../../images/Contact/map.png";
 import email from "../../images/Contact/email.png";
 import location from "../../images/Contact/location.png";
 import phone from "../../images/Contact/phone.png";
 import { Form } from "react-bootstrap";
+import GMap from "./GMap";
 
 const Contact = () => {
   useEffect(() => {
@@ -24,54 +24,59 @@ const Contact = () => {
       </p>
       <div className="content-contact">
         <section data-aos="fade-up" className="coord sec">
-          <div className="sub-sec location">
-            <img
-              className="location_icon"
-              src={location}
-              alt="location icon"
-              width="32px"
-              height="32px"
-            />
-            <div className="desc">
-              <h6 className="subtitle">Location : </h6>
-              <p className="desc-sub country">Tunisie</p>
-              <p className="desc-para">
-                Rue de parc
-                <br /> 2036 La Soukra
-              </p>
+          <div className="contact-coord">
+            <div className="sub-sec location">
+              <img
+                className="location_icon"
+                src={location}
+                alt="location icon"
+                width="32px"
+                height="32px"
+              />
+              <div className="desc">
+                <h6 className="subtitle">Adresse : </h6>
+                <p className="desc-sub country">Tunisie</p>
+                <p className="desc-para">
+                  Rue de parc
+                  <br /> 2036 La Soukra
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="sub-sec">
-            <img
-              className="svg_icons"
-              alt="email icon"
-              width="30px"
-              height="30px"
-              src={email}
-            />
-            <div className="desc">
-              <h6 className="subtitle">Email : </h6>
-              <p className="desc-para">info@tchindustries.com</p>
+            <div className="sub-sec">
+              <img
+                className="svg_icons"
+                alt="email icon"
+                width="30px"
+                height="30px"
+                src={email}
+              />
+              <div className="desc">
+                <h6 className="subtitle">Email : </h6>
+                <p className="desc-para">info@tchindustries.com</p>
+              </div>
             </div>
+            <div className="sub-sec">
+              <img
+                className="svg_icons"
+                alt="phone icon"
+                width="30px"
+                height="30px"
+                src={phone}
+              />
+              <div className="desc">
+                <h6 className="subtitle">Appelez : </h6>
+                <p className="desc-para">
+                  +216 29 25 88 86
+                  <br />
+                  +216 28 54 49 79
+                </p>
+              </div>
+            </div>            
           </div>
-          <div className="sub-sec">
-            <img
-              className="svg_icons"
-              alt="phone icon"
-              width="30px"
-              height="30px"
-              src={phone}
-            />
-            <div className="desc">
-              <h6 className="subtitle">Appelez : </h6>
-              <p className="desc-para">
-                +216 29 25 88 86
-                <br />
-                +216 28 54 49 79
-              </p>
-            </div>
+          <div className="map">
+            <GMap/>
           </div>
-          <img className="map-sec" src={map} alt="location map" />
+            
         </section>
         <section data-aos="fade-up" className="form sec">
           <Form>
@@ -107,8 +112,8 @@ const Contact = () => {
           </button>
         </section>
       </div>
+      
     </section>
   );
 };
-
-export default Contact;
+export default Contact

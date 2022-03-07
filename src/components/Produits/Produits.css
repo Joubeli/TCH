@@ -1,10 +1,41 @@
 .sec-produits {
-  width: 80%;
+  width: 75%;
   padding-top: 90px;
   margin: 0 auto;
 }
-
-.card_title_color {
+.card {
+  border: 1px solid #d6d6d6;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  margin: 2%;
+  width: 90%;
+}
+.info-container {
+  padding: 5%;
+}
+.card-image {
+  width: 100%;
+  border-radius: 5px;
+}
+.card-title {
   color: #459baa;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.card-desc {
+  text-align: left;
+}
+.modal-image {
+  width: 100%;
+}
+.slider {
+  padding-left: 1.4%;
+}
+@media screen and (max-width: 380px) {
+  .slider{
+    height: 450px;
+    margin-top: 5%;
+  padding-left: 4.5%;
+
+  }
 }

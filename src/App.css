@@ -83,41 +83,41 @@ h2::after {
   color: #459baa;
   transform: translateY(0);
 }
-.sec1 {
-  display: flex;
-  justify-content: space-between;
-}
 .topbar {
-  width: 100%;
-  height: 12%;
+  width: 100vw;
+  height: 77px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   background-color: white;
   top: 0;
   z-index: 2;
 }
 .logo {
   display: flex;
-  width: 30%;
-  padding: 1% 0 1% 3%;
+  width: 40%;
 }
 .logo img {
   cursor: pointer;
+  margin: 2% 0 0 4%;  
+  width: 100%;
 }
 h5 {
   font-size: 1.4em;
 }
 nav {
-  display: flex;
-  justify-content: space-around;
-  padding: 2.6% 1.8%;
-  width: 75%;
   position: relative;
-  align-items: center;
+  width: 100%;
+  padding-right: 2%;
 }
-.link_topbar {
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1.2%;
+  width: 100%;
+}
+.topbar_link {
   position: relative;
   font-size: 1.2rem;
   font-family: "Jost", sans-serif;
@@ -126,7 +126,7 @@ nav {
   z-index: 0;
   color: #407b91;
 }
-.link_topbar::after {
+.topbar_link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -138,13 +138,11 @@ nav {
   height: 100%;
   border-radius: 8px;
 }
-.link_topbar:hover {
-  color: white;
-}
+.topbar_link:hover,
 .active_link_menu {
   color: white;
 }
-.link_topbar:hover::after,
+.topbar_link:hover::after,
 .active_link_menu::after {
   width: 100%;
 }
@@ -169,7 +167,6 @@ nav {
     opacity: 0;
     transform: translateY(50px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -199,11 +196,142 @@ nav {
   0% {
     transform: rotate(0);
   }
-
   100% {
     transform: rotate(180deg);
   }
 }
-.dropdown_link {
+.dropdown_link,
+.resizable-btn {
   color: #407b91;
+}
+label #burger-btn,
+label #cancel-btn {
+  font-size: 40px;
+  margin-right: 20px;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 15%;
+}
+#check {
+  display: none;
+}
+@media screen and (max-width: 1160px) {
+  .links a {
+    font-size: 1.1rem;
+  }
+  .logo{
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .links a {
+    font-size: 1rem;
+  }
+  .logo{
+    width: 30%;
+  }
+  .logo img{
+    width: 80%;
+    margin: 5.5% 0 0 -12%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .topbar {
+    width: 100%;
+  }
+  .logo{
+    width: 100%;
+  }
+  .logo img{
+    width: 100%;
+    margin: 2% 0 0 4%;
+  }
+  .links {
+    position: relative;
+    height: 90vh;
+    width: 220%;
+    background-color: #407b91;
+    top: 65%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    opacity: 0.95;
+    margin: 0;
+    right: -110%;
+    transition: all 0.5s;
+  }
+  .links a {
+    font-size: 1.4rem;
+    padding: 2rem;
+  }
+  .topbar_link {
+    color: white;
+    position: relative;
+    line-height: 10px;
+  }
+  .topbar_link:hover,
+  .active_link_menu {
+    color: #44acbe;
+  }
+  .dropdown {
+    height: 20%;
+    background-color: #407b91;
+    box-shadow: none;
+    width: 20%;
+    margin-left: 55%;
+    margin-top: -3.1%;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  @keyframes myAnim {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .dropdown li a {
+    color: white;
+  }
+  #ressources:hover .arrow {
+    filter: brightness(0) invert(1);
+    animation: arrow 1s ease 0s 1 normal forwards;
+  }
+  @keyframes arrow {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+  label #burger-btn {
+    display: block;
+  }
+  #check:checked ~ .links {
+    right: 110%;
+  }
+  #check:checked ~ label #burger-btn {
+    display: none;
+  }
+  #check:checked ~ label #cancel-btn {
+    display: block;
+  }
+}
+@media screen and (max-width: 520px) {
+  .logo img{
+    display: none;
+  }
+  .logo {
+    background: url('./images//Header//logo-small.png') no-repeat center;
+  }  
+}
+@media screen and (max-width: 420px) {
+  .logo {
+    background: url('./images//Header//logo-smaller.png') no-repeat center;
+  } 
 }

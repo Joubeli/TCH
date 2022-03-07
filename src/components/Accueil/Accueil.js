@@ -2,7 +2,6 @@ import React from "react";
 import "../../App.css";
 import "./Accueil.css";
 import video_icon from "../../images/Accueil/video_icon.png";
-import back_accueil from "../../images/Accueil/back_accueil.png";
 
 const Accueil = () => {
   return (
@@ -30,9 +29,6 @@ const Accueil = () => {
            Regarder la vidéo
           </p>
         </a>
-      </div>
-      <div className="background_image">
-        <img src={back_accueil} alt="background_image" />
       </div>
     </section>
   );
