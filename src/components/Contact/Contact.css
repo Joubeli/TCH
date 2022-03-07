@@ -33,6 +33,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1% 0 ;
 }
 .contact-coord{
   display: flex;
@@ -159,14 +160,37 @@
     margin-bottom: 3%;
   }
   .form_line_1{
-    flex-direction: row;
+    margin-left: 3%;
     justify-content: space-between;
   } 
   .input_group_1{
-    width: 290px;
+    width: 100%;
   }  
+  .form_group{
+    margin-left: 3%;
+  }
   .input_group {
-    width: 600px;
+    width: 100%;
+  }
+  .email_group{
+    margin-top: 2%;
+  }
+  .form_button{
+    margin-bottom: 0.2%;
   }
 }
+@media screen and (max-width: 320px){ 
+  .sec{
+    box-shadow: none;
+    border: none;
+  }
+  .contact-sub-title{
+    margin-top: 3%;
+    font-size: 0.9em ;
+  }
+  .subtitle{
+    font-size: 15px;
+  }
+}
+
 

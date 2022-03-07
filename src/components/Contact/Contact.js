@@ -87,7 +87,7 @@ const Contact = () => {
                 </Form.Label>
                 <Form.Control className="input_group_1" type="text" />
               </Form.Group>
-              <Form.Group className="form_group_1">
+              <Form.Group className="form_group_1 email_group">
                 <Form.Label className="sec-sub-title sub-title-form">
                   Votre Email :{" "}
                 </Form.Label>
