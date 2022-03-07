@@ -8,8 +8,8 @@ import {
 const Librairies = ["Places"];
 
 const mapContainerStyle = {
-  width: "300px",
-  height: "300px",
+  width: "350px",
+  height: "350px",
 };
 
 const center = {
