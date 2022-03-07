@@ -3,11 +3,11 @@ import "../../App.css";
 import "./Contact.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import map from "../../images/Contact/map.png";
 import email from "../../images/Contact/email.png";
 import location from "../../images/Contact/location.png";
 import phone from "../../images/Contact/phone.png";
 import { Form } from "react-bootstrap";
+import GMap from "./GMap";
 
 const Contact = () => {
   useEffect(() => {
@@ -71,9 +71,12 @@ const Contact = () => {
                   +216 28 54 49 79
                 </p>
               </div>
-            </div>
+            </div>            
           </div>
-          <img className="map-sec" src={map} alt="location map" />
+          <div className="map">
+            <GMap/>
+          </div>
+            
         </section>
         <section data-aos="fade-up" className="form sec">
           <Form>
@@ -109,8 +112,8 @@ const Contact = () => {
           </button>
         </section>
       </div>
+      
     </section>
   );
 };
-
-export default Contact;
+export default Contact
