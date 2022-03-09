@@ -2,10 +2,8 @@ import React from "react";
 import {
   GoogleMap,
   useLoadScript,
-  Marker,
+  Marker
 } from "@react-google-maps/api";
-
-const Librairies = ["Places"];
 
 const mapContainerStyle = {
   width: "350px",
@@ -17,10 +15,15 @@ const center = {
   lng: 10.264995646027437,
 };
 
+
+const position = {
+  lat: 36.87217502028581,
+  lng: 10.264995646027437,
+}
+
 const GMap = () => {
   const { isLoaded, LoadError } = useLoadScript({
     googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
-    Librairies,
   });
 
   if (LoadError) return "Error Loading Maps";
@@ -30,9 +33,12 @@ const GMap = () => {
     <div>
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
-        zoom={8}
+        zoom={14}
         center={center}
-      ></GoogleMap>
+      >
+        <Marker position={position} />  
+        
+      </GoogleMap>
     </div>
   );
 };
