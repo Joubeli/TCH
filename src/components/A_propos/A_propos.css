@@ -17,23 +17,9 @@
   height: auto;
 
 }
-.more{
-  margin: 3% 0;
-}
-.more::before{
-  content: 'Read More';
-}
-.art.active .more::before{
-  content: 'Read Less';
-}
-.art.active .content{
-}
-.art.active .content::before{
-  display: none;
-}
 .sub-title {
   font-family: "Poppins", sans-serif;
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: 500;
   color: #459baa;
   text-align: center;
