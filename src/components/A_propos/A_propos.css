@@ -14,12 +14,22 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border: 1px solid #e4e4e4;
   color: #6b6b6b;
+  height: auto;
+
 }
-.art p {
-  font-size: 1em;
-  line-height: 30px;
-  text-align: left;
-  padding: 2% 4%;
+.more{
+  margin: 3% 0;
+}
+.more::before{
+  content: 'Read More';
+}
+.art.active .more::before{
+  content: 'Read Less';
+}
+.art.active .content{
+}
+.art.active .content::before{
+  display: none;
 }
 .sub-title {
   font-family: "Poppins", sans-serif;
@@ -30,6 +40,21 @@
   padding-top: 25px;
   margin: 0;
 }
+.mini-title{
+  color: #459baa;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  text-decoration: underline;
+}
+.desc-apropos {
+  font-size: 0.9em;
+  line-height: 30px;
+  text-align: left;
+  padding: 1% 4%;
+  margin-bottom: 10px;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
