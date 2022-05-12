@@ -1,12 +1,13 @@
-import img1 from "./images/Produits/black_orange_cable.jpg";
-import img2 from "./images/Produits/blue_cable.jpg";
-import img3 from "./images/Produits/colorful_mini_cables.jpg";
-import img4 from "./images/Produits/colorful_mixed_mini_cables.jpg";
-import img5 from "./images/Produits/electric_wires_with_terminals.jpg";
-import img6 from "./images/Produits/electrical_wire.jpg";
-import img7 from "./images/Produits/green_yellow_cable.jpg";
-import img8 from "./images/Produits/joining_electrical_wires.jpg";
-import img9 from "./images/Produits/orange_electrical_wires.jpg";
+import img1 from "./images/Produits/CarlValentin/1APL100-1-500.jpg";
+import img2 from "./images/Produits/CarlValentin/compaII.jpg";
+import img3 from "./images/Produits/CarlValentin/03_2014_CarlValentin_MG_7192.jpg";
+import img4 from "./images/Produits/CarlValentin/09_2013_CValentin_MG_7596.jpg";
+import img5 from "./images/Produits/CarlValentin/Micra doppelbild.jpg";
+import img6 from "./images/Produits/CarlValentin/micra_ps01.jpg";
+import img7 from "./images/Produits/CarlValentin/valentin_20110217_10.jpg";
+import img8 from "./images/Produits/CarlValentin/valentin_20110323_012.jpg";
+import img9 from "./images/Produits/CarlValentin/valentin_20110323_016.jpg";
+import img10 from "./images/Produits/CarlValentin/valentin_20110323_023.jpg";
 
 import part1 from "./images/Partenaires/HLMT.png";
 import part2 from "./images/Partenaires/TESA.png";
@@ -36,55 +37,52 @@ export const Products = [
     titre: `Cable électrique rayé`,
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Integer in orci ut purus interdum suscipit.`,
-  },
-  {
+  },{
     image: img2,
-    titre: `Cable électrique bleu`,
+    titre: `Cable électrique rayé`,
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.  `,
-  },
-  {
+            Integer in orci ut purus interdum suscipit.`,
+  },{
     image: img3,
-    titre: `Tuyau ondulé avec câbles`,
+    titre: `Cable électrique rayé`,
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.  `,
-  },
-  {
+            Integer in orci ut purus interdum suscipit.`,
+  },{
     image: img4,
-    titre: `Tuyau ondulé avec câbles`,
+    titre: `Cable électrique rayé`,
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.  `,
-  },
-  {
+            Integer in orci ut purus interdum suscipit.`,
+  },{
     image: img5,
-    titre: `Tuyau ondulé avec câbles`,
+    titre: `Cable électrique rayé`,
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.  `,
-  },
-  {
+            Integer in orci ut purus interdum suscipit.`,
+  },{
     image: img6,
-    titre: `Cable électrique oranger`,
+    titre: `Cable électrique rayé`,
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.  `,
-  },
-  {
+            Integer in orci ut purus interdum suscipit.`,
+  },{
     image: img7,
-    titre: `Cable électrique oranger`,
+    titre: `Cable électrique rayé`,
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.  `,
-  },
-  {
+            Integer in orci ut purus interdum suscipit.`,
+  },{
     image: img8,
-    titre: `Cable électrique oranger`,
+    titre: `Cable électrique rayé`,
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.  `,
-  },
-  {
+            Integer in orci ut purus interdum suscipit.`,
+  },{
     image: img9,
-    titre: `Cable électrique oranger`,
+    titre: `Cable électrique rayé`,
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.  `,
-  },
+            Integer in orci ut purus interdum suscipit.`,
+  },{
+    image: img10,
+    titre: `Cable électrique rayé`,
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Integer in orci ut purus interdum suscipit.`,
+  }
 ];
 export const Partners = [
   {

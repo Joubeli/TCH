@@ -13,6 +13,7 @@ import pdf1 from "./pdf/1.pdf";
 import pdf2 from "./pdf/2.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+// import PPV from "./components/Produits/PPV";
 function App() {
   const [activeClass, setActiveClass] = useState("accueil");
   return (
@@ -156,6 +157,9 @@ function App() {
       <div id="produits">
         <Produits />
       </div>
+      {/* <div>
+        <PPV/>
+      </div> */}
        <div id="quisommesnous">
         <QuiSommesNous />
       </div>  

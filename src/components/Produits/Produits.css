@@ -34,6 +34,29 @@
 .top-prod{
   display: flex;
   justify-content: space-between;
+  margin-top: 2%;
+}
+.sec-ppv{
+  width: 75%;
+  padding-top: 90px;
+  margin: 0 auto;
+}
+.prod{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  position:relative;
+}
+.prodHovered {
+  display:none;
+  position: absolute;    
+  height: 180px;
+  width: 180px;
+  background-color: rgba(0 , 0, 0, .85);
+  cursor: pointer;
+  padding-bottom: -100%;
+  top: 0;
+}
+.prod:hover .prodHovered{
+  display: block; 
 }
 @media screen and (max-width: 380px) {
   .slider{
