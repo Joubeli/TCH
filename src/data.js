@@ -1,13 +1,12 @@
-import img1 from "./images/Produits/CarlValentin/1APL100-1-500.jpg";
-import img2 from "./images/Produits/CarlValentin/compaII.jpg";
-import img3 from "./images/Produits/CarlValentin/03_2014_CarlValentin_MG_7192.jpg";
-import img4 from "./images/Produits/CarlValentin/09_2013_CValentin_MG_7596.jpg";
-import img5 from "./images/Produits/CarlValentin/Micra doppelbild.jpg";
-import img6 from "./images/Produits/CarlValentin/micra_ps01.jpg";
-import img7 from "./images/Produits/CarlValentin/valentin_20110217_10.jpg";
-import img8 from "./images/Produits/CarlValentin/valentin_20110323_012.jpg";
-import img9 from "./images/Produits/CarlValentin/valentin_20110323_016.jpg";
-import img10 from "./images/Produits/CarlValentin/valentin_20110323_023.jpg";
+import img1 from "./images/Produits/CarlValentin/micra_ps01.jpg";
+import img2 from "./images/Produits/CarlValentin/pica-II_Pica.jpg";
+import img3 from "./images/Produits/Hellerman/Cable_protection_systems.jpg";
+import img4 from "./images/Produits/Hellerman/Electrical Installation.jpg";
+import img5 from "./images/Produits/KCC/6340_S01_FR.jpg";
+import img6 from "./images/Produits/KCC/essuieMains.jpg";
+import img7 from "./images/Produits/Kortho/foilprinter.jpg";
+import img8 from "./images/Produits/Kortho/HotPrint.jpg";
+import img9 from "./images/Produits/Kortho/hotprinter.jpg";
 
 import part1 from "./images/Partenaires/HLMT.png";
 import part2 from "./images/Partenaires/TESA.png";
@@ -34,54 +33,40 @@ import part20 from "./images/Partenaires/MAKITA.png";
 export const Products = [
   {
     image: img1,
-    titre: `Cable électrique rayé`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.`,
+    titre: `Micra`,
+    desc: `The Micra series prints alternatively in thermal direct or thermal transfer mode. The pleasing design inserts itself into different environments.`,
   },{
     image: img2,
-    titre: `Cable électrique rayé`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.`,
+    titre: `Pica II`,
+    desc: `Reliability, universal applicability and an attractive price/performance ratio have made the Pica series the best selling product in recent years.`,
   },{
     image: img3,
-    titre: `Cable électrique rayé`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.`,
+    titre: `Cable Protection`,
+    desc: `Reliability, universal applicability and an attractive price/performance ratio have made the Pica series the best selling product in recent years.`,
   },{
     image: img4,
-    titre: `Cable électrique rayé`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.`,
+    titre: `Electrical Installation`,
+    desc: `Reliability, universal applicability and an attractive price/performance ratio have made the Pica series the best selling product in recent years.`,
   },{
     image: img5,
-    titre: `Cable électrique rayé`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.`,
+    titre: `Mousse Lavante`,
+    desc: `Mousse Lavante pour les mains.`,
   },{
     image: img6,
-    titre: `Cable électrique rayé`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.`,
+    titre: `Essuie Mains`,
+    desc: `Essuie-mains roulés`,
   },{
     image: img7,
-    titre: `Cable électrique rayé`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.`,
+    titre: `Imprimante à pappier Aluminium`,
+    desc: `Imprimante à pappier Aluminium`,
   },{
     image: img8,
-    titre: `Cable électrique rayé`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.`,
+    titre: `Imprimante à chaud`,
+    desc: `Imprimante à chaud`,
   },{
     image: img9,
-    titre: `Cable électrique rayé`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.`,
-  },{
-    image: img10,
-    titre: `Cable électrique rayé`,
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer in orci ut purus interdum suscipit.`,
+    titre: `Imprimante à chaud`,
+    desc: `Imprimante à chauds`,
   }
 ];
 export const Partners = [

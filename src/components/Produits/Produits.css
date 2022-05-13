@@ -9,13 +9,29 @@
   border-radius: 5px;
   margin: 2%;
   width: 90%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .info-container {
   padding: 5%;
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.image-container{
+  flex-basis: 40%;
+  overflow: hidden;
+  border-radius: 5px;
+
 }
 .card-image {
-  width: 100%;
-  border-radius: 5px;
+  /* border-radius: 5px;  */
+  height: 200px;
+  margin: auto;
+  /* border: 1px black solid; */
 }
 .card-title {
   color: #459baa;

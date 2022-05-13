@@ -7,7 +7,9 @@ const Item = ({ product }) => {
   const handleShow = () => setShow(true);
   return (
     <div className="card">
-      <img className="card-image" height='200px' width='200px' src={product.image} />
+      <div className="image-container" >
+        <img className="card-image" src={product.image} />
+      </div>
       <div className="info-container">
         <h3 className="card-title">{product.titre}</h3>
         <p className="card-desc">{product.desc}</p>
