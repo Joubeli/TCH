@@ -34,19 +34,23 @@ export const Products = [
   {
     image: img1,
     titre: `Micra`,
-    desc: `The Micra series prints alternatively in thermal direct or thermal transfer mode. The pleasing design inserts itself into different environments.`,
+    conciseDesc: `La série Micra imprime facultativement en mode thermique directe ou transfert thermique. Le design agréable s'insère dans les différents environnements.`,
+    fullDesc: `La série Micra imprime facultativement en mode thermique directe ou transfert thermique. Le design agréable s'insère dans les différents environnements. Grâce au couvercle mesuré généreusement, le rouleau d’étiquettes et le film transfert peuvent être échangés simplement et rapidement.`
   },{
     image: img2,
     titre: `Pica II`,
-    desc: `Reliability, universal applicability and an attractive price/performance ratio have made the Pica series the best selling product in recent years.`,
-  },{
-    image: img3,
-    titre: `Cable Protection`,
-    desc: `Reliability, universal applicability and an attractive price/performance ratio have made the Pica series the best selling product in recent years.`,
+    conciseDesc: `Sa fiabilité, son utilité universelle ainsi qu'un excellent rapport qualité/prix ont permis à la série Pica d'accéder au rang des produits les plus vendus au cours des dernières années.`,
+    fullDesc: `Sa fiabilité, son utilité universelle ainsi qu'un excellent rapport qualité/prix ont permis à la série Pica d'accéder au rang des produits les plus vendus au cours des dernières années. Les imprimantes d'étiquettes compactes et très simples à utiliser de la série Pica II vous offrent un rendement maximal et une excellente qualité d'impression. Les imprimantes sont parfaitement adaptées pour les volumes d'impression faibles à moyens et peuvent être utilisées en production, magasins, bureaux et pour l'expédition. Les étiquettes d'adresse et d'expédition dotées de codes barres sont imprimées, tout comme les étiquettes portant des logos ou des graphiques fins, en impression thermique directe ou en impression par transfert thermique.`
   },{
     image: img4,
-    titre: `Electrical Installation`,
-    desc: `Reliability, universal applicability and an attractive price/performance ratio have made the Pica series the best selling product in recent years.`,
+    titre: `Jonctions de câbles en résine coulée`,
+    conciseDesc: `Les joints traversants RELICON Premium sont équipés d'un bornier intégré et conçus pour les réseaux électriques basse tension.`,
+    fullDesc: `Les joints traversants RELICON Premium sont équipés d'un bornier intégré et conçus pour les réseaux électriques basse tension. Ils conviennent au raccordement de câbles polymères et de fils en PVC, XLPE, PE, EPR et câbles utilitaires. Application : Connexions dans les bâtiments industriels, alimentation électrique dans le sol, à l'extérieur et sous l'eau.`
+  },{
+    image: img3,
+    titre: `Colliers de serrage et systèmes de fixation`,
+    conciseDesc: `Colliers de serrage et systèmes de fixation Les colliers de serrage doivent être en mesure de répondre aux exigences les plus variées.`,
+    fullDesc: `Colliers de serrage et systèmes de fixation Les colliers de serrage doivent être en mesure de répondre aux exigences les plus variées, d'autant qu'ils sont utilisés dans de multiples opérations, de la simple mise en faisceau de câbles avec des colliers de serrage jusqu'à des utilisations de colliers de serrages plus spécifiques dans des conditions extrêmes.`
   },{
     image: img5,
     titre: `Mousse Lavante`,
@@ -66,7 +70,7 @@ export const Products = [
   },{
     image: img9,
     titre: `Imprimante à chaud`,
-    desc: `Imprimante à chauds`,
+    desc: `Imprimante à chaud`,
   }
 ];
 export const Partners = [

@@ -29,7 +29,8 @@
 }
 .card-image {
   /* border-radius: 5px;  */
-  height: 200px;
+  height: 100%;
+  width: 300px;
   margin: auto;
   /* border: 1px black solid; */
 }
@@ -40,6 +41,7 @@
 }
 .card-desc {
   text-align: left;
+  font-size: 1.1rem;
 }
 .modal-image {
   width: 100%;
