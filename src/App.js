@@ -7,7 +7,7 @@ import Partenaires from "./components/Partenaires/Partenaires";
 import Contact from "./components/Contact/Contact";
 import Accueil from "./components/Accueil/Accueil";
 import Footer from "./components/Footer/Footer";
-import logo from "./images/Header/logo.png";
+import logo2 from "./images/Header/logo.png";
 import arrow from "./images/Header/arrow.png";
 import pdf1 from "./pdf/1.pdf";
 import pdf2 from "./pdf/2.pdf";
@@ -21,7 +21,7 @@ function App() {
       <div className="topbar">
         <div className="logo">
           <a href="#accueil">
-            <img src={logo} alt="logo" className="logo-pic" />
+            <img src={logo2} alt="logo" className="logo-pic" />
           </a>
         </div>
         <nav>

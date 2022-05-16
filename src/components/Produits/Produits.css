@@ -28,20 +28,17 @@
 
 }
 .card-image {
-  /* border-radius: 5px;  */
   height: 100%;
-  width: 300px;
   margin: auto;
-  /* border: 1px black solid; */
 }
 .card-title {
   color: #459baa;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .card-desc {
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .modal-image {
   width: 100%;
