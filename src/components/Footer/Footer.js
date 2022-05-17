@@ -28,7 +28,7 @@ const Footer = () => {
           Qui Sommes Nous
         </a>{" "}
         |
-        <a className="link" href="partenaires">
+        <a className="link" href="#partenaires">
           {" "}
           Partenaires
         </a>{" "}

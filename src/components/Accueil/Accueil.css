@@ -62,6 +62,9 @@
 .accueil-img{
   width: 100%;
 }
+.photo{
+  margin-top: 20px;
+}
 /******Max-width:1220px***********/
 @media screen and (max-width: 1220px) {
   .sec-accueil{
