@@ -15,10 +15,11 @@
   margin-bottom: 10px;
 }
 .link {
-  color: #00538B;
+  color: #459baa;
 }
 .link:hover {
   cursor: pointer;
+  color: #00538B;
 }
 .socials {
   display: flex;
