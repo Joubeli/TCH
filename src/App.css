@@ -27,7 +27,7 @@ h2::after {
   display: block;
   width: 2.5rem;
   height: 3px;
-  background: #459baa;
+  background: #00538B;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -97,18 +97,19 @@ h2::after {
 .logo {
   display: flex;
   width: 40%;
+  position: relative;
 }
 .logo img {
   cursor: pointer;
-  margin: 2% 0 0 4%;  
-  width: 100%;
+  margin-top: 2%;  
+  width: 85%;
 }
 h5 {
   font-size: 1.4em;
 }
 nav {
   position: relative;
-  width: 100%;
+  width: 90%;
   padding-right: 2%;
 }
 .links {
@@ -124,7 +125,7 @@ nav {
   font-weight: 500;
   padding: 1%;
   z-index: 0;
-  color: #407b91;
+  color: #00538B;
 }
 .topbar_link::after {
   content: "";
@@ -132,7 +133,7 @@ nav {
   bottom: 0;
   left: 0;
   width: 0%;
-  background-color: #407b91;
+  background-color: #00538B;
   transition: 0.5s ease;
   z-index: -5;
   height: 100%;
@@ -326,12 +327,12 @@ label #cancel-btn {
   .logo img{
     display: none;
   }
-  .logo {
+  /* .logo {
     background: url('./images//Header//logo-small.png') no-repeat center;
-  }  
+  }   */
 }
-@media screen and (max-width: 420px) {
+/* @media screen and (max-width: 420px) {
   .logo {
     background: url('./images//Header//logo-smaller.png') no-repeat center;
   } 
-}
+} */

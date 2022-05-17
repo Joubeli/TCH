@@ -9,21 +9,36 @@
   border-radius: 5px;
   margin: 2%;
   width: 90%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .info-container {
   padding: 5%;
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.image-container{
+  flex-basis: 40%;
+  overflow: hidden;
+  border-radius: 5px;
+
 }
 .card-image {
-  width: 100%;
-  border-radius: 5px;
+  height: 100%;
+  margin: auto;
 }
 .card-title {
   color: #459baa;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .card-desc {
   text-align: left;
+  font-size: 1rem;
 }
 .modal-image {
   width: 100%;
@@ -34,6 +49,29 @@
 .top-prod{
   display: flex;
   justify-content: space-between;
+  margin-top: 2%;
+}
+.sec-ppv{
+  width: 75%;
+  padding-top: 90px;
+  margin: 0 auto;
+}
+.prod{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  position:relative;
+}
+.prodHovered {
+  display:none;
+  position: absolute;    
+  height: 180px;
+  width: 180px;
+  background-color: rgba(0 , 0, 0, .85);
+  cursor: pointer;
+  padding-bottom: -100%;
+  top: 0;
+}
+.prod:hover .prodHovered{
+  display: block; 
 }
 @media screen and (max-width: 380px) {
   .slider{

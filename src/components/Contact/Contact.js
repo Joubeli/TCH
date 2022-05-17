@@ -38,7 +38,7 @@ const Contact = () => {
                 <p className="desc-sub country">Tunisie</p>
                 <p className="desc-para">
                   Rue de parc
-                  <br /> 2036 La Soukra
+                  <br /> La Soukra 2036
                 </p>
               </div>
             </div>
@@ -66,9 +66,8 @@ const Contact = () => {
               <div className="desc">
                 <h6 className="subtitle">Appelez : </h6>
                 <p className="desc-para">
-                  +216 29 25 88 86
+                  +216 70 85 84 83
                   <br />
-                  +216 28 54 49 79
                 </p>
               </div>
             </div>            

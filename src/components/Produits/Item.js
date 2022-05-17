@@ -7,21 +7,23 @@ const Item = ({ product }) => {
   const handleShow = () => setShow(true);
   return (
     <div className="card">
-      <img className="card-image" src={product.image} />
+      <div className="image-container" >
+        <img className="card-image" src={product.image} />
+      </div>
       <div className="info-container">
         <h3 className="card-title">{product.titre}</h3>
-        <p className="card-desc">{product.desc}</p>
+        <p className="card-desc">{product.conciseDesc}</p>
         <button className="button" onClick={handleShow}>
           Détails
         </button>
         <Modal show={show} onHide={handleClose} animation={false}>
-          <Modal.Header closeButton>
+          <Modal.Header >
             <Modal.Title>
               <h3 className="card-title">{product.titre}</h3>
             </Modal.Title>
           </Modal.Header>
           <img className="modal-image" src={product.image} />
-          <Modal.Body>{product.desc}</Modal.Body>
+          <Modal.Body>{product.fullDesc}</Modal.Body>
           <Modal.Footer>
             <button className="button" onClick={handleClose}>
               Fermer

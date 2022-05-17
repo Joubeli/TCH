@@ -15,7 +15,7 @@
   margin-bottom: 10px;
 }
 .link {
-  color: #459baa;
+  color: #00538B;
 }
 .link:hover {
   cursor: pointer;
@@ -29,7 +29,7 @@
   margin-bottom: 5px;
 }
 .copy {
-  color: #176a79;
+  color: #00538B;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.5px;
   font-size: 0.9em;
