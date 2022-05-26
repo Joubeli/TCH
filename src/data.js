@@ -40,6 +40,11 @@ import part18 from "./images/Partenaires/FACOM.png";
 import part19 from "./images/Partenaires/BOSCH.png";
 import part20 from "./images/Partenaires/MAKITA.png";
 
+import staff1 from "./images/QuiSommesNous/founder.jpg"
+import staff2 from "./images/QuiSommesNous/ingénieur.jpg"
+import staff3 from "./images/QuiSommesNous/sales.jpg"
+import staff4 from "./images/QuiSommesNous/responsable.jpg"
+import staff5 from "./images/QuiSommesNous/aide-comptable.jpg"
 
 export const Products = [
   {
@@ -298,5 +303,77 @@ export const Partners = [
     width: '100',
     image: part20,
     url: 'https://www.makitatools.com/'
+  }
+]
+export const Staff = [
+  {
+    name: 'Abdessalem BARKIA',
+    post: 'Directeur Général',
+    email: 'mailto:a.barkia@tch-industries.com',
+    linkedin: 'https://tn.linkedin.com/in/hichem-nahali',
+    image: {staff1}
+  },
+  {
+    name: 'Hichem NAHALI',
+    post: 'ING. Technico-Commercial ',
+    email: 'mailto:h.nahali@tch-industries.com',
+    linkedin: 'https://tn.linkedin.com/in/abdessalembarkia',
+    image: {staff2}
+  },
+  {
+    name: 'M’Hammed M’SAAD',
+    post: 'ING. Technico-Commercial',
+    email: 'mailto:m.msaad@tch-industries.com ',
+    linkedin: 'https://tn.linkedin.com/in/m-hammed-m-saad',
+    image: {staff3}
+  },
+  {
+    name: 'Khouloud KHALFAOUI',
+    post: 'Resp. Achat / Logistique ',
+    email: 'mailto:k.khalfaoui@tch-industries.com',
+    linkedin: '',
+    image: {}
+  },
+  {
+    name: 'Aroua BEN OTHMAN',
+    post: 'Administration des ventes',
+    email: 'mailto:a.benothman@tch-industries.com',
+    linkedin: '',
+    image: {}
+  },
+  {
+    name: 'Mariem CHBINOU',
+    post: 'Resp. Administratif / Financier',
+    email: 'mailto:m.chbinou@tch-industries.com',
+    linkedin: 'https://www.linkedin.com/in/mariem-chbinou-33a1a2148/',
+    image: {staff4}
+  },
+  {
+    name: 'Jihen BEN MAHMOUD',
+    post: 'Resp. Recouvrement',
+    email: 'mailto:j.benmahmoud@tch-industries.com',
+    linkedin: 'https://www.linkedin.com/in/jihen-ben-mahmoud-8199b921a/',
+    image: {}
+  },
+  {
+    name: 'Marwa BEN SLIMEN',
+    post: 'Chef Comptable',
+    email: 'mailto:m.benslimen@tch-industries.com',
+    linkedin: '',
+    image: {}
+  },
+  {
+    name: 'Rimeh CHARAABI',
+    post: 'Aide Comptable',
+    email: 'mailto:r.charaabin@tch-industries.com',
+    linkedin: 'https://www.linkedin.com/in/rimeh-charaabi/',
+    image: {staff5}
+  },
+  {
+    name: 'Marouen ZAHROUNI',
+    post: 'Magasinier',
+    email: 'mailto:magasin@tch-industries.com',
+    linkedin: '',
+    image: {}
   }
 ]

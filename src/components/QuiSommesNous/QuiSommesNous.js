@@ -10,6 +10,8 @@ import ingénieur from "../../images/QuiSommesNous/ingénieur.jpg";
 import sales from "../../images/QuiSommesNous/sales.jpg";
 import technicien from "../../images/QuiSommesNous/technicien.jpg";
 import linkedin_icon from "../../images/QuiSommesNous/linkedin_icon.png";
+import email_icon from "../../images/QuiSommesNous/email_icon.png";
+import user_mail from "../../data"
 
 const QuiSommesNous = () => {
   useEffect(() => {
@@ -32,7 +34,7 @@ const QuiSommesNous = () => {
                 <img src={founder} alt="profil" className="profil-photo"/>
                 <div className="description">
                   <div className="carte-top">
-                    <h6 className="carte-title">Abdessalem Barkia</h6>
+                    <h6 className="carte-title">Abdessalem BARKIA</h6>
                     <p className="carte-sub-title ">Fondateur</p>
                   </div>
                   <div className="carte-bottom">
@@ -54,26 +56,28 @@ const QuiSommesNous = () => {
                 </div>
               </div>
             </div>
-            <div className="carte" data-aos="zoom-in">
-              <div className="carte-ind">
-                <img src={manager} alt="profil" className="profil-photo" />
+            <div className="spec_line">
+          
+          <div className="cartes">
+            <div className="carte last_carte" data-aos="zoom-in">
+              <div className="carte-ind ">
                 <div className="description">
                   <div className="carte-top">
-                    <h6 className="carte-title">Rajander Thind</h6>
-                    <p className="carte-sub-title">Directeur</p>
+                    <h6 className="carte-title">Aroua BEN OTHMAN</h6>
+                    <p className="carte-sub-title">
+                    Administration des vents
+                    </p>
                   </div>
                   <div className="carte-bottom">
                     <hr className="line" />
                     <a
                       rel="noopener noreferrer"
-                      href="https://www.linkedin.com/in/rajander-thind-4822a37b/"
+                      href={user_mail}
                       target="_blank"
                     >
                       <img
-                        className="linkedin-link"
-                        src={linkedin_icon}
-                        width="24px"
-                        height="24px"
+                        className="linkedin-link last-carte-linkedin"
+                        src={email_icon}
                         alt="linkedin_icon"
                       />
                     </a>
@@ -81,6 +85,8 @@ const QuiSommesNous = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
             <div className="carte" data-aos="zoom-in">
               <div className="carte-ind">
                 <img src={responsable} alt="profil" className="profil-photo" />

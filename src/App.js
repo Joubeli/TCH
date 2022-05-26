@@ -78,33 +78,7 @@ function App() {
             >
               Produits
             </a>
-            <a
-              id="ressources"
-              onClick={() => {
-                setActiveClass("ressources_active");
-              }}
-              className={
-                activeClass == "ressources_active"
-                  ? "active_link_menu topbar_link ressources"
-                  : "topbar_link ressources"
-              }
-              href="#!"
-            >
-              Ressources
-              <img src={arrow} alt="arrow" className="arrow" />
-              <ul className="dropdown">
-                <li>
-                  <a className="dropdown_link" target="_blank" href={pdf1}>
-                    TI Guide
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown_link" target="_blank" href={pdf2}>
-                    TCH Line Card
-                  </a>
-                </li>
-              </ul>
-            </a>
+            
             <a
               onClick={() => {
                 setActiveClass("quisommesnous");

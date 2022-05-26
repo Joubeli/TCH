@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 import "../../App.css";
 import "./Contact.css";
 import Aos from "aos";
@@ -13,6 +14,33 @@ const Contact = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
+  let [name, setName] = useState('')
+  let [email, setEmail] = useState('')
+  let [subject, setSubject] = useState('')
+  let [message, setMessage] = useState('')
+  
+  
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_d36n7bq', 'template_19mxeei', form.current, 'XypZSD_PcOnXD7pZ2')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+  };
+  
+  
 
   return (
     <section className="sec-contact" id="contact">
@@ -78,37 +106,37 @@ const Contact = () => {
             
         </section>
         <section data-aos="fade-up" className="form sec">
-          <Form>
-            <div className="form_line_1">
-              <Form.Group className="form_group_1">
-                <Form.Label className="sec-sub-title sub-title-form">
-                  Votre Nom :{" "}
-                </Form.Label>
-                <Form.Control className="input_group_1" type="text" />
-              </Form.Group>
-              <Form.Group className="form_group_1 email_group">
-                <Form.Label className="sec-sub-title sub-title-form">
-                  Votre Email :{" "}
-                </Form.Label>
-                <Form.Control className="input_group_1" type="email" />
-              </Form.Group>
+           <Form ref={form} onSubmit={sendEmail}>
+           <div className="form_line_1">
+            <Form.Group className="form_group_1">
+              <Form.Label className="sec-sub-title sub-title-form">
+                Votre Nom :
+              </Form.Label>
+              <Form.Control value={name} onChange={(e)=>setName(e.target.value)} className="input_group_1" type="text" name='name'/>
+            </Form.Group>
+            <Form.Group className="form_group_1">
+              <Form.Label className="sec-sub-title sub-title-form">
+                Votre Email :
+              </Form.Label>
+              <Form.Control value={email} onChange={(e)=>setEmail(e.target.value)}  className="input_group_1" type="email" name='email'/>
+            </Form.Group>
             </div>
             <Form.Group className="form_group">
               <Form.Label className="sec-sub-title sub-title-form">
-                Sujet :{" "}
+                Sujet :
               </Form.Label>
-              <Form.Control className="input_group" type="text" />
+              <Form.Control value={subject} onChange={(e)=>setSubject(e.target.value)}  className="input_group" type="text" name='subject'/>
             </Form.Group>
             <Form.Group className="form_group">
               <Form.Label className="sec-sub-title sub-title-form">
-                Message :{" "}
+                Message :
               </Form.Label>
-              <Form.Control as="textarea" rows={13} className="input_group" />
+              <Form.Control value={message} onChange={(e)=>setMessage(e.target.value)}  as="textarea" rows={13}  className="input_group" type="text" name='message'/>
             </Form.Group>
-          </Form>
-          <button type="submit" className="button form_button" role="button">
+            <button type="submit" className="button form_button" role="button">
             Envoyer
-          </button>
+            </button>
+          </Form> 
         </section>
       </div>
       
