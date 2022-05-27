@@ -4,7 +4,7 @@ import "../../App.css";
 import "./Contact.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import email from "../../images/Contact/email.png";
+import mail from "../../images/Contact/email.png";
 import location from "../../images/Contact/location.png";
 import phone from "../../images/Contact/phone.png";
 import { Form } from "react-bootstrap";
@@ -76,7 +76,7 @@ const Contact = () => {
                 alt="email icon"
                 width="30px"
                 height="30px"
-                src={email}
+                src={mail}
               />
               <div className="desc">
                 <h6 className="subtitle">Email : </h6>
@@ -101,7 +101,7 @@ const Contact = () => {
             </div>            
           </div>
           <div className="map">
-            {/* <GMap/> */}
+            <GMap/>
           </div>
             
         </section>

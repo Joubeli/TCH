@@ -18,18 +18,7 @@ const Accueil = () => {
           Nous sommes Revendeur d'équipements et Fournisseur de Solutions pour
           Industries Électroniques, Électriques et Aérospatiales.
         </h5>
-        <a className="video-link" href='https://www.youtube.com/watch?v=n0bUKEuYDG0' target="_blank">
-          <p className="watch_video">
-            <img
-              className="video_icon"
-              src={video_icon}
-              width="32px"
-              height="32px"
-              alt="video icon"
-            /> 
-           Regarder la vidéo
-          </p>
-        </a>
+        
       </div>
       <div className="photo">
         <img width="80%" src={ph4}  />

@@ -360,7 +360,6 @@ export const Staffs = [
     name: 'Jihen BEN MAHMOUD',
     post: 'Resp. Recouvrement',
     email: 'j.benmahmoud@tch-industries.com',
-    linkedin: 'https://www.linkedin.com/in/jihen-ben-mahmoud-8199b921a/',
   },{
     name: 'Marwa BEN SLIMEN',
     post: 'Chef Comptable',

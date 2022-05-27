@@ -8,9 +8,6 @@ import Contact from "./components/Contact/Contact";
 import Accueil from "./components/Accueil/Accueil";
 import Footer from "./components/Footer/Footer";
 import logo2 from "./images/Header/logo.png";
-import arrow from "./images/Header/arrow.png";
-import pdf1 from "./pdf/1.pdf";
-import pdf2 from "./pdf/2.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import PPV from "./components/Produits/PPV";
@@ -125,14 +122,14 @@ function App() {
        <div id="accueil">
         <Accueil />
       </div>
+      <div>
+        <PPV/>
+      </div>
       <div id="a_propos">
         <A_propos />
       </div>
       <div id="produits">
         <Produits />
-      </div>
-      <div>
-        <PPV/>
       </div>
        <div id="quisommesnous">
         <QuiSommesNous />
