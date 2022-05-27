@@ -114,13 +114,13 @@ nav {
 }
 .links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: -1.2%;
   width: 100%;
 }
 .topbar_link {
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: "Jost", sans-serif;
   font-weight: 500;
   padding: 1%;
