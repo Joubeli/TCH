@@ -327,12 +327,10 @@ label #cancel-btn {
   .logo img{
     display: none;
   }
-  /* .logo {
-    background: url('./images//Header//logo-small.png') no-repeat center;
-  }   */
 }
-/* @media screen and (max-width: 420px) {
-  .logo {
-    background: url('./images//Header//logo-smaller.png') no-repeat center;
-  } 
-} */
+@media screen and (max-width: 350px) {
+.section-title {
+  font-size: 1.5em;
+}
+
+}

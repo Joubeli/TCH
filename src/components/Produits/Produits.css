@@ -79,15 +79,33 @@
   display: block; 
 }
 @media screen and (max-width: 1260px) {
-  
-}
-@media screen and (max-width: 380px) {
-  .slider{
-    height: 450px;
-    margin-top: 5%;
-  padding-left: 4.5%;
-
+  .sec-ppv{
+    width: 95%;
   }
 }
+@media screen and (max-width: 1000px) {
+  .sec-ppv{
+    width: 80%;
+  }
+  .top-prod{
+    flex-wrap: wrap;
+  }
+  .prod{
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 780px) {
+.slider{
+  height: 550px;
+}
+}
+@media screen and (max-width: 420px) {
+  .slider{
+    height: 580px;
+    margin-top: 5%;
+  padding-left: 4.5%;
+  }
+}
+
 
 
