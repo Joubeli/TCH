@@ -23,10 +23,22 @@
 .cartes {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   /* background-color: aqua; */
 }
 .carte {
   height: 100%;
+  margin-top: 2%;
+}
+.carte-ind-simple{
+  height: 150px;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 350px;
+  border-radius: 5px;
+  transition: transform 800ms;
+  display: flex;
 }
 .carte-ind {
   background-color: white;
@@ -83,6 +95,11 @@
 .last-carte-linkedin {
   margin-right: 90%;
   margin-top: -5%;
+}
+.icons{
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
 }
 @media screen and (max-width: 1268px){   
   .sec-quisommesnous {
