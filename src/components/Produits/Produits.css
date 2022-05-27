@@ -78,7 +78,8 @@
 .prod:hover .prodHovered{
   display: block; 
 }
-.prod-part{
+@media screen and (max-width: 1260px) {
+  
 }
 @media screen and (max-width: 380px) {
   .slider{
@@ -88,4 +89,5 @@
 
   }
 }
+
 
