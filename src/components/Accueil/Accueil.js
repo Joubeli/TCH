@@ -2,6 +2,7 @@ import React from "react";
 import "../../App.css";
 import "./Accueil.css";
 import ph4 from "../../images/Accueil/ph4.jpg";
+import ph5 from "../../images/Accueil/ph5.jpg";
 
 const Accueil = () => {
   return (
@@ -22,8 +23,11 @@ const Accueil = () => {
           technico-commerciales.
         </h5>
       </div>
-      <div className="photo">
-        <img className="photo-accueil" src={ph4} />
+      <div className="photos">
+        <div className="photo4">
+          <img className="photo-accueil4" src={ph4} />
+        </div>
+          <img className="photo-accueil5" src={ph5} />
       </div>
     </section>
   );
