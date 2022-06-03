@@ -13,7 +13,7 @@ const Footer = () => {
           Accueil
         </a>{" "}
         |
-        <a className="link" href="#a_propos">
+        <a className="link" href="#Apropos">
           {" "}
           A propos
         </a>{" "}
@@ -39,7 +39,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="copy">
-        Copyright © 2022 <a href="#a_propos"> TCH Industries</a> • Entreprise
+        Copyright © 2022 <a href="#Apropos"> TCH Industries</a> • Entreprise
         Tunisienne Privée Créée en 2013{" "}
       </div>
       <div className="socials">

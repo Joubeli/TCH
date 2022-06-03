@@ -19,8 +19,6 @@ const Contact = () => {
   let [email, setEmail] = useState('')
   let [subject, setSubject] = useState('')
   let [message, setMessage] = useState('')
-  
-  
 
   const form = useRef();
 
@@ -38,9 +36,7 @@ const Contact = () => {
       setEmail("");
       setSubject("");
       setMessage("");
-  };
-  
-  
+  }; 
 
   return (
     <section className="sec-contact" id="contact">

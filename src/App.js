@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import A_propos from "./components/A_propos/A_propos";
+import Apropos from "./components/Apropos/Apropos";
 import Produits from "./components/Produits/Produits";
 import QuiSommesNous from "./components/QuiSommesNous/QuiSommesNous";
 import Partenaires from "./components/Partenaires/Partenaires";
@@ -13,6 +13,8 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import PPV from "./components/Produits/PPV";
 function App() {
   const [activeClass, setActiveClass] = useState("accueil");
+  const [sidebar, setSidebar] = useState(false)
+  const showSidebar = () => setSidebar(!sidebar)
   return (
     <div className="App">
       <div className="topbar">
@@ -21,27 +23,14 @@ function App() {
             <img src={logo2} alt="logo" className="logo-pic" />
           </a>
         </div>
-        <nav>
-          <input type="checkbox" id="check" />
-          <label for="check">
-            <FontAwesomeIcon
-              icon={faBars}
-              className="fa-2x resizable-btn"
-              id="burger-btn"
-            />
-            <FontAwesomeIcon
-              icon={faXmark}
-              className="fa-2x resizable-btn"
-              id="cancel-btn"
-            />
-          </label>
-          <div className="links">
+        <nav>                    
+          <div className="links">            
             <a
               onClick={() => {
                 setActiveClass("accueil");
               }}
               className={
-                activeClass == "accueil"
+                activeClass === "accueil"
                   ? "active_link_menu topbar_link"
                   : "topbar_link"
               }
@@ -54,11 +43,11 @@ function App() {
                 setActiveClass("apropos");
               }}
               className={
-                activeClass == "apropos"
+                activeClass === "apropos"
                   ? "active_link_menu topbar_link"
                   : "topbar_link"
               }
-              href="#a_propos"
+              href="#Apropos"
             >
               A propos
             </a>
@@ -67,7 +56,7 @@ function App() {
                 setActiveClass("produits");
               }}
               className={
-                activeClass == "produits"
+                activeClass === "produits"
                   ? "active_link_menu topbar_link"
                   : "topbar_link"
               }
@@ -81,7 +70,7 @@ function App() {
                 setActiveClass("quisommesnous");
               }}
               className={
-                activeClass == "quisommesnous"
+                activeClass === "quisommesnous"
                   ? "active_link_menu topbar_link"
                   : "topbar_link"
               }
@@ -94,7 +83,7 @@ function App() {
                 setActiveClass("partenaires");
               }}
               className={
-                activeClass == "partenaires"
+                activeClass === "partenaires"
                   ? "active_link_menu topbar_link"
                   : "topbar_link"
               }
@@ -107,7 +96,7 @@ function App() {
                 setActiveClass("contact");
               }}
               className={
-                activeClass == "contact"
+                activeClass === "contact"
                   ? "active_link_menu topbar_link"
                   : "topbar_link"
               }
@@ -117,16 +106,124 @@ function App() {
             </a>
           </div>
         </nav>
-      </div>
-
+        <div className="nav-sidebar">
+          <div className="navbar">
+            <FontAwesomeIcon
+              icon={faBars}
+              onClick={showSidebar}
+              className='faBars'
+            />
+          </div>
+          <div className={sidebar ? 'sidebar-menu active' : 'sidebar-menu'}>
+            <ul className='sidebar-menu-items' onClick={showSidebar}>
+              <li>
+                <FontAwesomeIcon
+                icon={faXmark}
+                className='faXmark'
+                />
+              </li>
+              <li>
+                <a
+                  onClick={() => {
+                    setActiveClass("accueil");
+                  }}
+                  className={
+                    activeClass === "accueil"
+                      ? "active-sidebar-menu-item sidebar-menu-item"
+                      : "sidebar-menu-item"
+                  }
+                  href="#accueil"
+                >
+                  Accueil
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={() => {
+                    setActiveClass("apropos");
+                  }}
+                  className={
+                    activeClass === "apropos"
+                      ? "active-sidebar-menu-item sidebar-menu-item"
+                      : "sidebar-menu-item"
+                  }
+                  href="#Apropos"
+                >
+                  A propos
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={() => {
+                    setActiveClass("produits");
+                  }}
+                  className={
+                    activeClass === "produits"
+                      ? "active-sidebar-menu-item sidebar-menu-item"
+                      : "sidebar-menu-item"
+                  }
+                  href="#produits"
+                >
+                  Produits
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={() => {
+                    setActiveClass("quisommesnous");
+                  }}
+                  className={
+                    activeClass === "quisommesnous"
+                      ? "active-sidebar-menu-item sidebar-menu-item"
+                      : "sidebar-menu-item"
+                  }
+                  href="#quisommesnous"
+                >
+                  Qui Sommes Nous
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={() => {
+                    setActiveClass("partenaires");
+                  }}
+                  className={
+                    activeClass === "partenaires"
+                      ? "active-sidebar-menu-item sidebar-menu-item"
+                      : "sidebar-menu-item"
+                  }
+                  href="#partenaires"
+                >
+                  Partenaires
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={() => {
+                    setActiveClass("contact");
+                  }}
+                  className={
+                    activeClass === "contact"
+                      ? "active-sidebar-menu-item sidebar-menu-item"
+                      : "sidebar-menu-item"
+                  }
+                  href="#contact"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>   
        <div id="accueil">
         <Accueil />
       </div>
       <div>
         <PPV/>
       </div>
-      <div id="a_propos">
-        <A_propos />
+      <div id="Apropos">
+        <Apropos />
       </div>
       <div id="produits">
         <Produits />

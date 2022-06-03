@@ -24,11 +24,11 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  /* background-color: aqua; */
 }
 .carte {
   height: 100%;
   margin-top: 2%;
+  margin-left: 2%;
 }
 .carte-ind-simple{
   height: 150px;

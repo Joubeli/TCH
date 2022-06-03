@@ -1,19 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "../../App.css";
 import "aos/dist/aos.css";
 import Aos from "aos";
-import "./A_propos.css";
+import "./Apropos.css";
 
-const A_propos = () => {
+const Apropos = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
-  const[activeClass, setActiveClass] = useState(false)
-  const toggleActiveClass = () => {
-    setActiveClass(activeClass => !activeClass)
-  }
+  
   return (
-    <section className="sec-apropos" id="a_propos">
+    <section className="sec-apropos" id="Apropos">
       <h2 data-aos="fade-up" className="section-title">
         A propos
       </h2>
@@ -28,7 +25,7 @@ const A_propos = () => {
             injection plastique, automobile et aérospatiales.
           </p>
         </article>
-        <article data-aos="fade-up" className={activeClass ? 'art active' : 'art'}>
+        <article data-aos="fade-up" className="art">
           <div className='content'>
             <h6 className="sub-title">Nos Valeurs</h6>  
             <p className="desc-apropos">
@@ -48,7 +45,7 @@ const A_propos = () => {
               </p>
             </div>
         </article>
-        <article data-aos="fade-up" className={activeClass ? 'art active' : 'art'}>
+        <article data-aos="fade-up" className="art">
           <div className='content'>
             <h6 className="sub-title">Notre équipe</h6>
             <p className="desc-apropos">
@@ -68,4 +65,4 @@ const A_propos = () => {
   );
 };
 
-export default A_propos;
+export default Apropos;

@@ -14,34 +14,33 @@ const EmployeeIMG = ({ staff }) => {
 
   return (    
     <div className="carte" data-aos="zoom-in">
-            <div className="carte-ind-simple">
-                <div className="description">
-                    <div className="carte-top">
-                        <h6 className="carte-title">{staff.name}</h6>
-                        <p className="carte-sub-title ">{staff.post}</p>
-                    </div>
-                    <div className="carte-bottom">
-                        <hr className="line" />
-                        <div className='icons'>
-                            
-                            <a
-                                rel="noopener noreferrer"
-                                href={`mailto:` + staff.email}
-                                target="_blank"
-                            >
-                                <img
-                                className="email-link"
-                                src={email_icon}
-                                width="23px"
-                                height="23px"
-                                alt="email"
-                                />
-                            </a>
-                        </div>
+        <div className="carte-ind-simple">
+            <div className="description">
+                <div className="carte-top">
+                    <h6 className="carte-title">{staff.name}</h6>
+                    <p className="carte-sub-title ">{staff.post}</p>
+                </div>
+                <div className="carte-bottom">
+                    <hr className="line" />
+                    <div className='icons'>                        
+                        <a
+                            rel="noopener noreferrer"
+                            href={`mailto:` + staff.email}
+                            target="_blank"
+                        >
+                            <img
+                            className="email-link"
+                            src={email_icon}
+                            width="23px"
+                            height="23px"
+                            alt="email"
+                            />
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
+    </div>    
   )
 }
 
