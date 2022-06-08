@@ -12,53 +12,6 @@
   margin-bottom: -1%;
   margin-top: 1%;
 }
-.partners-row {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 4%;
-  height: 20%;
-}
-.partners {
-  transition: transform 500ms;
-}
-.artos {
-  margin-top: 8%;
-}
-.techS {
-  padding: 2%;
-  background-color: black;
-  margin-top: 6%;
-}
-.sumake {
-  padding-top: 5%;
-}
-.kortho {
-  padding: 3%;
-  background-color: #302070;
-}
-.aos {
-  padding-top: 5%;
-}
-.hk {
-  padding: 5%;
-  margin-top: 4%;
-  background-color: #00245d;
-}
-.grayscale {
-  filter: grayscale(100%);
-}
-.partners:hover {
-  transform: translateY(-10px);
-  cursor: pointer;
-}
-.partners:hover .grayscale {
-  filter: grayscale(0%);
-}
 .Partner-Slider-container{
   margin: 40px 0 20px 0;
-}
-.item-slide{
-  /* margin-left: 20px; */
 }

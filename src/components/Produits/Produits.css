@@ -50,6 +50,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 2%;
+  flex-wrap: wrap;
 }
 .sec-ppv{
   width: 75%;
@@ -62,6 +63,10 @@
   height: 180px;
   width: 180px;
   overflow: hidden;
+  margin-left: 1%;
+  margin-top: 2%;  
+  transition: transform 800ms;
+  border-radius: 5px;
 }
 .prodHovered {
   display:none;
@@ -75,19 +80,47 @@
   padding-top: 38%;
 
 }
+.prod:hover{
+  transform: translateY(-10px);
+}
 .prod:hover .prodHovered{
   display: block; 
 }
 @media screen and (max-width: 1260px) {
-  
-}
-@media screen and (max-width: 380px) {
-  .slider{
-    height: 450px;
-    margin-top: 5%;
-  padding-left: 4.5%;
-
+  .sec-ppv{
+    width: 95%;
   }
 }
+@media screen and (max-width: 1000px) {
+  .sec-ppv{
+    width: 80%;
+  }
+  .top-prod{
+    flex-wrap: wrap;
+  }
+  .prod{
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 780px) {
+.slider {
+  height: 550px;
+}
+}
+@media screen and (max-width: 550px) {
+  .slider{
+    height: 580px;
+    margin-top: 5%;
+    padding-left: 4.5%;
+  }
+  .top-prod{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .prod{
+    margin-top: 10%;
+  }
+}
+
 
 

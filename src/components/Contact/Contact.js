@@ -19,8 +19,6 @@ const Contact = () => {
   let [email, setEmail] = useState('')
   let [subject, setSubject] = useState('')
   let [message, setMessage] = useState('')
-  
-  
 
   const form = useRef();
 
@@ -38,9 +36,7 @@ const Contact = () => {
       setEmail("");
       setSubject("");
       setMessage("");
-  };
-  
-  
+  }; 
 
   return (
     <section className="sec-contact" id="contact">
@@ -65,8 +61,8 @@ const Contact = () => {
                 <h6 className="subtitle">Adresse : </h6>
                 <p className="desc-sub country">Tunisie</p>
                 <p className="desc-para">
-                  Rue de parc
-                  <br /> La Soukra 2036
+                  Rue de parc <br/>
+                  La Soukra 2036
                 </p>
               </div>
             </div>
@@ -80,7 +76,7 @@ const Contact = () => {
               />
               <div className="desc">
                 <h6 className="subtitle">Email : </h6>
-                <p className="desc-para">info@tchindustries.com</p>
+                <p className="desc-para">info@tch-industries.com</p>
               </div>
             </div>
             <div className="sub-sec">

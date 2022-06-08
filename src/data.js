@@ -98,21 +98,6 @@ export const Products = [
     conciseDesc: `Les armoires à portes battantes LISTA permettent un rangement sûr et propre des marchandises les plus diverses. Les accessoires d'armoires et le matériel de subdivision...`,
     fullDesc: `Les armoires à portes battantes LISTA permettent un rangement sûr et propre des marchandises les plus diverses. Les accessoires d'armoires et le matériel de subdivision permettent de personnaliser la configuration de toutes les armoires et de les adapter en fonction de vos besoins.`
   },{
-    image: img11,
-    titre: `ELATECH® SYNCRO MAX®`,
-    conciseDesc: `Les courroies en polyuréthane extra-larges étendent les avantages des courroies de distribution synchrones à des surfaces plus larges et aux applications typiques des bandes transporteuses plates et modulaires.`,
-    fullDesc: `Les courroies en polyuréthane extra-larges étendent les avantages des courroies de distribution synchrones à des surfaces plus larges et aux applications typiques des bandes transporteuses plates et modulaires.Fabriquées en polyuréthane et renforcées avec de l'aramide, les courroies extra-larges ELATECH® SYNCRO MAX® offrent un entraînement positif et un transport synchrone, ce qui se traduit par un glissement nul, un meilleur suivi, une précision d'indexation/positionnement plus élevée, des exigences de poulie d'entraînement plus petites, une tension de courroie inférieure, des charges d'arbre inférieures et donc économie d'énergie.`
-  },{
-    image: img12,
-    titre: `ELA-flex SD®`,
-    conciseDesc: `Les courroies de distribution sont fabriquées avec des câbles de tension en acier à haute résistance véritablement sans fin et en polyuréthane résistant à l'usure, à l'abrasion et aux déchirures. N'ayant ni épissure ni soudure...`,
-    fullDesc: `Les courroies de distribution sont fabriquées avec des câbles de tension en acier à haute résistance véritablement sans fin et en polyuréthane résistant à l'usure, à l'abrasion et aux déchirures. N'ayant ni épissure ni soudure, les courroies n'ont pas de sections transversales faibles. Les courroies dentées ELA-flex SD® sont donc idéales pour la transmission de puissance à grande vitesse et les applications de transport de charges élevées. Le processus de fabrication unique de haute technologie conçu par notre recherche et développement permet la production de toutes les longueurs de courroie, dent par dent d'un minimum de 800 mm à un maximum de 24.000 mm pour permettre la meilleure flexibilité d'application.`
-  },{
-    image: img13,
-    titre: `ELATECH®`,
-    conciseDesc: `Grâce à des machines et des techniques de pointe telles que la découpe au jet d'eau, les courroies dentées ELATECH® peuvent être traitées mécaniquement pour effectuer des tâches spéciales et complexes.`,
-    fullDesc: `Grâce à des machines et des techniques de pointe telles que la découpe au jet d'eau, les courroies dentées ELATECH® peuvent être traitées mécaniquement pour effectuer des tâches spéciales et complexes. Les opérations d'usinage et de finition extrêmement précises garantissent le respect des exigences de tolérance les plus strictes et la fiabilité maximale des courroies dentées ELATECH® dans toutes les applications industrielles les plus complexes et les plus exigeantes.`
-  },{
     image: img14,
     titre: ` Jauge d'épaisseur intelligente`,
     conciseDesc: `• Grand écran numérique
