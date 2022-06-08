@@ -116,27 +116,30 @@ function App() {
           </div>
           <div className={sidebar ? 'sidebar-menu active' : 'sidebar-menu'}>
             <ul className='sidebar-menu-items' onClick={showSidebar}>
-              <li>
-                <FontAwesomeIcon
-                icon={faXmark}
-                className='faXmark'
-                />
-              </li>
-              <li>
-                <a
-                  onClick={() => {
-                    setActiveClass("accueil");
-                  }}
-                  className={
-                    activeClass === "accueil"
-                      ? "active-sidebar-menu-item sidebar-menu-item"
-                      : "sidebar-menu-item"
-                  }
-                  href="#accueil"
-                >
-                  Accueil
-                </a>
-              </li>
+              <div>
+                <li>
+                  <FontAwesomeIcon
+                  icon={faXmark}
+                  className='faXmark'
+                  />
+                </li>
+              </div>
+              <div className="menu-items">
+                <li>
+                  <a
+                    onClick={() => {
+                      setActiveClass("accueil");
+                    }}
+                    className={
+                      activeClass === "accueil"
+                        ? "active-sidebar-menu-item sidebar-menu-item"
+                        : "sidebar-menu-item"
+                    }
+                    href="#accueil"
+                  >
+                    Accueil
+                  </a>
+                </li>
               <li>
                 <a
                   onClick={() => {
@@ -174,8 +177,8 @@ function App() {
                   }}
                   className={
                     activeClass === "quisommesnous"
-                      ? "active-sidebar-menu-item sidebar-menu-item"
-                      : "sidebar-menu-item"
+                      ? "active-sidebar-menu-item sidebar-menu-item quiSommesNous"
+                      : "sidebar-menu-item quiSommesNous"
                   }
                   href="#quisommesnous"
                 >
@@ -189,8 +192,8 @@ function App() {
                   }}
                   className={
                     activeClass === "partenaires"
-                      ? "active-sidebar-menu-item sidebar-menu-item"
-                      : "sidebar-menu-item"
+                      ? "active-sidebar-menu-item sidebar-menu-item partenaires"
+                      : "sidebar-menu-item partenaires"
                   }
                   href="#partenaires"
                 >
@@ -204,14 +207,15 @@ function App() {
                   }}
                   className={
                     activeClass === "contact"
-                      ? "active-sidebar-menu-item sidebar-menu-item"
-                      : "sidebar-menu-item"
+                      ? "active-sidebar-menu-item sidebar-menu-item contact"
+                      : "sidebar-menu-item contact"
                   }
                   href="#contact"
                 >
                   Contact
                 </a>
               </li>
+              </div>
             </ul>
           </div>
         </div>

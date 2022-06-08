@@ -3,16 +3,18 @@ import "../../App.css";
 import "./Accueil.css";
 import ph4 from "../../images/Accueil/ph4.jpg";
 import ph5 from "../../images/Accueil/ph5.jpg";
+import logo from "../../images/Accueil/logo.png";
 
 const Accueil = () => {
   return (
     <section className="sec-accueil" id="accueil">
       <div className="titles">
+        {/* <img height="300px" src={logo} /> */}
         <h1 className="accueil-title">
           Nous Sommes Une Entreprise Tunisienne Privée
         </h1>
         <h5 className="accueil-subtitle">
-          TCH INDUSTRIES, société de commerce international, totalement
+          Est une société de commerce international, totalement
           exportatrice opérant depuis 2013, dans le domaine de l’équipement,
           l’outillage, la fourniture industrielle.
           <br />

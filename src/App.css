@@ -35,7 +35,7 @@ h2::after {
   font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
   padding-bottom: 2%;
   position: relative;
   color: #00538B;
@@ -148,6 +148,7 @@ nav {
 }
 .topbar_link:hover::after,
 .active_link_menu::after {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   width: 100%;
   background-color: #00538B;
 }
@@ -196,44 +197,104 @@ nav {
   .sidebar-menu{
     height: 100vh;
     width: 50%;
-    background-color: #000;
+    background-color: rgba(255, 255, 255, 0.99);
     position: absolute;
     top: 0;
     right: -100%;
-    opacity: 0.95;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    opacity: 0.98;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.5s ease;  
   }
   .active{
     right: 0;
   }
   .sidebar-menu-items{ 
-    height: 100%;
-    color: white;  
-    font-size: 1.5rem;
     display: flex;
+    height: 100%;
     flex-direction: column;
     justify-content: space-around;
   }
   .sidebar-menu-items li:hover{ 
     cursor: pointer;
   }
-  .faXmark{
-    margin-left: 66%;
-    font-size: 47px;
+  .menu-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-family: 'Jost', sans-serif;
+    color: #00538B;  
+    height: 90vh;
   }
-  ul li a{
-    margin-top: -70%;
-    margin-right: 15%;
+  .faXmark{
+    margin-left: 62%;
+    margin-top: 4%;
+    font-size: 52px;
+    color: #00538B;  
+  }
+  .sidebar-menu-item{
+    font-size: 1.8rem;
+  }  
+  .sidebar-menu-item::after{
+    content: "";
+    position: absolute;
+    bottom: 100;
+    left: 0%;
+    width: 0%;
+    background-color: #00538B;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 8px;
+    height: 10%;
+    z-index: -5;
+    margin-top: -2%;
+    transition: 0.7s ease;
+  }
+  .menu-items li:hover .sidebar-menu-item::after{
+    width: 100%;
+  }
+  .sidebar-menu-item:hover,
+  .menu-items li:hover{
+    color: white;
   }
 }
+@media screen and (max-width: 880px) {
+  .faXmark{
+    margin-left: 56%;
+    margin-top: 4%;
+  }
+}
+
 @media screen and (max-width: 750px) {
+  .faXmark{
+    margin-left: 48%;
+    margin-top: 5%;
+  }
   .logo{
     width: 50%;
+  }
+  .sidebar-menu-item{
+    margin-right: 15%;
+    font-size: 1.6rem;
+  }
+  .sidebar-menu-item::after {
+    margin-top: -4%;
+
   }
   .section-title {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 600px) {
+  .sidebar-menu-item{
+    font-size: 1.4rem;
+  }
+  .faXmark{
+    margin-left: 38%;
+    margin-top: 6%;
+    font-size: 52px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .logo{
     width: 50%;
@@ -245,6 +306,16 @@ nav {
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .sidebar-menu-item{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .faXmark{
+    margin-left: 28%;
+    margin-top: 6%;
+  }
+}
 @media screen and (max-width: 450px) {
   .logo{
     width: 60%;
@@ -254,6 +325,7 @@ nav {
     margin-top: 10%;
   }
 }
+
 @media screen and (max-width: 350px) {
   .logo{
     width: 68%;
@@ -263,5 +335,16 @@ nav {
   }
   .section-title {
     font-size: 1.3rem;
+  }
+  .quiSommesNous::after{
+    margin-top: -20%;
+  }
+  .sidebar-menu-item{
+    /* margin-right: 5%; */
+    font-size: 1.1rem;
+  }
+  .menu-items{
+    margin-right: 25%;
+
   }
 }

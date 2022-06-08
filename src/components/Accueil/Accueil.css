@@ -12,6 +12,10 @@
   display: flex;
   justify-content: space-between;
 }
+.logo-accueil{
+  height: 300px;
+  z-index: 5;
+}
 .titles {
   padding-left:  5%;
 }

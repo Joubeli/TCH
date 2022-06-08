@@ -12,7 +12,6 @@
 .spec_line {
   display: flex;
   flex-direction: column;
-  margin-top: 2.5%;
 }
 .qsn_subtitles {
   color: #6b6b6b;
@@ -50,7 +49,8 @@
   transition: transform 800ms;
   display: flex;
 }
-.carte-ind:hover {
+.carte-ind:hover,
+.carte-ind-simple:hover{
   transform: translateY(-10px);
 }
 .carte-title {
@@ -73,7 +73,7 @@
 }
 .profil-photo {
   border-radius: 50%;
-  height: 67%;
+  height: 64%;
   filter: grayscale(100%);
   margin-top: 8%;
   margin-left: 2%;
@@ -84,6 +84,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 3%;
+  height: 100%;
 }
 .linkedin-link {
   margin-top: -10%;
@@ -100,6 +101,7 @@
   display: flex;
   width: 40%;
   justify-content: space-between;
+  /* background-color: red; */
 }
 @media screen and (max-width: 1268px){   
   .sec-quisommesnous {
@@ -110,7 +112,6 @@
   padding-left: 6%;
   }
   .carte-ind {
-    background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
       rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     height: 350px;
@@ -173,8 +174,6 @@
     height: 67%;
   }
 }
-@media screen and (max-width: 660px){   
-}
 @media screen and (max-width: 510px){ 
   .cartes{
     flex-direction: column;
@@ -190,9 +189,19 @@
     display: flex;
     flex-direction: column;
   }  
+  .carte-ind-simple {
+    height: 220px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+  }  
   .profil-photo {
     border-radius: 50%;
-    height: 45%;
+    height: auto;
     width: 80%;
+  }
+  .email-link{
+    margin-bottom: 37%;
+    /* background-color: red; */
   }
 }

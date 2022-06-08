@@ -3,7 +3,6 @@ import "./QuiSommesNous.css";
 import Aos from "aos";
 import "../../App.css";
 import "aos/dist/aos.css";
-import linkedin_icon from "../../images/QuiSommesNous/linkedin_icon.png";
 import email_icon from "../../images/QuiSommesNous/email_icon.png";
 
 const EmployeeIMG = ({ staff }) => {
