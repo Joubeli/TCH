@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./App.css";
+import Navbar from './components/Navbar/Navbar'
 import Apropos from "./components/Apropos/Apropos";
 import Produits from "./components/Produits/Produits";
 import QuiSommesNous from "./components/QuiSommesNous/QuiSommesNous";
@@ -12,9 +13,46 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import PPV from "./components/Produits/PPV";
 function App() {
-  const [activeClass, setActiveClass] = useState("accueil");
   const [sidebar, setSidebar] = useState(false)
+  const [activeClass, setActiveClass] = useState("accueil");
   const showSidebar = () => setSidebar(!sidebar)
+  const sectionAccueil = useRef()
+  const sectionApropos = useRef()
+  const sectionProduits = useRef()
+  const sectionQuiSommesNous = useRef()
+  const sectionPartenaires = useRef()
+  const sectionContact = useRef()
+  const navHeader = [
+    {
+      headerTitle: 'Accueil',
+      headerRef: sectionAccueil,
+      headerId: 'accueil'
+    },
+    {
+      headerTitle: 'A propos',
+      headerRef: sectionApropos,
+      headerId: 'Apropos'
+    },
+    {
+      headerTitle: 'Produits',
+      headerRef: sectionProduits,
+      headerId: 'produits'
+    },
+    {
+      headerTitle: 'Qui Sommes Nous',
+      headerRef: sectionQuiSommesNous,
+      headerId: 'quisommesnous'
+    },
+    {
+      headerTitle: 'Partenaires',
+      headerRef: sectionPartenaires,
+      headerId: 'partenaires'
+    },
+    {
+      headerTitle: 'Contact',
+      headerRef: sectionContact,
+      headerId: 'contact'
+    }]
   return (
     <div className="App">
       <div className="topbar">
@@ -23,89 +61,7 @@ function App() {
             <img src={logo2} alt="logo" className="logo-pic" />
           </a>
         </div>
-        <nav>                    
-          <div className="links">            
-            <a
-              onClick={() => {
-                setActiveClass("accueil");
-              }}
-              className={
-                activeClass === "accueil"
-                  ? "active_link_menu topbar_link"
-                  : "topbar_link"
-              }
-              href="#accueil"
-            >
-              Accueil
-            </a>
-            <a
-              onClick={() => {
-                setActiveClass("apropos");
-              }}
-              className={
-                activeClass === "apropos"
-                  ? "active_link_menu topbar_link"
-                  : "topbar_link"
-              }
-              href="#Apropos"
-            >
-              A propos
-            </a>
-            <a
-              onClick={() => {
-                setActiveClass("produits");
-              }}
-              className={
-                activeClass === "produits"
-                  ? "active_link_menu topbar_link"
-                  : "topbar_link"
-              }
-              href="#produits"
-            >
-              Produits
-            </a>
-            
-            <a
-              onClick={() => {
-                setActiveClass("quisommesnous");
-              }}
-              className={
-                activeClass === "quisommesnous"
-                  ? "active_link_menu topbar_link"
-                  : "topbar_link"
-              }
-              href="#quisommesnous"
-            >
-              Qui Sommes Nous
-            </a>
-            <a
-              onClick={() => {
-                setActiveClass("partenaires");
-              }}
-              className={
-                activeClass === "partenaires"
-                  ? "active_link_menu topbar_link"
-                  : "topbar_link"
-              }
-              href="#partenaires"
-            >
-              Partenaires
-            </a>
-            <a
-              onClick={() => {
-                setActiveClass("contact");
-              }}
-              className={
-                activeClass === "contact"
-                  ? "active_link_menu topbar_link"
-                  : "topbar_link"
-              }
-              href="#contact"
-            >
-              Contact
-            </a>
-          </div>
-        </nav>
+        <Navbar navHeader={navHeader}/>
         <div className="nav-sidebar">
           <div className="navbar">
             <FontAwesomeIcon
@@ -220,25 +176,23 @@ function App() {
           </div>
         </div>
       </div>   
-       <div id="accueil">
-        <Accueil />
-      </div>
-      <div>
+       <div id="accueil" ref={sectionAccueil}>
+        <Accueil />      
         <PPV/>
       </div>
-      <div id="Apropos">
+      <div id="Apropos" ref={sectionApropos}>
         <Apropos />
       </div>
-      <div id="produits">
+      <div id="produits" ref={sectionProduits}>
         <Produits />
       </div>
-       <div id="quisommesnous">
+       <div id="quisommesnous" ref={sectionQuiSommesNous}>
         <QuiSommesNous />
       </div>  
-      <div id="partenaires">
+      <div id="partenaires" ref={sectionPartenaires}>
         <Partenaires />
       </div>
-      <div id="contact">
+      <div id="contact" ref={sectionContact}>
         <Contact />
       </div> 
       <Footer />

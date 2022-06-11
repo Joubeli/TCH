@@ -53,7 +53,7 @@
 }
 .sub-sec {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .location_icon {
   margin-left: 8%;
