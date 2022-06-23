@@ -46,62 +46,7 @@
 .slider {
   padding-left: 1.4%;
 }
-.top-prod{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2%;
-  flex-wrap: wrap;
-}
-.sec-ppv{
-  width: 75%;
-  padding-top: 90px;
-  margin: 0 auto;
-}
-.prod{
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  position:relative;
-  height: 180px;
-  width: 180px;
-  overflow: hidden;
-  margin-left: 1%;
-  margin-top: 2%;  
-  transition: transform 800ms;
-  border-radius: 5px;
-}
-.prodHovered {
-  display:none;
-  position: absolute;    
-  height: 180px;
-  width: 180px;
-  background-color: rgba(0 , 0, 0, .85);
-  cursor: pointer;
-  padding-bottom: -100%;
-  top: 0;
-  padding-top: 38%;
 
-}
-.prod:hover{
-  transform: translateY(-10px);
-}
-.prod:hover .prodHovered{
-  display: block; 
-}
-@media screen and (max-width: 1260px) {
-  .sec-ppv{
-    width: 95%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .sec-ppv{
-    width: 80%;
-  }
-  .top-prod{
-    flex-wrap: wrap;
-  }
-  .prod{
-    margin-top: 2%;
-  }
-}
 @media screen and (max-width: 780px) {
 .slider {
   height: 550px;
@@ -112,13 +57,6 @@
     height: 580px;
     margin-top: 5%;
     padding-left: 4.5%;
-  }
-  .top-prod{
-    width: 50%;
-    margin: 0 auto;
-  }
-  .prod{
-    margin-top: 10%;
   }
 }
 

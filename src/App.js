@@ -11,7 +11,6 @@ import Footer from "./components/Footer/Footer";
 import logo2 from "./images/Header/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import PPV from "./components/Produits/PPV";
 function App() {
   const [sidebar, setSidebar] = useState(false)
   const [activeClass, setActiveClass] = useState("accueil");
@@ -178,7 +177,6 @@ function App() {
       </div>   
        <div id="accueil" ref={sectionAccueil}>
         <Accueil />      
-        <PPV/>
       </div>
       <div id="Apropos" ref={sectionApropos}>
         <Apropos />

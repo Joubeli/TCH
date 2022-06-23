@@ -50,7 +50,7 @@ const Navbar = ({navHeader}) => {
   useEffect(() => {
     const handleScroll = (e) => {
       var index = nearestIndex(
-        window.scrollY,
+        window.scrollY - 260,
         navHeader,
         0,
         navHeader.length - 1 
@@ -73,7 +73,6 @@ const Navbar = ({navHeader}) => {
           break;
         default:
           setActiveClass('accueil');
-        
       }
       setActiveIndex(index)
     }
