@@ -1,26 +1,34 @@
 import img1 from "./images/Produits/Hellerman/prod1.jpg";
 import img2 from "./images/Produits/Hellerman/prod2.jpg";
-import img3_1 from "./images/Produits/KCC/prod3-1.jpg";
-import img3_2 from "./images/Produits/KCC/prod3-2.jpg";
-import img3_3 from "./images/Produits/KCC/prod3-3.jpg";
-import img4_1 from "./images/Produits/KCC/prod4-1.jpg";
-import img4_2 from "./images/Produits/KCC/prod4-2.jpg";
-import img5_1 from "./images/Produits/KCC/prod5-1.jpg";
-import img5_2 from "./images/Produits/KCC/prod5-2.jpg";
-import img5_3 from "./images/Produits/KCC/prod5-3.jpg";
-import img7 from "./images/Produits/Kortho/foilprinter.jpg";
-import img8 from "./images/Produits/Kortho/HotPrint.jpg";
-import img9 from "./images/Produits/Lista/Armoire.png";
-import img10 from "./images/Produits/Lista/armoire_a_porte.png";
-import img11 from "./images/Produits/Sitspa/elatech_syncro_max.jpg";
-import img12 from "./images/Produits/Sitspa/ELA-flex-SD.jpg";
-import img13 from "./images/Produits/Sitspa/elatech.jpg";
-import img14 from "./images/Produits/Sylvac/Jauge.jpg";
-import img15 from "./images/Produits/Sylvac/Digital_display.png";
-import img16 from "./images/Produits/Sylvac/Jauge de hauteur.png";
-import img17 from "./images/Produits/Sylvac/Digital display.png";
-import img18 from "./images/Produits/TB/220P.jpg";
-import img19 from "./images/Produits/TB/120CE STATIC.jpg";
+import img3_1 from "./images/Produits/KCC/prod3_1.jpg";
+import img3_2 from "./images/Produits/KCC/prod3_2.jpg";
+import img3_3 from "./images/Produits/KCC/prod3_3.jpg";
+import img4_1 from "./images/Produits/KCC/prod4_1.jpg";
+import img4_2 from "./images/Produits/KCC/prod4_2.jpg";
+import img5_1 from "./images/Produits/KCC/prod5_1.jpg";
+import img5_2 from "./images/Produits/KCC/prod5_2.jpg";
+import img5_3 from "./images/Produits/KCC/prod5_3.jpg";
+import img6 from "./images/Produits/Lista/prod6.jpg";
+import img7 from "./images/Produits/Lista/prod7.jpg";
+import img8 from "./images/Produits/Lista/prod8.jpg";
+import img9 from "./images/Produits/Sylvac/prod9.png";
+import img10 from "./images/Produits/Sylvac/prod10.png";
+import img11_1 from "./images/Produits/Sylvac/prod11_1.png";
+import img11_2 from "./images/Produits/Sylvac/prod11_2.png";
+import img12_1 from "./images/Produits/Sylvac/prod12_1.png";
+import img12_2 from "./images/Produits/Sylvac/prod12_2.png";
+import img12_3 from "./images/Produits/Sylvac/prod12_3.png";
+import img13_1 from "./images/Produits/TB/prod13_1.jpg";
+import img13_2 from "./images/Produits/TB/prod13_2.jpg";
+import img14_1 from "./images/Produits/TB/prod14_1.jpg";
+import img14_2 from "./images/Produits/TB/prod14_2.jpg";
+import img15_1 from "./images/Produits/TB/prod15_1.jpg";
+import img15_2 from "./images/Produits/TB/prod15_2.jpg";
+import img16 from "./images/Produits/TB/prod16.jpg";
+import img17 from "./images/Produits/TB/prod17.jpg";
+import img18 from "./images/Produits/Tesa/prod18.png";
+import img19 from "./images/Produits/Tesa/prod19.png";
+import img20 from "./images/Produits/Tesa/prod20.png";
 
 
 import part1 from "./images/Partenaires/HLMT.png";
@@ -62,47 +70,47 @@ export const Products = [
     conciseDesc: `Sa fiabilité, son utilité universelle ainsi qu'un excellent rapport qualité/prix ont permis à la série Pica d'accéder au rang des produits les plus vendus au cours des dernières années.`,
     fullDesc: `Sa fiabilité, son utilité universelle ainsi qu'un excellent rapport qualité/prix ont permis à la série Pica d'accéder au rang des produits les plus vendus au cours des dernières années. Les imprimantes d'étiquettes compactes et très simples à utiliser de la série Pica II vous offrent un rendement maximal et une excellente qualité d'impression. Les imprimantes sont parfaitement adaptées pour les volumes d'impression faibles à moyens et peuvent être utilisées en production, magasins, bureaux et pour l'expédition. Les étiquettes d'adresse et d'expédition dotées de codes barres sont imprimées, tout comme les étiquettes portant des logos ou des graphiques fins, en impression thermique directe ou en impression par transfert thermique.`
   },{
-    image: img3,
+    image: img3_1,
     titre: `Colliers de serrage et systèmes de fixation`,
     conciseDesc: `Colliers de serrage et systèmes de fixation Les colliers de serrage doivent être en mesure de répondre aux exigences les plus variées.`,
     fullDesc: `Colliers de serrage et systèmes de fixation Les colliers de serrage doivent être en mesure de répondre aux exigences les plus variées, d'autant qu'ils sont utilisés dans de multiples opérations, de la simple mise en faisceau de câbles avec des colliers de serrage jusqu'à des utilisations de colliers de serrages plus spécifiques dans des conditions extrêmes.`
   },{
-    image: img4,
+    image: img3_2,
     titre: `Jonctions de câbles en résine coulée`,
     conciseDesc: `Les joints traversants RELICON Premium sont équipés d'un bornier intégré et conçus pour les réseaux électriques basse tension. Ils conviennent au raccordement de câbles polymères ...`,
     fullDesc: `Les joints traversants RELICON Premium sont équipés d'un bornier intégré et conçus pour les réseaux électriques basse tension. Ils conviennent au raccordement de câbles polymères et de fils en PVC, XLPE, PE, EPR et câbles utilitaires. Application : Connexions dans les bâtiments industriels, alimentation électrique dans le sol, à l'extérieur et sous l'eau.`
   },{
-    image: img5,
+    image: img3_3,
     titre: `Mousse Lavante`,
     conciseDesc: `Des savons liquides pour les mains de tous les jours qui améliorent l'hygiène personnelle et prennent soin de votre peau. Idéal pour : les toilettes très fréquentées ; se laver les mains et maintenir une bonne hygiène.`,
     fullDesc: `Des savons liquides pour les mains de tous les jours qui améliorent l'hygiène personnelle et prennent soin de votre peau. Idéal pour : les toilettes très fréquentées ; se laver les mains et maintenir une bonne hygiène; distribuant la quantité idéale de savon pour chaque lavage, évitant la surutilisation ; offrant jusqu'à deux fois plus de lavages par litre que les savons liquides conventionnels ; réduire les coûts d'utilisation quotidienne et réduire les déchets. Disponible en: savon liquide rose au toucher luxueux et au parfum subtil dans des cassettes de 1 litre résistantes et hygiéniquement scellées qui sont rapides et faciles à installer, donnent jusqu'à 1 000 injections de savon, rétrécissent pour économiser de l'espace lorsqu'elles sont vides et sont recyclables (lorsque le la pompe est retirée)`
   },{
-    image: img6,
+    image: img4_1,
     titre: `Essuie Mains`,
     conciseDesc: `Améliorez votre expérience des toilettes avec la marque Kleenex® fiable et familière, conçue pour offrir une expérience inégalée tout en respectant des normes d'hygiène élevées sur le lieu de travail.`,
     fullDesc: `Améliorez votre expérience des toilettes avec la marque Kleenex® fiable et familière, conçue pour offrir une expérience inégalée tout en respectant des normes d'hygiène élevées sur le lieu de travail. Les grands essuie-mains entrecroisés Kleenex® sont les essuie-mains pliés préférés pour un confort comme à la maison et un soin inégalé dans les toilettes exclusives.`
   },{
-    image: img7,
+    image: img4_2,
     titre: `Imprimante à Aluminium`,
     conciseDesc: `La première génération de Kortho Hotprinter est devenue disponible en 1986. Avec plus de 10 000 unités vendues, les Kortho Hotprinters sont des machines hautement développées et extrêmement fiables.`,
     fullDesc: `La première génération de Kortho Hotprinter est devenue disponible en 1986. Avec plus de 10 000 unités vendues, les Kortho Hotprinters sont des machines hautement développées et extrêmement fiables. On trouve encore des machines qui fonctionnent depuis plus de 15 ans dans le monde entier. Enfin, la large gamme de réglages des Kortho Hotprinters permet de produire une impression claire et lisse même sur les surfaces les plus difficiles.`
   },{
-    image: img8,
+    image: img5_1,
     titre: `Imprimante à chaud`,
     conciseDesc: `La première génération de Kortho Hotprinter est devenue disponible en 1986. Avec plus de 10 000 unités vendues, les Kortho Hotprinters sont des machines hautement développées et extrêmement fiables.`,
     fullDesc: `La première génération de Kortho Hotprinter est devenue disponible en 1986. Avec plus de 10 000 unités vendues, les Kortho Hotprinters sont des machines hautement développées et extrêmement fiables. On trouve encore des machines qui fonctionnent depuis plus de 15 ans dans le monde entier. Enfin, la large gamme de réglages des Kortho Hotprinters permet de produire une impression claire et lisse même sur les surfaces les plus difficiles.`
   },{
-    image: img9,
+    image: img5_2,
     titre: `Armoire à tiroirs`,
     conciseDesc: `Les armoires à tiroirs LISTA offrent une solution de stockage stable et protégée de manière optimale pour toutes sortes de moyens de production et de marchandises.`,
     fullDesc: `Les armoires à tiroirs LISTA offrent une solution de stockage stable et protégée de manière optimale pour toutes sortes de moyens de production et de marchandises. En plus de la version fixe, toutes les armoires à tiroirs LISTA existent en version mobile. Cela augmente la mobilité et, en outre, garantit plus de confort et d'espace. En effet, les armoires mobiles permettent de transporter rapidement et de façon sûre les marchandises et se rangent facilement sous les surfaces de travail en cas d'espace restreint.`
   },{
-    image: img10,
+    image: img5_3,
     titre: `Armoire à portes battante`,
     conciseDesc: `Les armoires à portes battantes LISTA permettent un rangement sûr et propre des marchandises les plus diverses. Les accessoires d'armoires et le matériel de subdivision...`,
     fullDesc: `Les armoires à portes battantes LISTA permettent un rangement sûr et propre des marchandises les plus diverses. Les accessoires d'armoires et le matériel de subdivision permettent de personnaliser la configuration de toutes les armoires et de les adapter en fonction de vos besoins.`
   },{
-    image: img14,
+    image: img6,
     titre: ` Jauge d'épaisseur intelligente`,
     conciseDesc: `• Grand écran numérique
                   • Version mm ou pouce disponible
@@ -117,7 +125,7 @@ export const Products = [
                 • Autonomie de la batterie jusqu'à 1 an
                 • Aucun logiciel, pilote ou dongle nécessaire avec HID`
   },{
-    image: img15,
+    image: img7,
     titre: `Digital display D62S`,
     conciseDesc: `Unité d'affichage moderne et compacte,
                   2 entrées de sonde numérique P12D (M8) - aucun appairage requis,
@@ -134,7 +142,7 @@ export const Products = [
                 Sortie de données RS232, USB ou technologie Bluetooth® (modèle Avancée),
                 Programmable par PC`
   },{
-    image: img16,
+    image: img8,
     titre: `Height gauge Hi_Cal V2 Smart`,
     conciseDesc: `Fonctions intuitives, 
                   Grande mobilité, 
@@ -152,7 +160,7 @@ export const Products = [
                 Valeur constante de la sonde mémorisée même lorsqu'elle est éteinte, 
                 Pagaie de déplacement motorisée ergonomique`
   },{
-    image: img17,
+    image: img9,
     titre: `Digital display D70A`,
     conciseDesc: `  Ecran tactile 4’’3, 
                     Compatible avec les jauges de prise et d'air, 
@@ -171,8 +179,9 @@ export const Products = [
                 Aucun pilote, aucun logiciel à installer, 
                 Compatibilité Excel et SPC, 
                 Alimenté par l'ordinateur lorsqu'il est connecté par câble USB`
-  },{
-    image: img18,
+   }
+  ,{
+    image: img10,
     titre: `220P`,
     conciseDesc: `Nylon (polyamide) Une fibre synthétique qui offre une haute résistance à l'abrasion, 
     Ne se déforme pas et sèche rapidement, 
@@ -181,8 +190,174 @@ export const Products = [
     Ne se déforme pas et sèche rapidement, 
     Le sans couture permet un meilleur confort et évite les irritations, 
     Embouts en PVC pour permettre une meilleure adhérence et une protection contre l'abrasion`
-  },{
+  }
+  ,{
+    image: img11_1,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
+    image: img11_2,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
+    image: img12_1,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
+    image: img12_2,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
+    image: img12_3,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
+    image: img13_1,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
+    image: img13_2,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
+    image: img14_1,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
+    image: img14_2,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
+    image: img15_1,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
+    image: img15_2,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
+    image: img16,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
+    image: img17,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
+    image: img18,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
     image: img19,
+    titre: `120CE STATIC`,
+    conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.`,
+    fullDesc: `Gant gris sans couture en polyester et fibre de carbone.
+    Enduction polyuréthane blanche sur la paume.
+    Poignet en tricot.Les fibres de carbone facilitent la dissipation de l'électricité statique causée par le frottement.
+    Paume renforcée en PU pour un toucher longue durée.`
+  }
+  ,{
+    image: img20,
     titre: `120CE STATIC`,
     conciseDesc: `Gant gris sans couture en polyester et fibre de carbone.
     Enduction polyuréthane blanche sur la paume.
