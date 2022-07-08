@@ -53,6 +53,9 @@
 .carte-ind-simple:hover{
   transform: translateY(-10px);
 }
+.carte-ind:hover .profil-photo{
+  filter: grayscale(0%);
+}
 .carte-title {
   color: #37517e;
   font-family: "Open Sans", sans-serif;

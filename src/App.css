@@ -177,6 +177,9 @@ nav {
     display: flex;
     justify-content: space-between;
   }
+  .topbar-menu{
+    display: none;
+  }
   .logo{
     width: 40%;
     margin: auto 0;

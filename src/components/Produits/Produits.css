@@ -31,6 +31,9 @@
   height: 100%;
   margin: auto;
 }
+.card-image:hover{
+  cursor: pointer;
+}
 .card-title {
   color: #459baa;
   font-weight: 400;
@@ -40,17 +43,25 @@
   text-align: left;
   font-size: 1rem;
 }
-.modal-image {
-  width: 100%;
-}
 .slider {
   padding-left: 1.4%;
 }
-
-@media screen and (max-width: 780px) {
-.slider {
-  height: 550px;
+.modal-image{
+  height: 80%;
 }
+.modal-link{
+  color: #459baa;
+  /* text-transform: uppercase; */
+}
+@media screen and (max-width: 1115px) {
+  .slider {
+    height: 550px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .slider {
+    height: 600px;
+  }
 }
 @media screen and (max-width: 550px) {
   .slider{
@@ -59,6 +70,12 @@
     padding-left: 4.5%;
   }
 }
+@media screen and (max-width: 460px) {
+  .slider {
+    height: 600px;
+  }
+}
+
 
 
 
