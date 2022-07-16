@@ -50,7 +50,7 @@ const Navbar = ({navHeader}) => {
   useEffect(() => {
     const handleScroll = (e) => {
       var index = nearestIndex(
-        window.scrollY - 260,
+        window.scrollY - 200,
         navHeader,
         0,
         navHeader.length - 1 

@@ -1,9 +1,12 @@
 import React from "react";
 import "../../App.css";
 import "./Accueil.css";
-import ph4 from "../../images/Accueil/ph4.jpg";
-import ph5 from "../../images/Accueil/ph5.jpg";
-import logo from "../../images/Accueil/logo.png";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import image1 from '../../images/Accueil/1.jpg'
+import image2 from '../../images/Accueil/2.jpg'
+import image3 from '../../images/Accueil/3.jpg'
 import prod1 from '../../images/TopProduits/prod1.png'
 import prod2 from '../../images/TopProduits/prod2.jpg'
 import prod3 from '../../images/TopProduits/prod3.png'
@@ -22,31 +25,43 @@ import part5 from '../../images/TopProduits/part5.png'
 import part6 from '../../images/TopProduits/part6.png'
 
 const Accueil = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    nextArrow: false,
+    prevArrow: false,
+    fade: true,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 2000,
+    cssEase: "linear"
+  };
   return (
     <section className="top-accueil" id="accueil">
       <div className="sec-accueil">
-        <div className="titles">
-          <h1 className="accueil-title">
-            Nous Sommes Une Entreprise Tunisienne Privée
-          </h1>
-          <h5 className="accueil-subtitle">
-            Est une société de commerce international, totalement
-            exportatrice opérant depuis 2013, dans le domaine de l’équipement,
-            l’outillage, la fourniture industrielle.
-            <br />
-            De plus, TCH INDUSTRIES, partenaire exclusif d’item en Tunisie,
-            conçoit et réalise des sous-ensembles industriels modulaires. 
-            <br />
-            Dotée d’un magasin et animée par une équipe d’ingénieurs et techniciens et
-            technico-commerciales.
-          </h5>
-        </div>
-        <div className="photos">
-          <div className="photo4">
-            <img className="photo-accueil4" src={ph4} />
+        <Slider className="slider-acceuil" {...settings}>
+          <div className="container">
+            <div className="center">
+              <img className="image-slider" src={image1} alt='accueil'/>
+              <p className="message-accueil">Un système de câblage automobile / aéronautique. Le coeur de notre activité</p>
+            </div>
           </div>
-            <img className="photo-accueil5" src={ph5} />
-        </div>
+          <div className="container">
+              {/* <h1 className="message-accueil">Un système de câblage automobile / aéronautique. Le coeur de notre activité</h1> */}
+            {/* <div className="center">
+              <img className="image-slider" src={image2} alt='accueil'/>
+            </div> */}
+          </div>
+          <div className="container">
+              {/* <h1 className="message-accueil">Un système de câblage automobile / aéronautique. Le coeur de notre activité</h1> */}
+            {/* <div className="center">
+              <img className="image-slider" src={image3} alt='accueil'/>
+            </div> */}
+          </div>
+        </Slider>        
       </div>
       <div className="sec-ppv">
         <h2 data-aos="fade-up" className="section-title">

@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import "./Produits.css";
 import { Modal } from "react-bootstrap";
-import Image from './Image'
-const Item = ({product}) => {
+
+const Item = ({ product }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => {
-    setShow(true)
-  }    
+    setShow(true);
+  };
   return (
     <div className="card">
-      <div className="image-container" >
+      <div className="image-container">
         <img onClick={handleShow} className="card-image" src={product.image} />
       </div>
       <div className="info-container">
@@ -20,15 +20,24 @@ const Item = ({product}) => {
           Détails
         </button>
         <Modal show={show} onHide={handleClose} animation={false}>
-          <Modal.Header >
+          <Modal.Header>
             <Modal.Title>
               <h3 className="card-title">{product.title}</h3>
             </Modal.Title>
           </Modal.Header>
           <img className="modal-image" src={product.image} />
           <Modal.Body>
-            {product.fullDesc}<br/>
-            <a className="modal-link" target="_blank" href={product.link} rel="noopener noreferrer" >{product.supplier}</a>
+            {product.fullDesc}
+            <br />
+            Visitez{" "}
+            <a
+              className="modal-link"
+              target="_blank"
+              href={product.link}
+              rel="noopener noreferrer"
+            >
+              {product.supplier}
+            </a>
           </Modal.Body>
           <Modal.Footer>
             <button className="button" onClick={handleClose}>
