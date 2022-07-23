@@ -35,9 +35,9 @@ const Accueil = () => {
     prevArrow: false,
     fade: true,
     autoplay: true,
-    speed: 3000,
-    autoplaySpeed: 2000,
-    cssEase: "linear"
+    speed: 6000,
+    autoplaySpeed: 1000,
+    // cssEase: "linear"
   };
   return (
     <section className="top-accueil" id="accueil">
@@ -46,20 +46,20 @@ const Accueil = () => {
           <div className="container">
             <div className="center">
               <img className="image-slider" src={image1} alt='accueil'/>
-              <p className="message-accueil">Un système de câblage automobile / aéronautique. Le coeur de notre activité</p>
+              <h1 className="message-accueil">Un système de câblage automobile et aéronautique est le coeur de notre activité</h1>
             </div>
           </div>
           <div className="container">
-              {/* <h1 className="message-accueil">Un système de câblage automobile / aéronautique. Le coeur de notre activité</h1> */}
-            {/* <div className="center">
+            <div className="center">
+              <h1 className="message-accueil">Nous importons des produits autant que nous exportons, et ce toujours en temps record</h1>
               <img className="image-slider" src={image2} alt='accueil'/>
-            </div> */}
+            </div>
           </div>
           <div className="container">
-              {/* <h1 className="message-accueil">Un système de câblage automobile / aéronautique. Le coeur de notre activité</h1> */}
-            {/* <div className="center">
+            <div className="center">
+              <h1 className="message-accueil" style={{marginLeft:'100px'}}>Un personnels de très haut calibre à votre disposition</h1>
               <img className="image-slider" src={image3} alt='accueil'/>
-            </div> */}
+            </div>
           </div>
         </Slider>        
       </div>

@@ -4,8 +4,6 @@ import img3 from "./images/Produits/KCC/prod3.jpg";
 import img4 from "./images/Produits/KCC/prod4.jpg";
 import img5 from "./images/Produits/KCC/prod5.jpg";
 import img6 from "./images/Produits/Lista/prod6.jpg";
-import img7 from "./images/Produits/Lista/prod7.jpg";
-import img8 from "./images/Produits/Lista/prod8.jpg";
 import img9 from "./images/Produits/Sylvac/prod9.png";
 import img10 from "./images/Produits/Sylvac/prod10.png";
 import img11 from "./images/Produits/Sylvac/prod11.png";
@@ -148,18 +146,6 @@ export const Products = [
   },
   {
     image: img6,
-    title: ` Armoires à tiroirs`,
-    conciseDesc: `Les armoires à tiroirs LISTA offrent une solution de stockage stable 
-    et protégée de manière optimale pour toutes sortes de moyens de 
-    production et de marchandises.`,
-    fullDesc: `Les armoires à tiroirs LISTA offrent une solution de stockage stable 
-    et protégée de manière optimale pour toutes sortes de moyens de 
-    production et de marchandises.`,
-    link: `https://www.lista.com`,
-    supplier: `Lista`,
-  },
-  {
-    image: img8,
     title: ` Armoires à tiroirs`,
     conciseDesc: `Les armoires à tiroirs LISTA offrent une solution de stockage stable 
     et protégée de manière optimale pour toutes sortes de moyens de 
@@ -542,6 +528,12 @@ export const StaffsIMG = [
 ];
 
 export const Staffs = [
+  {
+    name: "Haykel SOMRANI",
+    post: "Responsable des opérations",
+    email: "h.somrani@tch-industries.com"
+
+  },
   {
     name: "Marouen ZAHROUNI",
     post: "Magasinier",
