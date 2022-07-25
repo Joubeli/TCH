@@ -11,7 +11,7 @@ const Item = ({ product }) => {
   return (
     <div className="card">
       <div className="image-container">
-        <img onClick={handleShow} className="card-image" src={product.image} />
+        <img alt="produit" onClick={handleShow} className="card-image" src={product.image} />
       </div>
       <div className="info-container">
         <h3 className="card-title">{product.title}</h3>
@@ -25,7 +25,7 @@ const Item = ({ product }) => {
               <h3 className="card-title">{product.title}</h3>
             </Modal.Title>
           </Modal.Header>
-          <img className="modal-image" src={product.image} />
+          <img alt="produit" className="modal-image" src={product.image} />
           <Modal.Body>
             {product.fullDesc}
             <br />

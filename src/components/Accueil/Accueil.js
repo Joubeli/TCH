@@ -57,7 +57,7 @@ const Accueil = () => {
           </div>
           <div className="container">
             <div className="center">
-              <h1 className="message-accueil" style={{marginLeft:'100px'}}>Un personnels de très haut calibre à votre disposition</h1>
+              <h1 className="message-accueil">Un personnels de très haut calibre à votre disposition</h1>
               <img className="image-slider" src={image3} alt='accueil'/>
             </div>
           </div>
@@ -71,62 +71,62 @@ const Accueil = () => {
             <div className='prod' style={{backgroundColor:'white'}}>
                 <img src={prod1} alt='produit' />
                 <div className='prodHovered' >
-                    <img className='prod-part' src={part1} />
+                    <img className='prod-part' src={part1} alt='partner logo' />
                 </div>
             </div>
             <div className='prod'>
                 <img src={prod2} alt='produit' />
                 <div className='prodHovered' >
-                    <img className='prod-part' src={part2} />
+                    <img className='prod-part' src={part2} alt='partner logo' />
                 </div>
             </div>
             <div className='prod'>
                 <img src={prod3} alt='produit' />
                 <div className='prodHovered' >
-                    <img className='prod-part' src={part6} />
+                    <img className='prod-part' src={part6} alt='partner logo' />
                 </div>
 
             </div>
             <div className='prod'>
                 <img src={prod4} alt='produit' />
                 <div className='prodHovered' >
-                    <img className='prod-part' src={part4} />
+                    <img className='prod-part' src={part4} alt='partner logo' />
                 </div>
             </div>
             <div className='prod'>
                 <img src={prod5} alt='produit' />
                 <div className='prodHovered' >
-                    <img className='prod-part' src={part3} />
+                    <img className='prod-part' src={part3} alt='partner logo' />
                 </div>
             </div>
             <div className='prod' style={{backgroundColor:'white'}}>
                 <img src={prod6} alt='produit' />
                 <div className='prodHovered' >
-                    <img className='prod-part' src={part1} />
+                    <img className='prod-part' src={part1} alt='partner logo' />
                 </div>
             </div>
             <div className='prod' style={{backgroundColor:'#e6e6e6'}}>
                 <img src={prod7} alt='produit' />
                 <div className='prodHovered' >
-                    <img className='prod-part' src={part2} />
+                    <img className='prod-part' src={part2} alt='partner logo' />
                 </div>
             </div>
             <div className='prod' style={{backgroundColor:'#e6e6e6'}}>
                 <img src={prod8} alt='produit' style={{marginTop:'12%'}}  />
                 <div className='prodHovered' >
-                    <img className='prod-part' src={part6} />
+                    <img className='prod-part' src={part6} alt='partner logo' />
                 </div>
             </div>
             <div className='prod' style={{backgroundColor:'white'}}>
                 <img src={prod9} alt='produit' />
                 <div className='prodHovered' >
-                    <img className='prod-part' src={part5} />
+                    <img className='prod-part' src={part5} alt='partner logo' />
                 </div>
             </div>
             <div className='prod'>
                 <img src={prod10} alt='produit' />
                 <div className='prodHovered' >
-                    <img className='prod-part' src={part3} />
+                    <img className='prod-part' src={part3} alt='partner logo' />
                 </div>
             </div>
         </div>

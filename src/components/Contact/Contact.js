@@ -129,7 +129,7 @@ const Contact = () => {
               </Form.Label>
               <Form.Control value={message} onChange={(e)=>setMessage(e.target.value)}  as="textarea" rows={13}  className="input_group" type="text" name='message'/>
             </Form.Group>
-            <button type="submit" className="button form_button" role="button">
+            <button type="submit" className="button form_button">
             Envoyer
             </button>
           </Form> 
