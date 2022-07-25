@@ -45,19 +45,22 @@ const Accueil = () => {
         <Slider className="slider-acceuil" {...settings}>
           <div className="container">
             <div className="center">
+              <div className="bloc-slider"></div>
               <img className="image-slider" src={image1} alt='accueil'/>
-              <h1 className="message-accueil">Un système de câblage automobile et aéronautique est le coeur de notre activité</h1>
+              <h1 className="message-accueil message-1">Un système de câblage automobile et aéronautique est le coeur de notre activité</h1>
             </div>
           </div>
           <div className="container">
             <div className="center">
-              <h1 className="message-accueil">Nous importons des produits autant que nous exportons, et ce toujours en temps record</h1>
+              <div className="bloc-slider"></div>
+              <h1 className="message-accueil message-2">Nous importons des produits autant que nous exportons, et ce toujours en temps record</h1>
               <img className="image-slider" src={image2} alt='accueil'/>
             </div>
           </div>
           <div className="container">
             <div className="center">
-              <h1 className="message-accueil">Un personnels de très haut calibre à votre disposition</h1>
+             <div className="bloc-slider"></div>
+              <h1 className="message-accueil message-3" >Un personnels de très haut calibre à votre disposition</h1>
               <img className="image-slider" src={image3} alt='accueil'/>
             </div>
           </div>

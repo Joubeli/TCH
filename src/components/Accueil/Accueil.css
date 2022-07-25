@@ -28,20 +28,41 @@
   position: absolute;
   z-index: 1;
 }
+.bloc-slider{
+  background: rgba(0 , 0, 0, .50);
+  z-index: 3;
+  position: absolute;
+  left: -120px;
+  width: 550px;
+  top: -280px;
+  height: 572px;
+
+}
 .message-accueil{
   font-family: "Jost", sans-serif;
-  color: #00538B;
-  text-align: center;
+  color: white;
+  text-align: left;
   position: absolute;
-  z-index: 2;
-  font-size: 36px;
+  z-index: 3;
   font-weight: 700;
-  background: rgba(255 , 255, 255, .50);
   height: auto;
   top: -280px;
   padding: 2%;
-  width: auto;
-  left: 20px;
+  width: 550px;
+  left: -120px;
+}
+.message-1{
+  font-size: 68px;
+  line-height: 1.3em;
+}
+.message-2{
+  font-size: 68px;
+  line-height: 1.3em;
+}
+.message-3{
+  line-height: 1.5em;
+  margin-top: 50px;
+  font-size: 72px;
 }
 .sec-ppv{
   width: 75%;
