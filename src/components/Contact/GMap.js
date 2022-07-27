@@ -15,7 +15,7 @@ const GMap = () => {
         latitude: 36.871531286551715,
         zoom: 10,
       }}
-      mapStyle="mapbox://styles/mapbox/outdoors-v11"
+      mapStyle="mapbox://styles/mapbox/streets-v11"
     >
       <Marker
         longitude={10.264813253374376}

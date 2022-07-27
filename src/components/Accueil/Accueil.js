@@ -37,31 +37,36 @@ const Accueil = () => {
     autoplay: true,
     speed: 6000,
     autoplaySpeed: 1000,
-    // cssEase: "linear"
   };
   return (
-    <section className="top-accueil" id="accueil">
-      <div className="sec-accueil">
+    <section className="sec-accueil" id="accueil">
+      <div className="top-accueil">
         <Slider className="slider-acceuil" {...settings}>
           <div className="container">
             <div className="center">
-              <div className="bloc-slider"></div>
-              <img className="image-slider" src={image1} alt='accueil'/>
-              <h1 className="message-accueil message-1">Un système de câblage automobile et aéronautique est le coeur de notre activité</h1>
+              <div className="bloc-image">
+                <div className="bloc-slider"></div>                
+                <img className="image-slider" src={image1} alt='accueil'/>
+              </div>
+              <h1 className="message-accueil message-1">Un système de câblage automobile et aéronautique est le coeur de notre activité.</h1>
             </div>
           </div>
           <div className="container">
             <div className="center">
+            <div className="bloc-image">
               <div className="bloc-slider"></div>
-              <h1 className="message-accueil message-2">Nous importons des produits autant que nous exportons, et ce toujours en temps record</h1>
               <img className="image-slider" src={image2} alt='accueil'/>
             </div>
+              <h1 className="message-accueil message-2">Nous importons des produits autant que nous exportons, et ce toujours en temps record.</h1>
+            </div>
           </div>
           <div className="container">
             <div className="center">
-             <div className="bloc-slider"></div>
-              <h1 className="message-accueil message-3" >Un personnels de très haut calibre à votre disposition</h1>
+            <div className="bloc-image">
+              <div className="bloc-slider"></div>
               <img className="image-slider" src={image3} alt='accueil'/>
+            </div>
+              <h1 className="message-accueil message-3" >Un personnel de très haut calibre à votre disposition.</h1>
             </div>
           </div>
         </Slider>        

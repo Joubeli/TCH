@@ -43,6 +43,7 @@ import staff2 from "./images/QuiSommesNous/ingénieur.jpg";
 import staff3 from "./images/QuiSommesNous/sales.jpg";
 import staff4 from "./images/QuiSommesNous/responsable.jpg";
 import staff5 from "./images/QuiSommesNous/aide-comptable.jpg";
+import staff6 from "./images/QuiSommesNous/res-opérations.jpg";
 
 export const Products = [
   {
@@ -524,16 +525,17 @@ export const StaffsIMG = [
     email: "r.charaabin@tch-industries.com",
     linkedin: "https://www.linkedin.com/in/rimeh-charaabi/",
     image: staff5,
-  },
+  },{
+    name: "Haykel SOMRANI",
+    post: "Responsable des opérations",
+    email: "h.somrani@tch-industries.com",
+    linkedin: "https://www.linkedin.com/in/haykel-somrani-63999a186/",
+    image: staff6,
+  }
 ];
 
 export const Staffs = [
-  {
-    name: "Haykel SOMRANI",
-    post: "Responsable des opérations",
-    email: "h.somrani@tch-industries.com"
-
-  },
+  
   {
     name: "Marouen ZAHROUNI",
     post: "Magasinier",

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  /* width: 90%;
+  margin: 0 auto; */
 }
 a {
   text-decoration: none;
@@ -35,7 +37,6 @@ h2::after {
   font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
-  /* margin-bottom: 5%; */
   padding-bottom: 2%;
   position: relative;
   color: #00538B;
