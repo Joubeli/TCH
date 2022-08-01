@@ -1,8 +1,8 @@
 import React from "react";
 import "../../App.css";
 import "./Accueil.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import image1 from '../../images/Accueil/1.jpg'
 import image2 from '../../images/Accueil/2.jpg'
@@ -23,60 +23,52 @@ import part3 from '../../images/TopProduits/part3.png'
 import part4 from '../../images/TopProduits/part4.png'
 import part5 from '../../images/TopProduits/part5.png'
 import part6 from '../../images/TopProduits/part6.png'
+import Slide from './Slide'
+
 
 const Accueil = () => {
-  var settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    nextArrow: false,
-    prevArrow: false,
-    fade: true,
-    autoplay: true,
-    speed: 6000,
-    autoplaySpeed: 1000,
-  };
+  // var settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   initialSlide: 0,
+  //   nextArrow: false,
+  //   prevArrow: false,
+  //   fade: true,
+  //   autoplay: true,
+  //   speed: 8000,
+  //   autoplaySpeed: 1000,
+  // };
   return (
-    <section className="sec-accueil" id="accueil">
-      <div className="top-accueil">
-        <Slider className="slider-acceuil" {...settings}>
+    <section className="sec-accueil2" id="accueil">
+        {/* <Slider className="slider-acceuil" {...settings}>
           <div className="container">
             <div className="center">
-              <div className="bloc-image">
-                <div className="bloc-slider"></div>                
-                <img className="image-slider" src={image1} alt='accueil'/>
-              </div>
+              <img className="image-slider" src={image1} alt='accueil'/>
               <h1 className="message-accueil message-1">Un système de câblage automobile et aéronautique est le coeur de notre activité.</h1>
             </div>
           </div>
           <div className="container">
             <div className="center">
-            <div className="bloc-image">
-              <div className="bloc-slider"></div>
               <img className="image-slider" src={image2} alt='accueil'/>
-            </div>
               <h1 className="message-accueil message-2">Nous importons des produits autant que nous exportons, et ce toujours en temps record.</h1>
             </div>
           </div>
           <div className="container">
             <div className="center">
-            <div className="bloc-image">
-              <div className="bloc-slider"></div>
               <img className="image-slider" src={image3} alt='accueil'/>
-            </div>
               <h1 className="message-accueil message-3" >Un personnel de très haut calibre à votre disposition.</h1>
             </div>
           </div>
-        </Slider>        
-      </div>
+        </Slider>         */}
+        <Slide/>
       <div className="sec-ppv">
         <h2 data-aos="fade-up" className="section-title">
           Les Produits les plus vendus 
         </h2>
         <div className='top-prod' data-aos="fade-up">
-            <div className='prod' style={{backgroundColor:'white'}}>
+            <div className='prod'>
                 <img src={prod1} alt='produit' />
                 <div className='prodHovered' >
                     <img className='prod-part' src={part1} alt='partner logo' />

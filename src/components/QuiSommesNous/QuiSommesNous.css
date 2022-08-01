@@ -1,7 +1,7 @@
 .sec-quisommesnous {
   display: flex;
   flex-direction: column;
-  padding-top: 90px;
+  padding-top: 8%;
   width: 90%;
   margin: 0 auto;
 }
@@ -104,8 +104,8 @@
   display: flex;
   width: 40%;
   justify-content: space-between;
-  /* background-color: red; */
 }
+
 @media screen and (max-width: 1268px){   
   .sec-quisommesnous {
     width: 65%;
@@ -205,6 +205,5 @@
   }
   .email-link{
     margin-bottom: 37%;
-    /* background-color: red; */
   }
 }

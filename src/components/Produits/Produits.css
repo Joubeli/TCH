@@ -1,6 +1,6 @@
 .sec-produits {
   width: 85%;
-  padding-top: 90px;
+  padding-top: 8%;
   margin: 0 auto;
 }
 .card {
@@ -8,6 +8,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 5px;
   margin: 3%;
+  padding: 3% 2%;
   width: 90%;
   height: 500px;
   display: flex;
@@ -15,25 +16,38 @@
   justify-content: space-between;
 }
 .info-container {
-  padding: 5%;
-  flex-basis: 60%;
+  padding: 10% 5% 5% 5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
 }
-.image-container{
-  flex-basis: 40%;
-  overflow: hidden;
-  border-radius: 5px;
+.container-desc{
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+}
 
+.image-container{
+  overflow: hidden;
+  max-height: 40%;
 }
-.card-image {
-  height: 100%;
-  margin: auto;
+.card-image { 
+  position:absolute;
+  top:50%;
+  left:50%;   
+  cursor:pointer;
+  max-width:100%;
+  max-height:100%;
+  display:table;
 }
-.card-image:hover{
-  cursor: pointer;
-}
+/* .center{
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+} */
 .card-title {
   color: #459baa;
   font-weight: 400;

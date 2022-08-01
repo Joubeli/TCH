@@ -55,6 +55,7 @@ function App() {
   return (
     <div className="App">
       <div className="topbar">
+      <div className="topbar-container">
         <div className="logo">
           <a href="#accueil">
             <img src={logo2} alt="logo" className="logo-pic" />
@@ -173,6 +174,7 @@ function App() {
               </div>
             </ul>
           </div>
+        </div>
         </div>
       </div>   
        <div id="accueil" ref={sectionAccueil}>
