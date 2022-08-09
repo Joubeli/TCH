@@ -1,0 +1,19 @@
+import React from 'react'
+import './Accueil.css'
+
+const Product = ({prod}) => {
+  return (
+    <>
+        <div className='prod'>
+            <img src={prod.image1} alt='produit' />
+            <a href={prod.partLink} rel="noopener noreferrer" target="_blank">
+              <div className='prodHovered' >
+                  <img className='prod-part' src={prod.image2} alt='partner logo' />
+              </div>
+            </a>
+        </div>
+    </>
+  )
+}
+
+export default Product

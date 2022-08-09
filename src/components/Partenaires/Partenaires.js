@@ -20,12 +20,9 @@ import part11 from "../../images/Partenaires/BIMOS.png";
 import part12 from "../../images/Partenaires/TB.jpg";
 import part13 from "../../images/Partenaires/METZNER.png";
 import part14 from "../../images/Partenaires/RAMATECH.svg";
-import part15 from "../../images/Partenaires/OES.svg";
+import part15 from "../../images/Partenaires/OES.png";
 import part16 from "../../images/Partenaires/ARTOS.png";
 import part17 from "../../images/Partenaires/DINO.jpg";
-import part18 from "../../images/Partenaires/FACOM.png";
-import part19 from "../../images/Partenaires/BOSCH.png";
-import part20 from "../../images/Partenaires/MAKITA.png";
 
 const Partenaires = () => {
   useEffect(() => {
@@ -79,7 +76,7 @@ const Partenaires = () => {
         Nos Partenaires
       </h2>
       <p data-aos="fade-up" className="sec-sub-title">
-        Nous Sommes les Représenatnt Officiels de :
+        Nous sommes le représentant officiel de :
       </p>
       <div className="Partner-Slider-container" data-aos="fade-up">
         <Slider {...settings} className="slick-slider">
@@ -179,7 +176,7 @@ const Partenaires = () => {
             <a target="_blank" rel="noopener noreferrer" href="https://www.oes-inc.com/">
               <img
                 width="200px"
-                style={{ paddingTop: "21%" }}
+                style={{ paddingTop: "11%" }}
                 src={part15}
                 alt="logo"
               />
@@ -198,21 +195,6 @@ const Partenaires = () => {
           <div style={{ width: 200 }}>
             <a target="_blank" rel="noopener noreferrer" href="https://www.dino-lite.com/">
               <img style={{ paddingTop: "17%" }} src={part17} alt="logo" />
-            </a>
-          </div>
-          <div style={{ width: 210 }}>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.facom.com/">
-              <img style={{ paddingTop: "20%" }} src={part18} alt="logo" />
-            </a>
-          </div>
-          <div style={{ width: 320 }}>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.bosch.com/">
-              <img src={part19} alt="logo" />
-            </a>
-          </div>
-          <div style={{ width: 150 }}>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.makitatools.com/">
-              <img style={{ paddingTop: "25%" }} src={part20} alt="logo" />
             </a>
           </div>
         </Slider>

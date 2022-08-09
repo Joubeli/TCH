@@ -42,12 +42,14 @@
   max-height:100%;
   display:table;
 }
-/* .center{
-  position: absolute;
+.centered{
+  margin-bottom: 0;
+  position: relative;
   top: 50%;
-  left: 50%; 
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-} */
+} 
 .card-title {
   color: #459baa;
   font-weight: 400;

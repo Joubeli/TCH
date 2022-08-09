@@ -7,16 +7,19 @@
 .slider-acceuil{
   margin-bottom: 5%;
 }
-.image{
+.slide{
+  margin-bottom: 2%;
   width: 100%;
+  max-width: 400%;
   height: auto;
 }
-.container{
+/* .container{
   position: relative;
   border: 3px solid #dbe4ed;
-}
+  background-color: red;
+} */
 .center {
-  margin: 0;
+  margin-bottom: 0;
   position: relative;
   top: 50%;
   left: 50%;
@@ -26,9 +29,11 @@
   justify-content: center;
   align-items: center;
 }
+
 .image-slider{
-  filter: brightness(40%);
+  filter: brightness(50%);
   z-index: -10;
+  /* margin-top: 50%; */
 }
 .message-accueil{
   font-family: "Jost", sans-serif;
@@ -37,28 +42,32 @@
   z-index: 20;
   font-weight: 700;
   height: auto;
-  right: 32%;
 }
 .message-1{
   font-size: 68px;
   line-height: 1.3em;
   width: 750px;
-  margin-top: 100px;
+  margin-top: 10%;
+  right: 30%;
+
 }
 .message-2{
   font-size: 68px;
   line-height: 1.3em;
   width: 850px;
-  margin-top: 100px;
+  margin-top: 10%;
+  right: 30%;
+
 }
 .message-3{
   line-height: 1.5em;
-  margin-top: 50px;
+  margin-top: 9%;
   font-size: 72px;
-  width: 850px;
+  width: 575px;
+  right: 45%;
 }
 .sec-ppv{
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
 }
 .top-prod{
@@ -96,7 +105,9 @@
 .prod:hover .prodHovered{
   display: block; 
 }
+@media screen and (max-width: 1700px) {
 
+}
 @media screen and (max-width: 1260px) {
   .sec-ppv{
     width: 95%;

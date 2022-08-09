@@ -11,7 +11,7 @@ const Item = ({ product }) => {
   return (
     <div className="card">
       <div className="image-container">
-        <img alt="produit" onClick={handleShow} className="card-image center" src={product.image} />
+        <img alt="produit" onClick={handleShow} className="card-image centered" src={product.image} />
       </div>
       <div className="info-container">
         <div className="container-desc">
@@ -39,8 +39,9 @@ const Item = ({ product }) => {
               href={product.link}
               rel="noopener noreferrer"
             >
-              {product.supplier}
+              {product.supplier}{" "}
             </a>
+            pour plus de détails
           </Modal.Body>
           <Modal.Footer>
             <button className="button" onClick={handleClose}>

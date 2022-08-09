@@ -92,7 +92,7 @@ h2::after {
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   background-color: white;
   top: 0;
-  z-index: 2;
+  z-index: 22;
   padding: 0.8% 0;
 }
 .topbar-container{

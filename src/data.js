@@ -1,5 +1,6 @@
 import img1 from "./images/Produits/Hellerman/prod1.jpg";
 import img2 from "./images/Produits/Hellerman/prod2.jpg";
+import img22 from "./images/Produits/Hellerman/prod22.jpg";
 import img3 from "./images/Produits/KCC/prod3.jpg";
 import img4 from "./images/Produits/KCC/prod4.jpg";
 import img5 from "./images/Produits/KCC/prod5.jpg";
@@ -31,12 +32,9 @@ import part11 from "./images/Partenaires/BIMOS.png";
 import part12 from "./images/Partenaires/TB.jpg";
 import part13 from "./images/Partenaires/METZNER.png";
 import part14 from "./images/Partenaires/RAMATECH.svg";
-import part15 from "./images/Partenaires/OES.svg";
+import part15 from "./images/Partenaires/OES.png";
 import part16 from "./images/Partenaires/ARTOS.png";
 import part17 from "./images/Partenaires/DINO.jpg";
-import part18 from "./images/Partenaires/FACOM.png";
-import part19 from "./images/Partenaires/BOSCH.png";
-import part20 from "./images/Partenaires/MAKITA.png";
 
 import staff1 from "./images/QuiSommesNous/founder.jpg";
 import staff2 from "./images/QuiSommesNous/ingénieur.jpg";
@@ -44,6 +42,34 @@ import staff3 from "./images/QuiSommesNous/sales.jpg";
 import staff4 from "./images/QuiSommesNous/responsable.jpg";
 import staff5 from "./images/QuiSommesNous/aide-comptable.jpg";
 import staff6 from "./images/QuiSommesNous/res-opérations.jpg";
+import staff7 from "./images/QuiSommesNous/resp-recouvrement.jpg";
+import staff8 from "./images/QuiSommesNous/resp-stock.jpg";
+import staff9 from "./images/QuiSommesNous/resp-technicoCommercial.jpg"
+import staff10 from "./images/QuiSommesNous/chef-comptable.jpg"
+import staff11 from "./images/QuiSommesNous/supply.jpg"
+import staff12 from "./images/QuiSommesNous/training.jpg"
+import staff13 from "./images/QuiSommesNous/backOffice.jpg"
+
+import prod1 from './images/TopProduits/prod1.png'
+import prod2 from './images/TopProduits/prod2.jpg'
+import prod3 from './images/TopProduits/prod3.png'
+import prod4 from './images/TopProduits/prod4.png'
+import prod5 from './images/TopProduits/prod5.png'
+import prod6 from './images/TopProduits/prod6.png'
+import prod7 from './images/TopProduits/prod7.jpg'
+import prod8 from './images/TopProduits/prod8.png'
+import prod9 from './images/TopProduits/prod9.jpg'
+import prod10 from './images/TopProduits/prod10.jpg'
+import partner1 from './images/TopProduits/part1.png'
+import partner2 from './images/TopProduits/part2.png'
+import partner3 from './images/TopProduits/part3.png'
+import partner4 from './images/TopProduits/part4.png'
+import partner5 from './images/TopProduits/part5.png'
+import partner6 from './images/TopProduits/part6.png'
+
+import accueil1 from './images/Accueil/1.jpg'
+import accueil2 from './images/Accueil/2.jpg'
+import accueil3 from './images/Accueil/3.jpg'
 
 export const Products = [
   {
@@ -58,6 +84,22 @@ export const Products = [
     de faisceaux de câbles et la construction de panneaux de commande.`,
     link: "https://www.hellermanntyton.com/products/application-tooling-for-cable-ties/evo7i/110-77001",
     supplier: "HellermannTyton",
+  },
+  {
+    image: img22,
+    title: `CPK Hybrid`,
+    conciseDesc: `L'autotool CPK hybrid T18RA est un outil automatique de pose pour colliers fonctionnant soit 
+    sur secteur soit sur batterie. Il a été développé pour accélérer le processus de mise en faisceaux 
+    et pour garantir une pose de colliers constante, fiable et efficace.`,
+    fullDesc: `L'autotool CPK hybrid T18RA est un outil automatique de pose pour colliers fonctionnant soit 
+    sur secteur soit sur batterie. Il a été développé pour accélérer le processus de mise en faisceaux 
+    et pour garantir une pose de colliers constante, fiable et efficace. Son ergonomie, sa flexibilité 
+    et sa facilité d'utilisation en font une solution adaptée aux secteurs solaire, de l’automobile, de 
+    l'emballage, des câbliers en général et pour toutes applications de frettage à haute cadence. Le 
+    CPK hybrid dispose d'un écran pour modifier les réglages, à commencer par la langue parmi 
+    les 20 disponibles.`,
+    link: `https://www.hellermanntyton.fr/produits/frettageautomatique/autotool_cpk_hybrid/106-60000`,
+    supplier: `HellermannTyton`,
   },
   {
     image: img2,
@@ -160,41 +202,28 @@ export const Products = [
   {
     image: img9,
     title: `Pied à coulisse`,
-    conciseDesc: `  Ecran tactile 4’’3, 
-                    Compatible avec les jauges de prise et d'air, 
-                    Disponible en 2 versions : 1 ou 2 entrées, 
-                    Entrée pour MB-IO, 
-                    Affichage simple ou double avec bargraphe, aiguille ou sans tolérances.`,
-    fullDesc: `
-   • Transmission de données BLUETOOTH® Smart intégrée.
-   • Nouvel écran extra-large.
-   • Bouton programmable selon vos besoins.
-   • Etanche pour les travaux lourds avec liquides de refroidissement et 
-   lubrifiants, indice de protection IP67 selon IEC 60529.
-   • Réveil automatique en déplaçant l'électronique sur son châssis 
-   (Absolute System SIS).
-   • Mode veille après 20 min. inutile. (Absolute System SIS).
-   • Position mémorisée en mode veille (Absolute System SIS)`,
+    conciseDesc: `  Nos pieds à coulisse à affichage numérique offrent une lecture rapide au micromètre. Ils 
+    permettent d'effectuer des mesures de cotes intérieures (mesures de fond de gorge, de 
+    chanfreins) `,
+    fullDesc: `Nos pieds à coulisse à affichage numérique offrent une lecture rapide au micromètre. Ils 
+    permettent d'effectuer des mesures de cotes intérieures (mesures de fond de gorge, de 
+    chanfreins) et extérieures (épaisseurs, diamètres, cotes variées) sur une large plage de mesure`,
     link: `https://www.sylvac.ch/products/calipers/caliper-s_cal-evo-smart`,
     supplier: `Sylvac`,
   },
   {
     image: img10,
-    title: `Comparateur analogique`,
-    conciseDesc: `Comparateur analogique adaptatif (jusqu'à 0,2 μm par segment)
+    title: `Comparateur numérique`,
+    conciseDesc: `Comparateur numérique adaptatif (jusqu'à 0,2 μm par segment)
     , Version spéciale pour jauges d'alésage cylindrique
     , Introduction de la valeur prédéfinie sur la valeur Min enregistrée
     , Construction robuste`,
-    fullDesc: `Comparateur analogique adaptatif (jusqu'à 0,2 μm par segment)
-   , Version spéciale pour jauges d'alésage cylindrique
-   , Introduction de la valeur prédéfinie sur la valeur Min enregistrée
-   , Mesure rapide du point d'inversion
-   , Construction robuste
-   , Résistant à l'eau et aux liquides de refroidissement
-   , Technologie Bluetooth®
-   , Nouvelle technologie avec menus configurables
-   , Large choix de fonctions, Mode réveil et veille automatique (Absolute System SIS)
-   , Erreur maximale de 3 μm.`,
+    fullDesc: `Comparateur numérique adaptatif (jusqu'à 0,2 μm par segment) , Version spéciale pour jauges 
+    d'alésage cylindrique , Introduction de la valeur prédéfinie sur la valeur Min enregistrée , 
+    Mesure rapide du point d'inversion , Construction robuste , Résistant à l'eau et aux liquides de 
+    refroidissement , Technologie Bluetooth® , Nouvelle technologie avec menus configurables , 
+    Large choix de fonctions, Mode réveil et veille automatique (Absolute System SIS) , Erreur 
+    maximale de 3 μm.`,
     link: `https://www.sylvac.ch/products/digital-indicators/digital-indicator-s_dial-work-cbg`,
     supplier: `Sylvac`,
   },
@@ -474,21 +503,7 @@ export const Partners = [
     width: "200",
     image: part17,
     url: "https://www.dino-lite.com/",
-  },
-  {
-    image: part18,
-    url: "https://www.facom.com/",
-  },
-  {
-    width: "300",
-    image: part19,
-    url: "https://www.bosch.com/",
-  },
-  {
-    width: "100",
-    image: part20,
-    url: "https://www.makitatools.com/",
-  },
+  }
 ];
 export const StaffsIMG = [
   {
@@ -527,38 +542,122 @@ export const StaffsIMG = [
     image: staff5,
   },{
     name: "Haykel SOMRANI",
-    post: "Responsable des opérations",
+    post: "Resp. des opérations",
     email: "h.somrani@tch-industries.com",
     linkedin: "https://www.linkedin.com/in/haykel-somrani-63999a186/",
     image: staff6,
-  }
-];
-
-export const Staffs = [
-  
-  {
-    name: "Marouen ZAHROUNI",
-    post: "Magasinier",
-    email: "magasin@tch-industries.com",
-  },
-  {
-    name: "Khouloud KHALFAOUI",
-    post: "Resp. Achat / Logistique ",
-    email: "k.khalfaoui@tch-industries.com",
-  },
-  {
-    name: "Aroua BEN OTHMAN",
-    post: "Administration des ventes",
-    email: "a.benothman@tch-industries.com",
-  },
-  {
+  },{
     name: "Jihen BEN MAHMOUD",
     post: "Resp. Recouvrement",
     email: "j.benmahmoud@tch-industries.com",
+    linkedin: "https://www.linkedin.com/in/jihen-ben-mahmoud-92140b247/",
+    image: staff7,
+  },{
+    name: "Marouen ZAHROUNI",
+    post: "Resp. Stock",
+    email: "magasin@tch-industries.com",
+    linkedin: "https://www.linkedin.com/in/zahrouni-marwen-b6b675219/",
+    image: staff8,
+  },{
+    name: "Ahmed BARHOUMI",
+    post: "Représentant technico-commercial",
+    email: "a.barhoumi@tch-industries.com",
+    linkedin: "https://www.linkedin.com/in/barhoumi-ahmed-3b38b0237/",
+    image: staff9,
   },
   {
     name: "Marwa BEN SLIMEN",
     post: "Chef Comptable",
     email: "m.benslimen@tch-industries.com",
+    linkedin: "https://www.linkedin.com/in/marwa-benslimen-3bab08206/",
+    image: staff10,
+  },{
+    name: "Khouloud KHALFAOUI",
+    post: "Resp. Achat / Logistique ",
+    email: "k.khalfaoui@tch-industries.com",
+    linkedin: "https://www.linkedin.com/in/khouloud-khalfaoui-563a248b/",
+    image: staff11,
+  },{
+    name: "Manel BEN AMARA",
+    post: "Resp. Formation",
+    email: "m.benamara@tch-industries.com",
+    linkedin: "https://www.linkedin.com/in/manel-ben-amara-22425a215/",
+    image: staff12,
+  },{
+    name: "Chedly BEN MAHMOUD",
+    post: "Gestionnaire Back Office ",
+    email: "c.benmahmoud@tch-industries.com",
+    linkedin: "https://www.linkedin.com/in/ben-mahmoud-chedly-706b42220/",
+    image: staff13,
   },
 ];
+
+export const Prod = [
+  {
+    image1: prod1,
+    image2: partner1,
+    partLink: 'https://www.tesa.com/fr-fr'
+  },
+  {
+    image1: prod2,
+    image2: partner2,
+    partLink: 'https://www.hellermanntyton.com/'
+  },
+  {
+    image1: prod3,
+    image2: partner6,
+    partLink: 'https://www.lakesprecision.com/'
+  },
+  {
+    image1: prod4,
+    image2: partner4,
+    partLink: 'https://www.sylvac.ch/'
+  },
+  {
+    image1: prod5,
+    image2: partner3,
+    partLink: 'https://metzner.com/index.php/en/'
+  },
+  {
+    image1: prod6,
+    image2: partner1,
+    partLink: 'https://www.tesa.com/fr-fr'
+  },
+  {
+    image1: prod7,
+    image2: partner2,
+    partLink: 'https://www.hellermanntyton.com/'
+  },
+  {
+    image1: prod8,
+    image2: partner6,
+    partLink: 'https://www.lakesprecision.com/'
+  },
+  {
+    image1: prod9,
+    image2: partner5,
+    partLink: 'https://www.lista.com/fr/'
+  },
+  {
+    image1: prod10,
+    image2: partner3,
+    partLink: 'https://metzner.com/index.php/en/'
+  },
+];
+
+export const Sliders = [{
+    name: 'random',
+    description: 'random',
+    image: accueil1
+
+  },{
+    name: 'random',
+    description: 'random',
+    image: accueil2
+
+  },{
+    name: 'random',
+    description: 'random',
+    image: accueil3
+
+  }]
