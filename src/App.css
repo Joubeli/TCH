@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  /* width: 90%;
+  margin: 0 auto; */
 }
 a {
   text-decoration: none;
@@ -35,7 +37,6 @@ h2::after {
   font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
-  /* margin-bottom: 5%; */
   padding-bottom: 2%;
   position: relative;
   color: #00538B;
@@ -85,25 +86,33 @@ h2::after {
 }
 .topbar {
   width: 100vw;
-  height: 77px;
+  min-height: 12vh;
+  position: fixed;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  display: flex;
-  position: fixed;
   background-color: white;
   top: 0;
-  z-index: 2;
+  z-index: 22;
+  padding: 0.8% 0;
+}
+.topbar-container{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  /* background-color: blue; */
+  align-items: flex-end;
 }
 .topbar-menu{
-  width: 100%;
+  width: 90%;
   height: 100%;
+  margin-top: 0.8%;
 }
 .nav-sidebar{
   display: none;
 }
 .logo {
   display: flex;
-  width: 40%;
+  flex-basis: 40%;
   position: relative;
 }
 .logo img {
@@ -116,13 +125,15 @@ h5 {
 }
 nav {
   position: relative;
-  width: 90%;
-  padding-right: 2%;
+
+  /* width: 90%; */
+  /* padding-right: 2%; */
 }
 .links {
   display: flex;
   justify-content: space-around;
-  margin-top: 1.2%;
+  /* margin: auto; */
+  /* background-color: green; */
   width: 100%;
 }
 .topbar_link {
@@ -176,6 +187,10 @@ nav {
   .topbar{
     display: flex;
     justify-content: space-between;
+    /* background-color: blue; */
+  }
+  .topbar-menu{
+    display: none;
   }
   .logo{
     width: 40%;
@@ -189,8 +204,8 @@ nav {
   }
   .faBars{
     position: relative;
-    top: 10px;
-    right: 60px;
+    top: 1%;
+    left: 200px;
     z-index: -20;
     font-size: 48px;
     color: #00538B;
@@ -204,7 +219,7 @@ nav {
     background-color: rgba(255, 255, 255, 0.99);
     position: absolute;
     top: 0;
-    right: -100%;
+    left: 510px;
     opacity: 0.98;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: 0.5s ease;  

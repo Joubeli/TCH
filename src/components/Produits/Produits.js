@@ -20,8 +20,8 @@ const Produits = () => {
     slidesToShow: 3,
     slidesToScroll: 2,
     initialSlide: 0,
-    nextArrow: <img className="nextArrow" src={next} />,
-    prevArrow: <img className="prevArrow" src={prev} />,
+    nextArrow: <img alt="arrow" className="nextArrow" src={next} />,
+    prevArrow: <img alt="arrow" className="prevArrow" src={prev} />,
     responsive: [
       {
         breakpoint: 1120,

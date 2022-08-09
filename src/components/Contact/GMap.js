@@ -1,11 +1,19 @@
 import React from "react";
 import ReactMapGL, { Marker, NavigationControl } from "react-map-gl";
+import 'mapbox-gl/dist/mapbox-gl.css';
+// added the following 6 lines.
+import mapboxgl from 'mapbox-gl';
+// The following is required to stop "npm build" from transpiling mapbox code.
+// notice the exclamation point in the import.
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 const GMap = () => {
   return (
     <ReactMapGL
       style={{
-        width: 300,
-        height: 300,
+        width: 350,
+        height: 350,
         boxShadow: `rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px`,
         border: `solid 1px #7c7c7c`,
       }}
@@ -15,7 +23,7 @@ const GMap = () => {
         latitude: 36.871531286551715,
         zoom: 10,
       }}
-      mapStyle="mapbox://styles/mapbox/outdoors-v11"
+      mapStyle="mapbox://styles/mapbox/streets-v11"
     >
       <Marker
         longitude={10.264813253374376}

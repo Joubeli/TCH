@@ -1,10 +1,11 @@
 .sec-apropos {
-  padding: 8% 10% 1% 10%;
+  padding: 8% 0 1% 0;
+  width: 90%;
+  margin: 0 auto;
 }
 .sec1 {
   display: flex;
   justify-content: space-between;
-  width: 95%;
   margin: 2% auto;
 }
 .art {

@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
-import "aos/dist/aos.css";
-import Aos from "aos";
-import "../../App.css";
-import "./QuiSommesNous.css";
-import { Staffs } from "../../data"
+import React, { useEffect } from "react"
+import "aos/dist/aos.css"
+import Aos from "aos"
+import "../../App.css"
+import "./QuiSommesNous.css"
 import { StaffsIMG } from "../../data"
-import EmployeeIMG from "./EmployeeIMG";
-import Employee from "./Employee";
+import EmployeeIMG from "./EmployeeIMG"
 
 const QuiSommesNous = () => {
   useEffect(() => {
@@ -25,13 +23,6 @@ const QuiSommesNous = () => {
                 <EmployeeIMG staff={staff} />
             ))}
           </div>
-        </div>
-        <div className="spec_line">          
-            <div className="cartes">
-                {Staffs.map((staff) => (
-                    <Employee staff={staff} />
-                ))}
-            </div>
         </div>
       </div>
     </section>

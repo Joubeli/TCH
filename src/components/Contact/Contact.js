@@ -9,7 +9,6 @@ import location from "../../images/Contact/location.png";
 import phone from "../../images/Contact/phone.png";
 import { Form } from "react-bootstrap";
 import GMap from "./GMap";
-
 const Contact = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -25,7 +24,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_d36n7bq', 'template_19mxeei', form.current, 'XypZSD_PcOnXD7pZ2')
+    emailjs.sendForm('service_r75khyq', 'template_0gnwdej', form.current, 'wMXlXYz6QyggDsznn')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -76,7 +75,7 @@ const Contact = () => {
               />
               <div className="desc">
                 <h6 className="subtitle">Email : </h6>
-                <p className="desc-para">info@tch-industries.com</p>
+                <a className="desc-para" href="mailto: info@tch-industries.com" > info@tch-industries.com</a>
               </div>
             </div>
             <div className="sub-sec">
@@ -95,41 +94,39 @@ const Contact = () => {
                 </p>
               </div>
             </div>            
-          </div>
-          <div className="map">
-            <GMap/>
+            <div className="map">
+              <GMap/>
+            </div>
           </div>
             
         </section>
         <section data-aos="fade-up" className="form sec">
            <Form ref={form} onSubmit={sendEmail}>
-           <div className="form_line_1">
-            <Form.Group className="form_group_1">
+            <Form.Group className="form_group">
               <Form.Label className="sec-sub-title sub-title-form">
                 Votre Nom :
               </Form.Label>
               <Form.Control value={name} onChange={(e)=>setName(e.target.value)} className="input_group_1" type="text" name='name'/>
             </Form.Group>
-            <Form.Group className="form_group_1">
+            <Form.Group className="form_group">
               <Form.Label className="sec-sub-title sub-title-form">
                 Votre Email :
               </Form.Label>
               <Form.Control value={email} onChange={(e)=>setEmail(e.target.value)}  className="input_group_1" type="email" name='email'/>
             </Form.Group>
-            </div>
             <Form.Group className="form_group">
               <Form.Label className="sec-sub-title sub-title-form">
                 Sujet :
               </Form.Label>
-              <Form.Control value={subject} onChange={(e)=>setSubject(e.target.value)}  className="input_group" type="text" name='subject'/>
+              <Form.Control value={subject} onChange={(e)=>setSubject(e.target.value)}  className="input_group_1" type="text" name='subject'/>
             </Form.Group>
             <Form.Group className="form_group">
               <Form.Label className="sec-sub-title sub-title-form">
                 Message :
               </Form.Label>
-              <Form.Control value={message} onChange={(e)=>setMessage(e.target.value)}  as="textarea" rows={13}  className="input_group" type="text" name='message'/>
+              <Form.Control value={message} onChange={(e)=>setMessage(e.target.value)}  as="textarea" rows={13}  className="input_group_1" type="text" name='message'/>
             </Form.Group>
-            <button type="submit" className="button form_button" role="button">
+            <button type="submit" className="button form_button">
             Envoyer
             </button>
           </Form> 
