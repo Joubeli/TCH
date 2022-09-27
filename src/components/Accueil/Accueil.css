@@ -432,7 +432,47 @@
     right: 24%;
     width: 150px;
     top: 10%;
-
+  }
+}
+@media screen and (max-width: 270px) {
+  .sec-accueil{
+    padding-top: 26%;
+  }
+  .logo img {  
+    width: 200%;
+  }
+  .message-1{
+    font-size: 12px;
+    font-weight: 400;
+    width: 170px;
+    right: 23%;
+    top: 3%;
+  }
+  .message-2{
+    font-size: 12px;
+    font-weight: 400;
+    width: 170px;
+    right: 21%;
+    top: 3%;
+  }
+  .message-3{
+    font-size: 12px;
+    font-weight: 400;
+    right: 24%;
+    width: 120px;
+    top: 3%;
+  }
+  .section-title{
+    font-size: 1.1em;
+  }
+  .sub-title{
+    font-size: 1em;
+  }
+  .desc-apropos{
+    font-size: 0.8em;
+  }
+  .card-title{
+    font-size: 1em;
   }
 }
 
