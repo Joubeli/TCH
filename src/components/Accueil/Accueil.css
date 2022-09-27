@@ -336,7 +336,7 @@
     width: 280px;
   }
   .section-title{
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 @media screen and (max-width: 550px) {
@@ -411,6 +411,28 @@
 @media screen and (max-width: 300px) {
   .sec-accueil{
     padding-top: 22%;
+  }
+  .message-1{
+    font-size: 14px;
+    font-weight: 400;
+    width: 200px;
+    right: 23%;
+    top: 10%;
+  }
+  .message-2{
+    font-size: 14px;
+    font-weight: 400;
+    width: 200px;
+    right: 21%;
+    top: 10%;
+  }
+  .message-3{
+    font-size: 14px;
+    font-weight: 400;
+    right: 24%;
+    width: 150px;
+    top: 10%;
+
   }
 }
 
