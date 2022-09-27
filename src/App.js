@@ -9,12 +9,12 @@ import Contact from "./components/Contact/Contact";
 import Accueil from "./components/Accueil/Accueil";
 import Footer from "./components/Footer/Footer";
 import logo2 from "./images/Header/logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import menu from './images/Accueil/menu.png'
+import close from './images/Accueil/close.png'
 function App() {
   const [sidebar, setSidebar] = useState(false)
   const [activeClass, setActiveClass] = useState("accueil");
-  const showSidebar = () => setSidebar(!sidebar)
+  const showSidebar = () => setSidebar(!sidebar); console.log(sidebar)
   const sectionAccueil = useRef()
   const sectionApropos = useRef()
   const sectionProduits = useRef()
@@ -55,128 +55,119 @@ function App() {
   return (
     <div className="App">
       <div className="topbar">
-      <div className="topbar-container">
-        <div className="logo">
-          <a href="#accueil">
-            <img src={logo2} alt="logo" className="logo-pic" />
-          </a>
-        </div>
-        <Navbar navHeader={navHeader}/>
-        <div className="nav-sidebar">
-          <div className="navbar">
-            <FontAwesomeIcon
-              icon={faBars}
-              onClick={showSidebar}
-              className='faBars'
-            />
+        <div className="topbar-container">
+          <div className="logo">
+            <a href="#accueil">
+              <img src={logo2} alt="logo" className="logo-pic" />
+            </a>
           </div>
-          <div className={sidebar ? 'sidebar-menu active' : 'sidebar-menu'}>
-            <ul className='sidebar-menu-items' onClick={showSidebar}>
-              <div>
-                <li>
-                  <FontAwesomeIcon
-                  icon={faXmark}
-                  className='faXmark'
-                  />
-                </li>
-              </div>
-              <div className="menu-items">
+          <Navbar navHeader={navHeader}/>
+          <div className="nav-sidebar"> 
+            <img src={menu} onClick={showSidebar} className='menuBars' alt='menu-icon'/>      
+            <div className={sidebar ? 'sidebar-menu sidebar-menu-active' : 'sidebar-menu'}>
+              <ul className='sidebar-menu-items' onClick={showSidebar}>
+                <div>
+                  <li>
+                    <img src={close} onClick={showSidebar} className='close' alt='menu-icon'/>
+                  </li>
+                </div>
+                <div className="menu-items">
+                  <li>
+                    <a
+                      onClick={() => {
+                        setActiveClass("accueil");
+                      }}
+                      className={
+                        activeClass === "accueil"
+                          ? "active-sidebar-menu-item sidebar-menu-item"
+                          : "sidebar-menu-item"
+                      }
+                      href="#accueil"
+                    >
+                      Accueil
+                    </a>
+                  </li>
                 <li>
                   <a
                     onClick={() => {
-                      setActiveClass("accueil");
+                      setActiveClass("apropos");
                     }}
                     className={
-                      activeClass === "accueil"
+                      activeClass === "apropos"
                         ? "active-sidebar-menu-item sidebar-menu-item"
                         : "sidebar-menu-item"
                     }
-                    href="#accueil"
+                    href="#Apropos"
                   >
-                    Accueil
+                    A propos
                   </a>
                 </li>
-              <li>
-                <a
-                  onClick={() => {
-                    setActiveClass("apropos");
-                  }}
-                  className={
-                    activeClass === "apropos"
-                      ? "active-sidebar-menu-item sidebar-menu-item"
-                      : "sidebar-menu-item"
-                  }
-                  href="#Apropos"
-                >
-                  A propos
-                </a>
-              </li>
-              <li>
-                <a
-                  onClick={() => {
-                    setActiveClass("produits");
-                  }}
-                  className={
-                    activeClass === "produits"
-                      ? "active-sidebar-menu-item sidebar-menu-item"
-                      : "sidebar-menu-item"
-                  }
-                  href="#produits"
-                >
-                  Produits
-                </a>
-              </li>
-              <li>
-                <a
-                  onClick={() => {
-                    setActiveClass("quisommesnous");
-                  }}
-                  className={
-                    activeClass === "quisommesnous"
-                      ? "active-sidebar-menu-item sidebar-menu-item quiSommesNous"
-                      : "sidebar-menu-item quiSommesNous"
-                  }
-                  href="#quisommesnous"
-                >
-                  Qui Sommes Nous
-                </a>
-              </li>
-              <li>
-                <a
-                  onClick={() => {
-                    setActiveClass("partenaires");
-                  }}
-                  className={
-                    activeClass === "partenaires"
-                      ? "active-sidebar-menu-item sidebar-menu-item partenaires"
-                      : "sidebar-menu-item partenaires"
-                  }
-                  href="#partenaires"
-                >
-                  Partenaires
-                </a>
-              </li>
-              <li>
-                <a
-                  onClick={() => {
-                    setActiveClass("contact");
-                  }}
-                  className={
-                    activeClass === "contact"
-                      ? "active-sidebar-menu-item sidebar-menu-item contact"
-                      : "sidebar-menu-item contact"
-                  }
-                  href="#contact"
-                >
-                  Contact
-                </a>
-              </li>
+                <li>
+                  <a
+                    onClick={() => {
+                      setActiveClass("produits");
+                    }}
+                    className={
+                      activeClass === "produits"
+                        ? "active-sidebar-menu-item sidebar-menu-item"
+                        : "sidebar-menu-item"
+                    }
+                    href="#produits"
+                  >
+                    Produits
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={() => {
+                      setActiveClass("quisommesnous");
+                    }}
+                    className={
+                      activeClass === "quisommesnous"
+                        ? "active-sidebar-menu-item sidebar-menu-item quiSommesNous"
+                        : "sidebar-menu-item quiSommesNous"
+                    }
+                    href="#quisommesnous"
+                  >
+                    Qui Sommes Nous
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={() => {
+                      setActiveClass("partenaires");
+                    }}
+                    className={
+                      activeClass === "partenaires"
+                        ? "active-sidebar-menu-item sidebar-menu-item partenaires"
+                        : "sidebar-menu-item partenaires"
+                    }
+                    href="#partenaires"
+                  >
+                    Partenaires
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={() => {
+                      setActiveClass("contact");
+                    }}
+                    className={
+                      activeClass === "contact"
+                        ? "active-sidebar-menu-item sidebar-menu-item contact"
+                        : "sidebar-menu-item contact"
+                    }
+                    href="#contact"
+                  >
+                    Contact
+                  </a>
+                </li>
               </div>
             </ul>
           </div>
-        </div>
-        </div>
-      </div>   
+          </div>
+          </div>
+        </div>   
        <div id="accueil" ref={sectionAccueil}>
         <Accueil />      
       </div>

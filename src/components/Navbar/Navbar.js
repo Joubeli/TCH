@@ -81,7 +81,6 @@ const Navbar = ({navHeader}) => {
       document.removeEventListener("scroll", handleScroll)
     }
   }, [navHeader])
-
   return (
     <div className='topbar-menu'>
       <nav>                    
@@ -107,5 +106,4 @@ const Navbar = ({navHeader}) => {
     </div>
   )
 }
-
 export default Navbar

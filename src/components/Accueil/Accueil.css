@@ -13,11 +13,6 @@
   max-width: 400%;
   height: auto;
 }
-/* .container{
-  position: relative;
-  border: 3px solid #dbe4ed;
-  background-color: red;
-} */
 .center {
   margin-bottom: 0;
   position: relative;
@@ -33,7 +28,6 @@
 .image-slider{
   filter: brightness(50%);
   z-index: -10;
-  /* margin-top: 50%; */
 }
 .message-accueil{
   font-family: "Jost", sans-serif;
@@ -49,7 +43,6 @@
   width: 750px;
   margin-top: 10%;
   right: 30%;
-
 }
 .message-2{
   font-size: 68px;
@@ -57,14 +50,13 @@
   width: 850px;
   margin-top: 10%;
   right: 30%;
-
 }
 .message-3{
   line-height: 1.5em;
   margin-top: 9%;
   font-size: 72px;
   width: 575px;
-  right: 45%;
+  margin-right: 14%;
 }
 .sec-ppv{
   width: 85%;
@@ -105,15 +97,127 @@
 .prod:hover .prodHovered{
   display: block; 
 }
-@media screen and (max-width: 1700px) {
-
+@media screen and (min-width: 2500px) {
+  .message-1{    
+    font-size: 92px;
+    width: 1450px;
+    right: 35%;
+  }
+  .message-2{    
+    font-size: 92px;
+    width: 1450px;
+    right: 35%;
+  }
+  .message-3{    
+    font-size: 92px;
+    width: 1150px;
+    margin-left: 12%;
+    margin-top: 16%;
+  }
+  .topbar_link {    
+    font-size: 2rem;
+  }
+  .section-title{
+    font-size: 2.5em;
+  }
 }
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 2000px) {
+  .message-1,
+  .message-2{    
+    font-size: 85px;
+    width: 1050px;
+    right: 30%;
+  }
+  .message-3{    
+    font-size: 85px;
+    right: 19%;
+    width: 1050px;
+    top: 16%;
+  }
+  .topbar_link {    
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .message-1,
+  .message-2{
+    font-size: 75px;
+    right: 25%;
+  }
+  .message-3{
+    right: 12%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .message-1{
+    font-size: 68px;
+    width: 750px;
+    right: 37%;
+    top: 9%;
+  }
+  .message-2{
+    font-size: 68px;
+    width: 850px;
+    right: 32%;
+    top: 9%;
+  }
+  .message-3{
+    font-size: 72px;
+    width: 575px;
+    right: 32%;
+    top: 9%;
+  }
+  .topbar_link {    
+    font-size: 1.3rem;
+  }
+  .section-title {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 1300px) {
+    .message-1{
+      font-size: 68px;
+      width: 750px;
+      right: 27%;
+      top: 7%;
+    }
+    .message-2{
+      font-size: 68px;
+      width: 850px;
+      right: 28%;
+      top: 9%;
+    }
+    .message-3{
+      font-size: 72px;
+      width: 575px;
+      right: 28%;
+      top: 9%;
+    }
+}
+@media screen and (max-width: 1200px) {
+  .message-1{
+  font-size: 68px;
+  width: 750px;
+  right: 27%;
+  top: 7%;
+}
+.message-2{
+  font-size: 68px;
+  width: 850px;
+  right: 20%;
+  top: 9%;
+}
+.message-3{
+  font-size: 72px;
+  width: 575px;
+  right: 23%;
+  top: 9%;
+}
   .sec-ppv{
     width: 95%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .sec-ppv{
     width: 80%;
   }
@@ -124,40 +228,121 @@
     margin-top: 2%;
   }
   .message-accueil{
-  font-size: 28px;
+    font-size: 28px;
   }
   .sec-accueil{
     padding-top: 7%;
+    
+  }
+  .message-1{
+    font-size: 48px;
+    width: 500px;
+    right: 40%;
+
+  }
+  .message-2{
+    font-size: 48px;
+    width: 450px;
+    top: 6%;
+    right: 40%;
+  }
+  .message-3{
+    font-size: 48px;
+    width: 375px;
+    right: 40%;
+    top: 5%;
+  }
+  .section-title{
+    font-size: 1.5em;
   }
 }
-@media screen and (max-width: 830px) {  
-  .sec-accueil{
-    padding-top: 8%;
+@media screen and (max-width: 960px) { 
+  .message-1{
+    font-size: 42px;
+    right: 40%;
+  }
+  .message-2{
+    font-size: 42px;
+  }
+  .message-3{
+    font-size: 42px;
+    right: 30%;
+  } 
+
+}
+@media screen and (max-width: 860px) {  
+  .message-1{
+    font-size: 36px;
+    top: 6%;
+    right: 28%;
+  }
+  .message-2{
+    font-size: 36px;
+    top: 6%;
+    right: 35%;
+  }
+  .message-3{
+    font-size: 36px;
+    top: 6%;
+    right: 28%;
   }
 }
-@media screen and (max-width: 733px) {
+@media screen and (max-width: 780px) {
   .top-accueil{
     flex-direction: column;
   }
-  .sec-accueil{
-    padding-top: 10%;
+  .message-2,
+  .message-1{
+    right: 25%;
+    font-size: 30px;
+    width: 400px;
+  }
+  .message-3{
+    right: 18%;
   }
 }
-@media screen and (max-width: 580px) {
-  .accueil-title{
-    margin: 20% auto 1% auto;
-    width: 80%;
-    font-size: 1.3rem;
-    line-height: 30px;
+@media screen and (max-width: 680px) {
+  .message-1{
+    right: 35%;
+    font-size: 23px;
+    width: 280px;
   }
-  .accueil-subtitle{
-    font-size: 1rem;
-    width: 80%;
-    line-height: 40px;
-    margin: auto;
+  .message-2{
+    right: 30%;
+    font-size: 23px;
+    width: 280px;
+  }
+  .message-3{
+    right: 30%;
+    font-size: 23px;
+    top: 17%;
+    width: 280px;
+  }
+}
+@media screen and (max-width: 580px) {  
+  .message-1{
+    font-size: 25px;
+    width: 280px;
+    right: 35%;
+  }
+  .message-2{
+    font-size: 25px;
+    width: 280px;
+    right: 33%;
+  }
+  .message-3{
+    font-size: 25px;
+    right: 38%;
+    width: 280px;
+  }
+  .section-title{
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 550px) {
+  .sec-accueil{
+    padding-top: 13%;
+  }
   .top-prod{
     width: 50%;
     margin: 0 auto;
@@ -166,18 +351,66 @@
     margin-top: 10%;
   }
 }
-@media screen and (max-width: 535px) {
-  .accueil-title{
-    margin: 25% auto 1% auto;
-    width: 80%;
-    font-size: 1.2rem;
-    line-height: 30px;
+@media screen and (max-width: 450px) {
+  .sec-accueil{
+    padding-top: 16%;
   }
-  .accueil-subtitle{
-    font-size: 0.9rem;
-    width: 80%;
-    line-height: 30px;
-    margin: auto;
+  .message-1{
+    font-size: 18px;
+    width: 220px;
+    right: 35%;
+    top: 12%;
+  }
+  .message-2{
+    font-size: 18px;
+    width: 220px;
+    right: 33%;
+    top: 12%;
+  }
+  .message-3{
+    font-size: 18px;
+    right: 38%;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .sec-accueil{
+  padding-top: 15%;
+}
+  .message-1{
+    font-size: 14px;
+    font-weight: 400;
+    width: 220px;
+    right: 25%;
+    top: 12%;
+  }
+  .message-2{
+    font-size: 14px;
+    font-weight: 400;
+    width: 220px;
+    right: 23%;
+    top: 12%;
+  }
+  .message-3{
+    font-size: 14px;
+    font-weight: 400;
+    right: 28%;
+    width: 200px;
+  }
+  .prod{    
+    width: 250px;
+    height: 140px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 330px) {
+  .sec-accueil{
+    padding-top: 12%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .sec-accueil{
+    padding-top: 22%;
   }
 }
 

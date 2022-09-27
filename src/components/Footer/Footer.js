@@ -40,7 +40,7 @@ const Footer = () => {
       </div>
       <div className="copy">
         Copyright © 2022 <a href="#Apropos"> TCH Industries</a> • Entreprise
-        Tunisienne Privée Créée en 2013{" "}
+        Tunisienne Privée Crée en 2013{" "}
       </div>
       <div className="socials">
         <a

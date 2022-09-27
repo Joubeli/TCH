@@ -1,21 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../App.css";
-import "./Accueil.css";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import Slider from "react-slick";
-// import image1 from '../../images/Accueil/11.jpg'
-// import image2 from '../../images/Accueil/22.jpg'
-// import image3 from '../../images/Accueil/33.jpg'
 import { Prod } from "../../data";
 import Product from "./Product";
+import Aos from "aos";
 import Slide from "./Slide";
-// import Item from "./Item";
-
-
 
 const Accueil = () => {
-  
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <section className="sec-accueil" id="accueil">
       <Slide/>

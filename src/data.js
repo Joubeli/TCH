@@ -89,8 +89,7 @@ export const Products = [
     image: img22,
     title: `CPK Hybrid`,
     conciseDesc: `L'autotool CPK hybrid T18RA est un outil automatique de pose pour colliers fonctionnant soit 
-    sur secteur soit sur batterie. Il a été développé pour accélérer le processus de mise en faisceaux 
-    et pour garantir une pose de colliers constante, fiable et efficace.`,
+    sur secteur soit sur batterie. Il a été développé pour accélérer le processus de mise en faisceaux .`,
     fullDesc: `L'autotool CPK hybrid T18RA est un outil automatique de pose pour colliers fonctionnant soit 
     sur secteur soit sur batterie. Il a été développé pour accélérer le processus de mise en faisceaux 
     et pour garantir une pose de colliers constante, fiable et efficace. Son ergonomie, sa flexibilité 
@@ -217,7 +216,7 @@ export const Products = [
     conciseDesc: `Comparateur numérique adaptatif (jusqu'à 0,2 μm par segment)
     , Version spéciale pour jauges d'alésage cylindrique
     , Introduction de la valeur prédéfinie sur la valeur Min enregistrée
-    , Construction robuste`,
+    `,
     fullDesc: `Comparateur numérique adaptatif (jusqu'à 0,2 μm par segment) , Version spéciale pour jauges 
     d'alésage cylindrique , Introduction de la valeur prédéfinie sur la valeur Min enregistrée , 
     Mesure rapide du point d'inversion , Construction robuste , Résistant à l'eau et aux liquides de 
@@ -276,8 +275,7 @@ export const Products = [
     conciseDesc: `Polyester, une fibre synthétique avec une grande résistance à 
     l'abrasion.
     Moins d'élasticité et d'absorption de la transpiration que le 
-    polyamide.
-    Le maintien sans couture apporte du confort et évite les irritations.`,
+    polyamide.`,
     fullDesc: `Polyester, une fibre synthétique avec une grande résistance à 
     l'abrasion.
     Moins d'élasticité et d'absorption de la transpiration que le 
@@ -307,7 +305,6 @@ export const Products = [
     title: `INDRA S3`,
     conciseDesc: `Chaussure de sécurité : Tissu multicouche hydrofuge haute 
     résistance de couleur gris-noir et cuir suédé noir.
-    Doublure : tissu Shoe Tech.
     Embout : fibre de verre non métallique résistant aux chocs 200 J.`,
     fullDesc: `Chaussure de sécurité : Tissu multicouche hydrofuge haute 
     résistance de couleur gris-noir et cuir suédé noir.
@@ -408,8 +405,7 @@ export const Products = [
     title: `LPI`,
     conciseDesc: `Lakes Precision propose des lames de coupe et de dénudage de fil 
     pour les machines Komax, Schleuniger, Makfil, Megomat, Shäfer, 
-    Metzner, Ideal, ARTOS, Eraser et Carpenter ainsi que pratiquement 
-    toutes les autres machines de traitement de fil.`,
+    Metzner, Ideal, ARTOS, Eraser et Carpenter etc`,
     fullDesc: `Lakes Precision propose des lames de coupe et de dénudage de fil 
     pour les machines Komax, Schleuniger, Makfil, Megomat, Shäfer, 
     Metzner, Ideal, ARTOS, Eraser et Carpenter ainsi que pratiquement 

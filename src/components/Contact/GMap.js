@@ -15,7 +15,7 @@ const GMap = () => {
         width: 350,
         height: 350,
         boxShadow: `rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px`,
-        border: `solid 1px #7c7c7c`,
+        
       }}
       mapboxAccessToken="pk.eyJ1IjoiZmF0bWFnaCIsImEiOiJjbDFuZ2d5YnAwYzh5M2JwZ2k3bmFtbmc3In0.du_LMQnTkopC6MHRT8YeEw"
       initialViewState={{

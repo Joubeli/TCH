@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect }  from 'react'
+import Aos from "aos";
 import './Accueil.css'
 
 const Product = ({prod}) => {
+  useEffect(() => {
+  Aos.init({ duration: 3000 });
+}, []);
   return (
     <>
-        <div className='prod'>
+        <div data-aos="fade-up" className='prod'>
             <img src={prod.image1} alt='produit' />
             <a href={prod.partLink} rel="noopener noreferrer" target="_blank">
               <div className='prodHovered' >
